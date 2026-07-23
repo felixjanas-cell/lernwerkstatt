@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selbsttest-Hub · Meisterprüfung</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪚</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/dashboard.css">
+<link rel="stylesheet" href="assets/deck.css">
+<link rel="stylesheet" href="assets/pomodoro.css">
+</head>
+<body class="wide">
+
+<div class="hero">
+  <div class="kick">Lernwerkstatt · Zimmerermeister · Prüfung September 2026</div>
+  <h1>📚 Selbsttest-Hub</h1>
+  <div class="stats">
+    <div class="reifebar">
+      <div class="lbl">Prüfungsreife</div>
+      <div class="val"><b id="reifeTxt">0 / 0</b> <small>Themen 🟢</small></div>
+      <div class="track"><div class="fill" id="reifeFill"></div></div>
+    </div>
+    <div class="stat"><div class="num" id="streakNum">0</div><div class="lbl">🔥 Tage-Streak</div></div>
+    <div class="stat"><div class="num" id="doneNum">0</div><div class="lbl">Durchläufe gesamt</div></div>
+  </div>
+</div>
+
+<div class="quicknav">
+  <a class="primary" href="pruefung.html">🎲 Prüfungssimulator</a>
+  <a class="primary" href="wiederholung.html">🎯 Wiederhol-Deck (<span id="missCnt">0</span>)</a>
+  <a href="#g-hf1">HF 1</a><a href="#g-hf2">HF 2</a><a href="#g-hf3">HF 3</a><a href="#g-hf4">HF 4</a>
+  <a href="#mindmaps">🗺️ Mindmaps</a>
+</div>
+
+<div id="due"></div>
+<div id="hub"></div>
+
+<div class="mmsec">
+<h2 id="mindmaps">🗺️ Mindmap-Galerie <small>· Excalidraw · Klick öffnet Obsidian zum Bearbeiten</small></h2>
+<div class="mmgroup">Übergreifend · Prüfung &amp; Überblick</div><div class="mmgrid"><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Alt-Klausuren%20%C3%9Cbersicht%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/alt-klausuren-uebersicht.svg" alt="Alt-Klausuren Übersicht" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Alt-Klausuren Übersicht<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Rahmenlehrplan%20Zimmermeister%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/rahmenlehrplan-zimmermeister.svg" alt="Rahmenlehrplan Zimmermeister" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Rahmenlehrplan Zimmermeister<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Meisterwissen%20Netzwerk%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img src="assets/mindmaps/meisterwissen-netzwerk.svg" alt="Meisterwissen Netzwerk" loading="lazy"></span><span class="mmname">🗺️ Meisterwissen Netzwerk<span class="obx">Obsidian ↗</span></span></a></div><div class="mmgroup">HF 1 · Bautechnik</div><div class="mmgrid"><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Holzkonstruktionen%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/holzkonstruktionen.svg" alt="Holzkonstruktionen" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Holzkonstruktionen<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=HF1a%20Sparrenbemessung%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img src="assets/mindmaps/hf1a-sparrenbemessung.svg" alt="HF1a Sparrenbemessung" loading="lazy"></span><span class="mmname">🗺️ HF1a Sparrenbemessung<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Holzbau%20Nachschlagewerk%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/holzbau-nachschlagewerk.svg" alt="Holzbau Nachschlagewerk" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Holzbau Nachschlagewerk<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Dachdeckung%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/dachdeckung.svg" alt="Dachdeckung" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Dachdeckung<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=W%C3%A4rme%2BK%C3%A4lte%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/waerme-kaelte.svg" alt="Wärme+Kälte" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Wärme+Kälte<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=GEG%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/geg.svg" alt="GEG" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ GEG<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Schallschutz%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/schallschutz.svg" alt="Schallschutz" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Schallschutz<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Brandschutz%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/brandschutz.svg" alt="Brandschutz" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Brandschutz<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Denkmalschutz%20im%20Zimmererhandwerk%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/denkmalschutz-im-zimmererhandwerk.svg" alt="Denkmalschutz im Zimmererhandwerk" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Denkmalschutz im Zimmererhandwerk<span class="obx">Obsidian ↗</span></span></a></div><div class="mmgroup">HF 2 · Baustoffe &amp; Arbeitsvorbereitung</div><div class="mmgrid"><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Baustoffkunde%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/baustoffkunde.svg" alt="Baustoffkunde" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Baustoffkunde<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Wareneingang%20%26%20Logistik%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/wareneingang-logistik.svg" alt="Wareneingang &amp; Logistik" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Wareneingang &amp; Logistik<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Holzsch%C3%A4dlinge%20%26%20Holzschutz%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/holzschaedlinge-holzschutz.svg" alt="Holzschädlinge &amp; Holzschutz" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Holzschädlinge &amp; Holzschutz<span class="obx">Obsidian ↗</span></span></a></div><div class="mmgroup">HF 3 · Auftragsabwicklung</div><div class="mmgrid"><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Rechte%20%26%20Normen%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/rechte-normen.svg" alt="Rechte &amp; Normen" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Rechte &amp; Normen<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=ATV%20DIN%2018334%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/atv-din-18334.svg" alt="ATV DIN 18334" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ ATV DIN 18334<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Lageplan%20Brandenburg%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/lageplan-brandenburg.svg" alt="Lageplan Brandenburg" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Lageplan Brandenburg<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Rechtliche%20Vorgaben%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/rechtliche-vorgaben.svg" alt="Rechtliche Vorgaben" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Rechtliche Vorgaben<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Denkmalschutz%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/denkmalschutz.svg" alt="Denkmalschutz" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Denkmalschutz<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Pl%C3%A4ne%20%26%20Skizzen%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/plaene-skizzen.svg" alt="Pläne &amp; Skizzen" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Pläne &amp; Skizzen<span class="obx">Obsidian ↗</span></span></a></div><div class="mmgroup">HF 4 · Betriebsführung</div><div class="mmgrid"><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=HF4a%20Kostenarten%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img src="assets/mindmaps/hf4a-kostenarten.svg" alt="HF4a Kostenarten" loading="lazy"></span><span class="mmname">🗺️ HF4a Kostenarten<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=BWL%20Allgemein%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/bwl-allgemein.svg" alt="BWL Allgemein" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ BWL Allgemein<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Marketing%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/marketing.svg" alt="Marketing" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Marketing<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=Qualit%C3%A4tsmanagement%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/qualitaetsmanagement.svg" alt="Qualitätsmanagement" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ Qualitätsmanagement<span class="obx">Obsidian ↗</span></span></a><a class="mmcard" href="obsidian://open?vault=Zweites_Gehirn&file=DGUV%20Arbeitsschutz%20%28Mindmap%29.excalidraw" title="In Obsidian öffnen &amp; bearbeiten"><span class="mmthumb"><img class="cover" src="assets/mindmaps/dguv-arbeitsschutz.svg" alt="DGUV Arbeitsschutz" loading="lazy"><span class="crophint">Ausschnitt · ganze Map in Obsidian</span></span><span class="mmname">🗺️ DGUV Arbeitsschutz<span class="obx">Obsidian ↗</span></span></a></div>
+</div>
+
+<div class="srcbox" style="border-left-color:#3a5a8a">
+<h3>🧠 Dein Lern-Workflow – 5 Methoden im Tool</h3>
+<ol style="margin:0.3rem 0 0;padding-left:1.2rem">
+<li>🧑‍🏫 <b>Feynman</b> – jede Karte erst laut in eigenen Worten erklären, dann aufdecken.</li>
+<li>🗺️ <b>Mind Map</b> – Excalidraw-Mindmaps: Galerie oben im Hub + in den Decks verlinkt (wo vorhanden).</li>
+<li>🧠 <b>Active Recall</b> – die Selbsttests selbst: abrufen ohne Spicken.</li>
+<li>🔁 <b>Spaced Repetition</b> – „Heute dran“ + Ampel (2 gute Tage = 🟢) + Wiederhol-Deck.</li>
+<li>🍅 <b>Pomodoro</b> – Timer unten rechts (25/5 min) schützt deine Lernzeit.</li>
+</ol>
+<div class="quelle">Grundlage: <a href="obsidian://open?vault=Zweites_Gehirn&file=Lernmethoden%20%C3%9Cbersicht">Lernmethoden Übersicht</a> · Empfohlener Ablauf: Feynman → Mind Map → Active Recall → Spaced Repetition, geschützt durch Pomodoro.</div>
+</div>
+
+<div class="toolbar">
+  <button id="exportBtn">⬇️ Fortschritt exportieren (Backup)</button>
+  <button id="resetBtn">🗑️ Fortschritt zurücksetzen</button>
+</div>
+
+<footer>
+  Fortschritt liegt lokal in diesem Browser (localStorage). Ampel-Regel: 🟢 = 2 Durchläufe ≥90% an verschiedenen Tagen · 🟡 = dran · 🔴 = neu / letzter &lt;60%.<br>
+  Simulator- &amp; Wiederhol-Sessions zählen für Streak und Durchläufe (nicht für die Deck-Ampel).
+  Ergebnis Claude melden → Vault-Lernampel (Lehrplan Meisterprüfung) wird gepflegt.
+</footer>
+
+<script type="application/json" id="manifest">[{"id": "hf1a", "group": "hf1", "title": "HF 1a – Holzkonstruktionen planen & berechnen", "n": 10, "file": "lessons/hf1a-selbsttest.html"}, {"id": "hf1b", "group": "hf1", "title": "HF 1b – Anschlüsse, Knotenpunkte & Verankerungen", "n": 9, "file": "lessons/hf1b-selbsttest.html"}, {"id": "hf1c", "group": "hf1", "title": "HF 1c – Dachdeckungen & Abdichtungen", "n": 9, "file": "lessons/hf1c-selbsttest.html"}, {"id": "hf1d", "group": "hf1", "title": "HF 1d – Holztreppen", "n": 8, "file": "lessons/hf1d-selbsttest.html"}, {"id": "hf1e", "group": "hf1", "title": "HF 1e – Konstruktionsgrundlagen Vorgewerke", "n": 8, "file": "lessons/hf1e-selbsttest.html"}, {"id": "hf1f", "group": "hf1", "title": "HF 1f – Wärme-, Kälte-, Feuchte-, Schall- & Brandschutz", "n": 10, "file": "lessons/hf1f-selbsttest.html"}, {"id": "hf1g", "group": "hf1", "title": "HF 1g – Luftdichtigkeit & Windschutz", "n": 8, "file": "lessons/hf1g-selbsttest.html"}, {"id": "hf1h", "group": "hf1", "title": "HF 1h – Vorgefertigte Bauteile & Energiesammler", "n": 8, "file": "lessons/hf1h-selbsttest.html"}, {"id": "hf2a", "group": "hf2", "title": "HF 2a – Baustoffe: Arten, Eigenschaften, Verwendung", "n": 9, "file": "lessons/hf2a-selbsttest.html"}, {"id": "hf2b", "group": "hf2", "title": "HF 2b – Warenkontrolle, Lagerung, Transport, Entsorgung", "n": 9, "file": "lessons/hf2b-selbsttest.html"}, {"id": "hf2c", "group": "hf2", "title": "HF 2c – Lagerausstattung & Logistikprozesse", "n": 8, "file": "lessons/hf2c-selbsttest.html"}, {"id": "hf2d", "group": "hf2", "title": "HF 2d – Chemischer Holzschutz & Holztrocknung", "n": 8, "file": "lessons/hf2d-selbsttest.html"}, {"id": "hf2e", "group": "hf2", "title": "HF 2e – Konstruktiver Holzschutz", "n": 8, "file": "lessons/hf2e-selbsttest.html"}, {"id": "hf2f", "group": "hf2", "title": "HF 2f – Mengen- & Materialberechnungen", "n": 9, "file": "lessons/hf2f-selbsttest.html"}, {"id": "hf2g", "group": "hf2", "title": "HF 2g – Gerüste & Schalungen", "n": 8, "file": "lessons/hf2g-selbsttest.html"}, {"id": "hf2h", "group": "hf2", "title": "HF 2h – Vorleistungen & Toleranzen Vorgewerke", "n": 8, "file": "lessons/hf2h-selbsttest.html"}, {"id": "hf3a", "group": "hf3", "title": "HF 3a – Auftragsbeschaffung", "n": 8, "file": "lessons/hf3a-selbsttest.html"}, {"id": "hf3b", "group": "hf3", "title": "HF 3b – Angebote & Angebotskalkulation", "n": 9, "file": "lessons/hf3b-selbsttest.html"}, {"id": "hf3c", "group": "hf3", "title": "HF 3c – Arbeitsplanung & Qualitätssicherung", "n": 8, "file": "lessons/hf3c-selbsttest.html"}, {"id": "hf3d", "group": "hf3", "title": "HF 3d – Rechtliche Vorschriften, Normen & Regeln der Technik", "n": 9, "file": "lessons/hf3d-selbsttest.html"}, {"id": "hf3e", "group": "hf3", "title": "HF 3e – Baurechtliche Vorgaben", "n": 9, "file": "lessons/hf3e-selbsttest.html"}, {"id": "hf3f", "group": "hf3", "title": "HF 3f – Pläne, Zeichnungen, Berichte, Protokolle", "n": 9, "file": "lessons/hf3f-selbsttest.html"}, {"id": "hf3g", "group": "hf3", "title": "HF 3g – Material, Geräte, Maschinen & Gerüste", "n": 8, "file": "lessons/hf3g-selbsttest.html"}, {"id": "hf3h", "group": "hf3", "title": "HF 3h – Unteraufträge & Koordination", "n": 8, "file": "lessons/hf3h-selbsttest.html"}, {"id": "hf3i", "group": "hf3", "title": "HF 3i – Kalkulation, Vor-/Nachkalkulation & Rechnungslegung", "n": 9, "file": "lessons/hf3i-selbsttest.html"}, {"id": "hf4a", "group": "hf4", "title": "HF 4a – Betriebliche Kosten & BWL-Zusammenhänge", "n": 9, "file": "lessons/hf4a-selbsttest.html"}, {"id": "hf4b", "group": "hf4", "title": "HF 4b – Controlling & Kennzahlen", "n": 8, "file": "lessons/hf4b-selbsttest.html"}, {"id": "hf4c", "group": "hf4", "title": "HF 4c – Marketing", "n": 9, "file": "lessons/hf4c-selbsttest.html"}, {"id": "hf4d", "group": "hf4", "title": "HF 4d – Qualitätsmanagement", "n": 8, "file": "lessons/hf4d-selbsttest.html"}, {"id": "hf4e", "group": "hf4", "title": "HF 4e – Personalwirtschaft & Führung", "n": 9, "file": "lessons/hf4e-selbsttest.html"}, {"id": "hf4f", "group": "hf4", "title": "HF 4f – Arbeitsschutz & Umweltschutz", "n": 9, "file": "lessons/hf4f-selbsttest.html"}, {"id": "hf4g", "group": "hf4", "title": "HF 4g – Betriebsausstattung & Logistikprozesse", "n": 8, "file": "lessons/hf4g-selbsttest.html"}, {"id": "hf4h", "group": "hf4", "title": "HF 4h – Kooperation & Netzwerke", "n": 8, "file": "lessons/hf4h-selbsttest.html"}]</script>
+<script type="application/json" id="groups">{"hf1": "HF 1 · Bautechnik", "hf2": "HF 2 · Baustoffe & Arbeitsvorbereitung", "hf3": "HF 3 · Auftragsabwicklung", "hf4": "HF 4 · Betriebsführung"}</script>
+<script src="progress-sync.js"></script>
+<script src="assets/sync.js"></script>
+<script>
+var STORE='lernwerkstatt.v1';
+var MAN=JSON.parse(document.getElementById('manifest').textContent);
+var GRP=JSON.parse(document.getElementById('groups').textContent);
+function load(){try{return JSON.parse(localStorage.getItem(STORE))||{decks:{}};}catch(e){return {decks:{}};}}
+function ampel(runs){
+  if(!runs||!runs.length) return {c:'🔴',cls:''};
+  var last=runs[runs.length-1], good={};
+  runs.forEach(function(r){if(r.pct>=90)good[r.date]=1;});
+  if(Object.keys(good).length>=2) return {c:'🟢',cls:'done'};
+  if(last.pct<60) return {c:'🔴',cls:''};
+  return {c:'🟡',cls:''};
+}
+function render(){
+  var db=load(), green=0, totalRuns=0, allDates={};
+  var byGrp={};
+  MAN.forEach(function(m){
+    var d=db.decks[m.id], runs=d?d.runs:[];
+    totalRuns+=runs.length;
+    runs.forEach(function(r){allDates[r.date]=1;});
+    var a=ampel(runs);
+    if(a.c==='🟢') green++;
+    (byGrp[m.group]=byGrp[m.group]||[]).push({m:m,runs:runs,a:a});
+  });
+  // Simulator-/Wiederhol-Sessions: zaehlen fuer Streak + Durchlaeufe
+  var sess=db.sessions||[];
+  sess.forEach(function(s){allDates[s.date]=1;});
+  // Reife
+  document.getElementById('reifeTxt').textContent=green+' / '+MAN.length;
+  document.getElementById('reifeFill').style.width=Math.round(green/MAN.length*100)+'%';
+  document.getElementById('doneNum').textContent=totalRuns+sess.length;
+  // Streak
+  document.getElementById('streakNum').textContent=streak(Object.keys(allDates));
+  // Wiederhol-Pool (falsch beantwortete Fragen)
+  var miss=0;
+  MAN.forEach(function(m){var d=db.decks[m.id]; if(d&&d.q){Object.keys(d.q).forEach(function(k){if(d.q[k]===false)miss++;});}});
+  document.getElementById('missCnt').textContent=miss;
+  // Heute dran (Spaced Repetition)
+  renderDue(db);
+  // Hub
+  var h='';
+  Object.keys(GRP).forEach(function(g){
+    var rows=byGrp[g]||[]; var gg=rows.filter(function(x){return x.a.c==='🟢';}).length;
+    var gp=rows.length?Math.round(gg/rows.length*100):0;
+    h+='<div class="hfgroup" id="g-'+g+'"><h2>'+GRP[g]+
+       '<span class="gtrack"><span class="gfill" style="width:'+gp+'%"></span></span>'+
+       '<span class="grpstat">'+gg+'/'+rows.length+' 🟢</span></h2>';
+    rows.forEach(function(x){
+      var last=x.runs.length?x.runs[x.runs.length-1]:null;
+      var info=last?('<b>'+last.known+'/'+last.total+'</b> · '+x.runs.length+'× · '+last.date):'noch nie · 0×';
+      h+='<div class="deckrow">'+
+           '<span class="amp">'+x.a.c+'</span>'+
+           '<span class="name">'+x.m.title+' <small>('+x.m.n+' Fragen)</small></span>'+
+           '<span class="info">'+info+'</span>'+
+           '<a class="go '+x.a.cls+'" href="'+x.m.file+'">▶ Start</a>'+
+         '</div>';
+    });
+    h+='</div>';
+  });
+  document.getElementById('hub').innerHTML=h;
+}
+function daysSince(ymd){
+  var p=ymd.split('-'); var then=new Date(+p[0],+p[1]-1,+p[2]);
+  var today=new Date(); today.setHours(0,0,0,0);
+  return Math.round((today-then)/86400000);
+}
+function renderDue(db){
+  var due=[];
+  MAN.forEach(function(m){
+    var d=db.decks[m.id], runs=d?d.runs:[];
+    var a=ampel(runs);
+    if(!runs.length){ due.push({m:m,why:'neu',prio:0}); return; }
+    var ds=daysSince(runs[runs.length-1].date);
+    if(a.c==='🔴') due.push({m:m,why:'schwach – dranbleiben',prio:1});
+    else if(a.c==='🟡' && ds>=2) due.push({m:m,why:'seit '+ds+' Tagen offen',prio:2});
+    else if(a.c==='🟢' && ds>=7) due.push({m:m,why:'Auffrischung ('+ds+' Tage)',prio:3});
+  });
+  due.sort(function(x,y){return x.prio-y.prio;});
+  var box=document.getElementById('due');
+  if(!due.length){ box.innerHTML=''; return; }
+  var top=due.slice(0,5);
+  box.innerHTML='<div class="srcbox" style="border-left-color:var(--amber)"><h3>📌 Heute dran ('+due.length+')</h3><ul>'+
+    top.map(function(x){return '<li><a href="'+x.m.file+'">'+x.m.title+'</a> · <span style="color:var(--muted)">'+x.why+'</span></li>';}).join('')+
+    '</ul>'+(due.length>5?'<div class="quelle">… und '+(due.length-5)+' weitere weiter unten.</div>':'')+'</div>';
+}
+function streak(dates){
+  if(!dates.length) return 0;
+  var set={}; dates.forEach(function(d){set[d]=1;});
+  var today=new Date(); today.setHours(0,0,0,0);
+  var key=function(dt){return dt.getFullYear()+'-'+('0'+(dt.getMonth()+1)).slice(-2)+'-'+('0'+dt.getDate()).slice(-2);};
+  // Start heute oder gestern
+  if(!set[key(today)]){ var y=new Date(today); y.setDate(y.getDate()-1); if(!set[key(y)]) return 0; today=y; }
+  var s=0, cur=new Date(today);
+  while(set[key(cur)]){ s++; cur.setDate(cur.getDate()-1); }
+  return s;
+}
+document.getElementById('exportBtn').onclick=function(){
+  var blob=new Blob([localStorage.getItem(STORE)||'{}'],{type:'application/json'});
+  var a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='lernfortschritt-'+new Date().toISOString().slice(0,10)+'.json'; a.click();
+};
+document.getElementById('resetBtn').onclick=function(){
+  if(confirm('Wirklich den GESAMTEN lokalen Fortschritt löschen?')){ localStorage.removeItem(STORE); render(); }
+};
+render();
+</script>
+<script src="assets/pomodoro.js"></script>
+</body>
+</html>

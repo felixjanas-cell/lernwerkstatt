@@ -1,0 +1,174 @@
+/* Lernwerkstatt – Dashboard / Hub. Ergänzt style.css.
+   Werkstatt-Stil: Holzrot + Serifen bleiben, verfeinert mit Karten,
+   HF-Fortschrittsbalken und Mindmap-Galerie. */
+
+body.wide { max-width: 52rem; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative; overflow: hidden;
+  background: linear-gradient(135deg, #6b2415, #8f4229 55%, #9a4a33);
+  color: #fff; border-radius: 14px;
+  padding: 1.7rem 1.9rem 1.6rem; margin: 1.2rem 0 1.4rem;
+  box-shadow: 0 12px 32px -20px rgba(122, 46, 29, 0.7);
+}
+.hero::before { /* dezente Holzmaserung */
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(115deg,
+    rgba(255,255,255,0.05) 0 2px, transparent 2px 9px,
+    rgba(0,0,0,0.05) 9px 11px, transparent 11px 26px);
+}
+.hero > * { position: relative; }
+.hero .kick {
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.66rem;
+  text-transform: uppercase; letter-spacing: 0.16em; opacity: 0.82; margin-bottom: 0.35rem;
+}
+.hero h1 { color: #fff; margin: 0 0 1.1rem; font-size: 1.65rem; line-height: 1.15; }
+.hero .stats { display: flex; flex-wrap: wrap; gap: 0.9rem; align-items: stretch; }
+
+.reifebar {
+  flex: 1; min-width: 220px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 10px; padding: 0.7rem 0.9rem 0.8rem;
+}
+.reifebar .lbl {
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.66rem;
+  text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.85;
+}
+.reifebar .val { font-size: 1.35rem; font-weight: 700; margin: 0.15rem 0 0.4rem; }
+.reifebar .val small { font-size: 0.8rem; font-weight: 400; opacity: 0.85; }
+.reifebar .track { height: 12px; background: rgba(0,0,0,0.28); border-radius: 99px; overflow: hidden; }
+.reifebar .fill {
+  height: 100%; width: 0; border-radius: 99px;
+  background: linear-gradient(90deg, #5fae7f, #7ee0a0); transition: width 0.6s;
+}
+.hero .stat {
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 10px; padding: 0.7rem 1rem; min-width: 7.2rem;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.hero .stat .num { font-size: 1.9rem; font-weight: 700; line-height: 1.1; }
+.hero .stat .lbl {
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.66rem;
+  text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.85; margin-top: 0.2rem;
+}
+
+/* ---------- Schnellnavigation ---------- */
+.quicknav { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0 0 1.3rem; }
+.quicknav a {
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.82rem;
+  padding: 0.42rem 0.85rem; border: 1px solid var(--grid); border-radius: 99px;
+  background: #fff; color: var(--ink); text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+.quicknav a:hover { border-color: var(--accent); color: var(--accent); }
+.quicknav a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.quicknav a.primary:hover { filter: brightness(1.1); color: #fff; }
+
+/* ---------- HF-Gruppen als Karten ---------- */
+.hfgroup {
+  background: #fff; border: 1px solid var(--grid); border-radius: 12px;
+  padding: 1rem 1.2rem 0.45rem; margin: 1.3rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  scroll-margin-top: 1rem;
+}
+.hfgroup h2 {
+  display: flex; align-items: center; gap: 0.8rem;
+  margin: 0 0 0.35rem; padding: 0 0 0.6rem; font-size: 1.16rem;
+  border-bottom: 1px solid var(--grid);
+}
+.hfgroup h2 .gtrack {
+  flex: 1; max-width: 140px; height: 7px; margin-left: auto;
+  background: var(--accent-soft); border-radius: 99px; overflow: hidden;
+}
+.hfgroup h2 .gfill { display: block; height: 100%; background: var(--green); border-radius: 99px; transition: width 0.5s; }
+.hfgroup h2 .grpstat {
+  font-size: 0.75rem; font-weight: 400; color: var(--muted);
+  font-family: -apple-system, "Segoe UI", sans-serif; white-space: nowrap;
+}
+
+.deckrow {
+  display: flex; align-items: center; gap: 0.7rem;
+  padding: 0.55rem 0.5rem; border-bottom: 1px solid #f0eae2; border-radius: 8px;
+}
+.deckrow:last-child { border-bottom: none; }
+.deckrow:hover { background: #faf5ee; }
+.deckrow .amp { font-size: 1.15rem; width: 1.6rem; text-align: center; flex: none; }
+.deckrow .name { flex: 1; font-size: 0.97rem; }
+.deckrow .name small { color: var(--muted); font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.72rem; }
+.deckrow .info {
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.78rem;
+  color: var(--muted); text-align: right; min-width: 9rem;
+}
+.deckrow .info b { color: var(--ink); }
+.deckrow .go { flex: none; }
+.deckrow a.go {
+  display: inline-block; background: var(--accent); color: #fff;
+  border: 1px solid var(--accent); border-radius: 8px; padding: 0.38rem 0.85rem;
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.84rem;
+  text-decoration: none; transition: filter 0.15s;
+}
+.deckrow a.go:hover { filter: brightness(1.1); }
+.deckrow a.go.done { background: #fff; color: var(--accent); }
+
+/* ---------- Mindmap-Galerie ---------- */
+.mmsec h2 { scroll-margin-top: 1rem; }
+.mmsec h2 small { font-size: 0.78rem; color: var(--muted); font-weight: 400; }
+.mmgroup {
+  margin: 1.2rem 0 0.4rem; font-family: -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600;
+}
+.mmgrid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.9rem; margin: 0.5rem 0 1.2rem;
+}
+.mmcard {
+  display: flex; flex-direction: column;
+  border: 1px solid var(--grid); border-radius: 10px; background: #fff;
+  overflow: hidden; text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s, border-color 0.15s;
+}
+.mmcard:hover {
+  border-color: var(--accent); transform: translateY(-2px);
+  box-shadow: 0 8px 20px -12px rgba(122, 46, 29, 0.45);
+}
+.mmthumb {
+  position: relative; height: 132px; background: #fdfcf9; border-bottom: 1px solid #f0eae2;
+  display: flex; align-items: center; justify-content: center; padding: 0.55rem;
+}
+.mmthumb img { max-width: 100%; max-height: 100%; }
+.mmthumb img.cover {
+  width: 100%; height: 100%; max-width: none; max-height: none;
+  object-fit: cover; object-position: left center;
+}
+.mmthumb .crophint {
+  position: absolute; right: 6px; bottom: 6px;
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.58rem;
+  background: rgba(255,255,255,0.88); border: 1px solid var(--grid);
+  border-radius: 4px; padding: 1px 5px; color: var(--muted);
+}
+.mmname {
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.84rem;
+  color: var(--ink); padding: 0.5rem 0.7rem; display: flex; align-items: center; gap: 0.4rem;
+}
+.mmname .obx { margin-left: auto; font-size: 0.68rem; color: var(--muted); white-space: nowrap; }
+
+/* ---------- Toolbar (auch pruefung.html) ---------- */
+.toolbar { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin: 2rem 0 1rem; }
+.toolbar button, .toolbar a, .toolbar label {
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.85rem;
+  padding: 0.5rem 1rem; border: 1px solid var(--grid); border-radius: 8px;
+  background: var(--paper); cursor: pointer; text-decoration: none; color: var(--ink);
+}
+.toolbar label { display: inline-flex; align-items: center; gap: 0.4rem; cursor: default; }
+.toolbar select { font: inherit; border: 1px solid var(--grid); border-radius: 6px; padding: 0.15rem 0.3rem; background: #fff; }
+.toolbar button:hover, .toolbar a:hover { border-color: var(--accent); }
+
+@media (max-width: 34rem) {
+  .hero { padding: 1.3rem 1.2rem; }
+  .deckrow .info { min-width: 6.5rem; font-size: 0.7rem; }
+  .deckrow .name { font-size: 0.88rem; }
+  .mmgrid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .mmthumb { height: 105px; }
+}

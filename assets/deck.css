@@ -1,0 +1,70 @@
+/* Lernwerkstatt – Karteikarten-Deck (Selbsttest / Active Recall)
+   Ergänzt style.css. Für offene Prüfungsfragen: Frage → Erläuterung → Lösung → Selbstbewertung. */
+
+.deck-wrap { margin: 1.5rem 0 3rem; }
+
+.deck-bar {
+  display: flex; align-items: center; gap: 0.8rem;
+  font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.85rem;
+  color: var(--muted); margin-bottom: 0.8rem;
+}
+.deck-bar .track { flex: 1; height: 8px; background: var(--accent-soft); border-radius: 99px; overflow: hidden; }
+.deck-bar .fill { height: 100%; width: 0; background: var(--accent); transition: width 0.3s; }
+.deck-bar .known { color: var(--green); font-weight: 600; }
+
+.card {
+  border: 1px solid var(--grid); border-radius: 10px; background: #fff;
+  padding: 1.4rem 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.card .meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.9rem; }
+.badge {
+  font-family: -apple-system, sans-serif; font-size: 0.68rem; text-transform: uppercase;
+  letter-spacing: 0.05em; padding: 0.15rem 0.55rem; border-radius: 99px;
+  background: var(--accent-soft); color: var(--accent); font-weight: 600;
+}
+.badge.v { background:#e8f0ea; color: var(--green); }
+.badge.p { background:#eef1f7; color:#3a5a8a; }
+
+.card .frage { font-size: 1.12rem; line-height: 1.45; margin: 0 0 1.1rem; }
+.card .frage b { color: var(--ink); }
+
+.reveal { border-top: 1px dashed var(--grid); margin-top: 1rem; padding-top: 1rem; }
+.reveal.hint { background: #fbf7f0; margin: 1rem -1.5rem 0; padding: 1rem 1.5rem; border-top: 1px dashed var(--amber); }
+.reveal h4 { margin: 0 0 0.5rem; font-family:-apple-system,sans-serif; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color: var(--muted); }
+.reveal .formula { font-size: 1rem; }
+.reveal table { font-size: 0.85rem; }
+.reveal p, .reveal li { font-size: 0.95rem; }
+.reveal .muted { color: var(--muted); font-size: 0.85rem; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
+.btn {
+  font: inherit; font-family:-apple-system,sans-serif; font-size: 0.9rem; font-weight: 500;
+  padding: 0.5rem 1rem; border-radius: 7px; border: 1px solid var(--grid);
+  background: var(--paper); cursor: pointer;
+}
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); color:#fff; border-color: var(--accent); }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn.ok { background: var(--green); color:#fff; border-color: var(--green); }
+.btn.no { background: #fff; color: var(--red); border-color: var(--red); }
+.btn.ghost { color: var(--muted); }
+
+.rate { margin-top: 1.2rem; border-top: 1px solid var(--grid); padding-top: 1rem; }
+.rate p { margin: 0 0 0.6rem; font-family:-apple-system,sans-serif; font-size: 0.85rem; color: var(--muted); }
+
+.result { text-align: center; padding: 2rem 1rem; }
+.result .score { font-size: 3rem; font-weight: 700; color: var(--accent); }
+.result .ampel { font-size: 1.1rem; margin: 0.5rem 0 1.5rem; }
+.result ul { text-align: left; max-width: 32rem; margin: 1rem auto; }
+
+.feynman { font-family:-apple-system,sans-serif; font-size:0.82rem; color:var(--green); background:#eef5f0; border-radius:6px; padding:0.4rem 0.7rem; margin:0 0 0.9rem; }
+.methods { font-family:-apple-system,sans-serif; font-size:0.8rem; color:var(--muted); margin-top:0.6rem; }
+.methods b { color:var(--accent); }
+.tophub { display:inline-block; margin-bottom:1rem; font-family:-apple-system,sans-serif; font-size:0.85rem; }
+.srcbox { border:1px solid var(--grid); border-left:3px solid var(--accent); border-radius:0 6px 6px 0; background:#fff; padding:1rem 1.2rem; margin:1.6rem 0; }
+.srcbox h3 { margin:0 0 0.6rem; font-size:0.95rem; }
+.srcbox ul { margin:0.3rem 0 0; padding-left:1.1rem; }
+.srcbox li { font-size:0.9rem; margin:0.2rem 0; }
+.srcbox .quelle { font-size:0.82rem; color:var(--muted); margin-top:0.6rem; }
+
+@media print { .actions, .rate, .deck-bar .track, .tophub { display: none; } .reveal { display: block !important; } }

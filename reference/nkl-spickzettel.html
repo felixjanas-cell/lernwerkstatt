@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spickzettel – Nutzungsklassen &amp; Beiwerte (EC5)</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div class="kicker">Lernwerkstatt · Referenz · EC5</div>
+<h1>Spickzettel: Nutzungsklassen &amp; Beiwerte</h1>
+<p class="lead">Zum schnellen Nachschlagen &amp; Ausdrucken. Werte gerundet — im Zweifel Normtabelle.</p>
+
+<h2>Nutzungsklassen (DIN EN 1995-1-1, 2.3.1.3)</h2>
+<table>
+<tr><th>NKL</th><th>Klima</th><th>Holzfeuchte u</th><th>Beispiele</th></tr>
+<tr><td><strong>1</strong></td><td>innen, beheizt/trocken</td><td>bis ≈ 12 %</td><td>Wohnraumdecke, beheizter Dachstuhl</td></tr>
+<tr><td><strong>2</strong></td><td>überdacht außen</td><td>bis ≈ 20 %</td><td>Carport, überdachter Balkon, kalter Dachraum</td></tr>
+<tr><td><strong>3</strong></td><td>frei bewittert</td><td>&gt; 20 %</td><td>offene Terrasse, Pergola, ungeschützte Fassade</td></tr>
+</table>
+
+<h2>Die zwei Beiwerte — nicht verwechseln!</h2>
+<table>
+<tr><th></th><th>k<sub>mod</sub></th><th>k<sub>def</sub></th></tr>
+<tr><td><strong>Bedeutung</strong></td><td>Modifikation der Festigkeit</td><td>Kriechen / Verformung (zeitabh.)</td></tr>
+<tr><td><strong>Hängt ab von</strong></td><td>NKL + KLED</td><td>nur NKL (+ Holzart)</td></tr>
+<tr><td><strong>Grenzzustand</strong></td><td>GZT (Tragfähigkeit)</td><td>GZG (Gebrauchstauglichkeit)</td></tr>
+<tr><td><strong>Formel</strong></td><td>f<sub>d</sub> = k<sub>mod</sub>·f<sub>k</sub>/γ<sub>M</sub></td><td>u<sub>fin</sub> = u<sub>inst</sub>·(1+k<sub>def</sub>)</td></tr>
+<tr><td><strong>Norm-Tabelle</strong></td><td>EC5 Tab. 3.1</td><td>EC5 Tab. 3.2</td></tr>
+</table>
+
+<div class="note mnemonic">
+<strong>Eselsbrücke:</strong> k<sub>mod</sub> = <strong>MOD</strong>ifiziert Festigkeit (steht in f<sub>d</sub>). k<sub>def</sub> = <strong>DEF</strong>ormation = krumm (steht in der Durchbiegung).
+</div>
+
+<h2>k<sub>mod</sub> — Vollholz &amp; BSH (Auszug EC5 Tab. 3.1)</h2>
+<table>
+<caption>KLED = Klasse der Lasteinwirkungsdauer. Auszug für Vollholz/BSH.</caption>
+<tr><th>KLED</th><th>Beispiel-Last</th><th>NKL 1</th><th>NKL 2</th><th>NKL 3</th></tr>
+<tr><td>ständig</td><td>Eigengewicht</td><td>0,60</td><td>0,60</td><td>0,50</td></tr>
+<tr><td>lang</td><td>Lager/Vorrat</td><td>0,70</td><td>0,70</td><td>0,55</td></tr>
+<tr><td>mittel</td><td>Nutzlast, Schnee</td><td><strong>0,80</strong></td><td><strong>0,80</strong></td><td>0,65</td></tr>
+<tr><td>kurz</td><td>Wind, Schnee (kurz)</td><td>0,90</td><td>0,90</td><td>0,70</td></tr>
+<tr><td>sehr kurz</td><td>außergewöhnl. (Anprall)</td><td>1,10</td><td>1,10</td><td>0,90</td></tr>
+</table>
+
+<h2>k<sub>def</sub> — Vollholz/BSH (EC5 Tab. 3.2)</h2>
+<table>
+<tr><th>Baustoff</th><th>NKL 1</th><th>NKL 2</th><th>NKL 3</th></tr>
+<tr><td>Vollholz / BSH</td><td>0,60</td><td>0,80</td><td>2,00</td></tr>
+<tr><td>OSB (Typ 3)</td><td>1,50</td><td>2,25</td><td>—</td></tr>
+</table>
+
+<h2>Praxis-Konsequenzen je NKL</h2>
+<ul>
+<li><strong>Verbindungsmittel-Korrosionsschutz:</strong> NKL 1+2 = mind. feuerverzinkt · NKL 3 = nicht rostender Stahl (A2/A4). Gerbstoffreiches Holz (Eiche) → immer nicht rostend.</li>
+<li><strong>Klebstoff tragend:</strong> nur Typ I nach DIN EN 301 (alle NKL).</li>
+<li><strong>Holzschutz:</strong> NKL koppelt an Gebrauchsklassen GK nach DIN 68800 (baulicher vs. chemischer Holzschutz).</li>
+<li><strong>&lt; 2 % Gefälle / bewittert:</strong> NKL 3 → höhere k<sub>def</sub> → deutlich größere Durchbiegung einplanen.</li>
+</ul>
+
+<h2>Glossar (verbindlich für alle Lektionen)</h2>
+<ul>
+<li><strong>NKL</strong> — Nutzungsklasse: Umgebungsfeuchte-Klasse des Bauteils (1/2/3).</li>
+<li><strong>KLED</strong> — Klasse der Lasteinwirkungsdauer (ständig/lang/mittel/kurz/sehr&nbsp;kurz).</li>
+<li><strong>k<sub>mod</sub></strong> — Modifikationsbeiwert (Festigkeit), abh. von NKL+KLED, 0,2–1,1.</li>
+<li><strong>k<sub>def</sub></strong> — Verformungsbeiwert (Kriechen), abh. von NKL.</li>
+<li><strong>f<sub>d</sub></strong> — Bemessungsfestigkeit = k<sub>mod</sub>·f<sub>k</sub>/γ<sub>M</sub>.</li>
+<li><strong>γ<sub>M</sub></strong> — Teilsicherheitsbeiwert Material: 1,3 (Vollholz), 1,25 (BSH), 1,1 (Stahl in Verbindungen).</li>
+<li><strong>GZT / GZG</strong> — Grenzzustand der Tragfähigkeit / der Gebrauchstauglichkeit.</li>
+</ul>
+
+<footer>
+Referenz · aktualisiert 2026-07-23 · Quelle: DIN EN 1995-1-1 Tab. 3.1/3.2 + Vault-Notizen ·
+gehört zu <a href="../lessons/0001-nutzungsklassen-kmod-kdef.html">Lektion 0001</a>.
+</footer>
+
+</body>
+</html>

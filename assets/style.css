@@ -1,0 +1,133 @@
+/* Lernwerkstatt – gemeinsames Stylesheet (Tufte-inspiriert)
+   Wird von allen Lektionen & Referenzdokumenten geteilt. */
+
+:root {
+  --ink: #1a1a1a;
+  --paper: #fdfcf9;
+  --accent: #7a2e1d;      /* holzrot */
+  --accent-soft: #f0e6df;
+  --grid: #d8cfc4;
+  --green: #2e6b3f;
+  --amber: #b7791f;
+  --red: #a02c22;
+  --muted: #6b6257;
+  --maxw: 42rem;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 18px; }
+
+body {
+  margin: 0 auto;
+  max-width: var(--maxw);
+  padding: 3rem 1.4rem 6rem;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.kicker {
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+  line-height: 1.1;
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 2.4rem 0 0.6rem;
+  border-bottom: 1px solid var(--grid);
+  padding-bottom: 0.3rem;
+}
+
+h3 { font-size: 1.08rem; margin: 1.6rem 0 0.4rem; }
+
+p, li { font-size: 1.02rem; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+a:hover { border-bottom-color: var(--accent); }
+
+.lead { font-size: 1.15rem; color: var(--muted); font-style: italic; margin: 0.4rem 0 1.6rem; }
+
+/* Sidenote / Merksatz */
+.note {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  padding: 0.8rem 1rem;
+  margin: 1.4rem 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.96rem;
+}
+.note strong { color: var(--accent); }
+
+.mnemonic {
+  border-left: 3px solid var(--green);
+  background: #e8f0ea;
+}
+.mnemonic strong { color: var(--green); }
+
+/* Tables */
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0; font-size: 0.95rem; }
+th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { font-family: -apple-system, "Segoe UI", sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+tr:last-child td { border-bottom: 1px solid var(--grid); }
+caption { caption-side: bottom; font-size: 0.8rem; color: var(--muted); margin-top: 0.4rem; text-align: left; }
+
+/* Formula block */
+.formula {
+  font-family: "Cambria Math", Georgia, serif;
+  background: #fff;
+  border: 1px solid var(--grid);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  font-size: 1.15rem;
+  text-align: center;
+}
+.formula small { display:block; font-family: -apple-system, sans-serif; font-size:0.72rem; color: var(--muted); margin-top:0.5rem; }
+
+/* Two-path diagram */
+.paths { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.4rem 0; }
+.path { border: 1px solid var(--grid); border-radius: 8px; padding: 1rem; background:#fff; }
+.path h3 { margin-top: 0; color: var(--accent); }
+.path .big { font-size: 1.4rem; font-family: "Cambria Math", serif; }
+@media (max-width: 34rem) { .paths { grid-template-columns: 1fr; } }
+
+/* Quiz */
+.quiz { border: 1px solid var(--grid); border-radius: 8px; padding: 1.2rem 1.3rem; margin: 1.6rem 0; background: #fff; }
+.quiz h3 { margin-top: 0; }
+.quiz .q { font-weight: 600; margin: 1rem 0 0.6rem; }
+.quiz button.opt {
+  display: block; width: 100%; text-align: left; margin: 0.35rem 0;
+  padding: 0.55rem 0.8rem; border: 1px solid var(--grid); border-radius: 6px;
+  background: var(--paper); font: inherit; font-size: 0.95rem; cursor: pointer;
+}
+.quiz button.opt:hover { border-color: var(--accent); }
+.quiz button.opt.correct { background: #e8f0ea; border-color: var(--green); }
+.quiz button.opt.wrong { background: #f7e6e4; border-color: var(--red); }
+.quiz .fb { margin-top: 0.5rem; font-size: 0.9rem; min-height: 1.2rem; }
+.quiz .fb.ok { color: var(--green); }
+.quiz .fb.no { color: var(--red); }
+
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--grid); font-size: 0.85rem; color: var(--muted); }
+.pill { display:inline-block; font-family:-apple-system,sans-serif; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; background:var(--accent-soft); color:var(--accent); padding:0.15rem 0.5rem; border-radius:99px; }
+
+@media print {
+  body { max-width: 100%; padding: 0; font-size: 11pt; }
+  .quiz button.opt { border: 1px solid #999; }
+  a { color: var(--ink); border: none; }
+  .no-print { display: none; }
+}

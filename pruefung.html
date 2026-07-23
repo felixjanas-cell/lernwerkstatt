@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prüfungssimulator · Meisterprüfung</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/deck.css">
+<link rel="stylesheet" href="assets/dashboard.css">
+<link rel="stylesheet" href="assets/pomodoro.css">
+</head>
+<body>
+
+<a class="tophub" href="index.html">← Zurück zum Hub</a>
+<div class="kicker">Lernwerkstatt · Prüfungsmodus</div>
+<h1>🎲 Prüfungssimulator</h1>
+<p class="lead">Zufällige Fragen quer über die Handlungsfelder (Interleaving) – näher an der echten Prüfung als Thema-für-Thema.</p>
+
+<div class="srcbox" style="border-left-color:var(--green)">
+  <h3>Einstellungen</h3>
+  <div class="toolbar" style="margin:0.4rem 0 0">
+    <label>Anzahl:
+      <select id="cnt"><option>10</option><option selected>20</option><option>30</option><option>40</option></select>
+    </label>
+    <label>Bereich:
+      <select id="grp">
+        <option value="all" selected>Alle HF</option>
+        <option value="hf1">HF 1 Bautechnik</option>
+        <option value="hf2">HF 2 Baustoffe/AV</option>
+        <option value="hf3">HF 3 Auftrag</option>
+        <option value="hf4">HF 4 Betrieb</option>
+      </select>
+    </label>
+    <label>Zeit:
+      <select id="tmr"><option value="0" selected>ohne</option><option value="30">30 min</option><option value="60">60 min</option><option value="90">90 min</option></select>
+    </label>
+    <button class="btn primary" id="startBtn" style="border:none">▶ Neu starten</button>
+  </div>
+</div>
+
+<div class="deck-wrap"><div id="exam"></div></div>
+
+<footer>Übungsmodus – zählt nicht auf die Deck-Ampel, hält aber deinen Wiederhol-Pool aktuell. Falsch beantwortete Fragen landen im <a href="wiederholung.html">Wiederhol-Deck</a>.</footer>
+
+<script>window.EXAM_CFG = { mode:'sim', count:20, group:'all', timerMin:0 };</script>
+<script src="progress-sync.js"></script>
+<script src="assets/sync.js"></script>
+<script src="assets/pool.js"></script>
+<script src="assets/exam.js"></script>
+<script>
+document.getElementById('startBtn').onclick = function(){
+  window.EXAM_CFG = {
+    mode:'sim',
+    count: parseInt(document.getElementById('cnt').value,10),
+    group: document.getElementById('grp').value,
+    timerMin: parseInt(document.getElementById('tmr').value,10)
+  };
+  window.EXAM_BOOT();
+};
+</script>
+<script src="assets/pomodoro.js"></script>
+</body>
+</html>

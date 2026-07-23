@@ -1,0 +1,321 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.0 -24.0 16008.0 538.0" font-family="Segoe UI, system-ui, sans-serif">
+<path d="M 640.0 210.0 L 160.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="160.0,280.0 167.6,275.2 168.7,282.4" fill="#1e1e1e"/>
+<path d="M 640.0 210.0 L 480.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="480.0,280.0 486.1,273.3 489.0,280.1" fill="#1e1e1e"/>
+<path d="M 640.0 210.0 L 800.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="800.0,280.0 791.0,280.1 793.9,273.3" fill="#1e1e1e"/>
+<path d="M 640.0 210.0 L 1120.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="1120.0,280.0 1111.3,282.4 1112.4,275.2" fill="#1e1e1e"/>
+<path d="M 1920.0 350.0 L 1440.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="1440.0,420.0 1447.6,415.2 1448.7,422.4" fill="#1e1e1e"/>
+<path d="M 1920.0 350.0 L 1760.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="1760.0,420.0 1766.1,413.3 1769.0,420.1" fill="#1e1e1e"/>
+<path d="M 1920.0 350.0 L 2080.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="2080.0,420.0 2071.0,420.1 2073.9,413.3" fill="#1e1e1e"/>
+<path d="M 1920.0 350.0 L 2400.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="2400.0,420.0 2391.3,422.4 2392.4,415.2" fill="#1e1e1e"/>
+<path d="M 2880.0 350.0 L 2720.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="2720.0,420.0 2726.1,413.3 2729.0,420.1" fill="#1e1e1e"/>
+<path d="M 2880.0 350.0 L 3040.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="3040.0,420.0 3031.0,420.1 3033.9,413.3" fill="#1e1e1e"/>
+<path d="M 3680.0 350.0 L 3360.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="3360.0,420.0 3367.2,414.7 3368.8,421.8" fill="#1e1e1e"/>
+<path d="M 3680.0 350.0 L 3680.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="3680.0,420.0 3676.3,411.8 3683.7,411.8" fill="#1e1e1e"/>
+<path d="M 3680.0 350.0 L 4000.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="4000.0,420.0 3991.2,421.8 3992.8,414.7" fill="#1e1e1e"/>
+<path d="M 4480.0 350.0 L 4320.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="4320.0,420.0 4326.1,413.3 4329.0,420.1" fill="#1e1e1e"/>
+<path d="M 4480.0 350.0 L 4640.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="4640.0,420.0 4631.0,420.1 4633.9,413.3" fill="#1e1e1e"/>
+<path d="M 3866.0 210.0 L 1920.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="1920.0,280.0 1928.1,276.0 1928.3,283.4" fill="#1e1e1e"/>
+<path d="M 3866.0 210.0 L 2880.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="2880.0,280.0 2887.9,275.8 2888.5,283.1" fill="#1e1e1e"/>
+<path d="M 3866.0 210.0 L 3680.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="3680.0,280.0 3686.4,273.7 3689.0,280.5" fill="#1e1e1e"/>
+<path d="M 3866.0 210.0 L 4480.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="4480.0,280.0 4471.4,282.7 4472.3,275.4" fill="#1e1e1e"/>
+<path d="M 3866.0 210.0 L 4960.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="4960.0,280.0 4951.6,283.1 4952.0,275.8" fill="#1e1e1e"/>
+<path d="M 3866.0 210.0 L 5280.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="5280.0,280.0 5271.6,283.3 5272.0,275.9" fill="#1e1e1e"/>
+<path d="M 5920.0 350.0 L 5600.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="5600.0,420.0 5607.2,414.7 5608.8,421.8" fill="#1e1e1e"/>
+<path d="M 5920.0 350.0 L 5920.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="5920.0,420.0 5916.3,411.8 5923.7,411.8" fill="#1e1e1e"/>
+<path d="M 5920.0 350.0 L 6240.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="6240.0,420.0 6231.2,421.8 6232.8,414.7" fill="#1e1e1e"/>
+<path d="M 6880.0 350.0 L 6560.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="6560.0,420.0 6567.2,414.7 6568.8,421.8" fill="#1e1e1e"/>
+<path d="M 6880.0 350.0 L 6880.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="6880.0,420.0 6876.3,411.8 6883.7,411.8" fill="#1e1e1e"/>
+<path d="M 6880.0 350.0 L 7200.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="7200.0,420.0 7191.2,421.8 7192.8,414.7" fill="#1e1e1e"/>
+<path d="M 6400.0 210.0 L 5920.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="5920.0,280.0 5927.6,275.2 5928.7,282.4" fill="#1e1e1e"/>
+<path d="M 6400.0 210.0 L 6880.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="6880.0,280.0 6871.3,282.4 6872.4,275.2" fill="#1e1e1e"/>
+<path d="M 7680.0 350.0 L 7520.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="7520.0,420.0 7526.1,413.3 7529.0,420.1" fill="#1e1e1e"/>
+<path d="M 7680.0 350.0 L 7840.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="7840.0,420.0 7831.0,420.1 7833.9,413.3" fill="#1e1e1e"/>
+<path d="M 8320.0 350.0 L 8160.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="8160.0,420.0 8166.1,413.3 8169.0,420.1" fill="#1e1e1e"/>
+<path d="M 8320.0 350.0 L 8480.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="8480.0,420.0 8471.0,420.1 8473.9,413.3" fill="#1e1e1e"/>
+<path d="M 8960.0 350.0 L 8800.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="8800.0,420.0 8806.1,413.3 8809.0,420.1" fill="#1e1e1e"/>
+<path d="M 8960.0 350.0 L 9120.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="9120.0,420.0 9111.0,420.1 9113.9,413.3" fill="#1e1e1e"/>
+<path d="M 9600.0 350.0 L 9440.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="9440.0,420.0 9446.1,413.3 9449.0,420.1" fill="#1e1e1e"/>
+<path d="M 9600.0 350.0 L 9760.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="9760.0,420.0 9751.0,420.1 9753.9,413.3" fill="#1e1e1e"/>
+<path d="M 8928.0 210.0 L 7680.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="7680.0,280.0 7688.0,275.9 7688.4,283.2" fill="#1e1e1e"/>
+<path d="M 8928.0 210.0 L 8320.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="8320.0,280.0 8327.7,275.4 8328.6,282.7" fill="#1e1e1e"/>
+<path d="M 8928.0 210.0 L 8960.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="8960.0,280.0 8953.2,274.1 8959.9,271.0" fill="#1e1e1e"/>
+<path d="M 8928.0 210.0 L 9600.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="9600.0,280.0 9591.4,282.8 9592.2,275.5" fill="#1e1e1e"/>
+<path d="M 8928.0 210.0 L 10080.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="10080.0,280.0 10071.6,283.2 10072.0,275.8" fill="#1e1e1e"/>
+<path d="M 10560.0 350.0 L 10400.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="10400.0,420.0 10406.1,413.3 10409.0,420.1" fill="#1e1e1e"/>
+<path d="M 10560.0 350.0 L 10720.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="10720.0,420.0 10711.0,420.1 10713.9,413.3" fill="#1e1e1e"/>
+<path d="M 11200.0 350.0 L 11040.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="11040.0,420.0 11046.1,413.3 11049.0,420.1" fill="#1e1e1e"/>
+<path d="M 11200.0 350.0 L 11360.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="11360.0,420.0 11351.0,420.1 11353.9,413.3" fill="#1e1e1e"/>
+<path d="M 11840.0 350.0 L 11680.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="11680.0,420.0 11686.1,413.3 11689.0,420.1" fill="#1e1e1e"/>
+<path d="M 11840.0 350.0 L 12000.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="12000.0,420.0 11991.0,420.1 11993.9,413.3" fill="#1e1e1e"/>
+<path d="M 11480.0 210.0 L 10560.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="10560.0,280.0 10567.9,275.7 10568.5,283.0" fill="#1e1e1e"/>
+<path d="M 11480.0 210.0 L 11200.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="11200.0,280.0 11207.1,274.4 11208.9,281.6" fill="#1e1e1e"/>
+<path d="M 11480.0 210.0 L 11840.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="11840.0,280.0 11831.2,282.0 11832.6,274.8" fill="#1e1e1e"/>
+<path d="M 11480.0 210.0 L 12320.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="12320.0,280.0 12311.5,283.0 12312.1,275.7" fill="#1e1e1e"/>
+<path d="M 13120.0 210.0 L 12640.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="12640.0,280.0 12647.6,275.2 12648.7,282.4" fill="#1e1e1e"/>
+<path d="M 13120.0 210.0 L 12960.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="12960.0,280.0 12966.1,273.3 12969.0,280.1" fill="#1e1e1e"/>
+<path d="M 13120.0 210.0 L 13280.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="13280.0,280.0 13271.0,280.1 13273.9,273.3" fill="#1e1e1e"/>
+<path d="M 13120.0 210.0 L 13600.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="13600.0,280.0 13591.3,282.4 13592.4,275.2" fill="#1e1e1e"/>
+<path d="M 14240.0 350.0 L 13920.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="13920.0,420.0 13927.2,414.7 13928.8,421.8" fill="#1e1e1e"/>
+<path d="M 14240.0 350.0 L 14240.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="14240.0,420.0 14236.3,411.8 14243.7,411.8" fill="#1e1e1e"/>
+<path d="M 14240.0 350.0 L 14560.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="14560.0,420.0 14551.2,421.8 14552.8,414.7" fill="#1e1e1e"/>
+<path d="M 14773.0 210.0 L 14240.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="14240.0,280.0 14247.7,275.3 14248.6,282.6" fill="#1e1e1e"/>
+<path d="M 14773.0 210.0 L 14880.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="14880.0,280.0 14871.1,278.6 14875.1,272.4" fill="#1e1e1e"/>
+<path d="M 14773.0 210.0 L 15200.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="15200.0,280.0 15191.3,282.3 15192.5,275.0" fill="#1e1e1e"/>
+<path d="M 15680.0 210.0 L 15520.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="15520.0,280.0 15526.1,273.3 15529.0,280.1" fill="#1e1e1e"/>
+<path d="M 15680.0 210.0 L 15840.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="15840.0,280.0 15831.0,280.1 15833.9,273.3" fill="#1e1e1e"/>
+<path d="M 9361.0 70.0 L 640.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="640.0,140.0 648.2,136.3 648.2,143.6" fill="#1e1e1e"/>
+<path d="M 9361.0 70.0 L 3866.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="3866.0,140.0 3874.2,136.2 3874.3,143.6" fill="#1e1e1e"/>
+<path d="M 9361.0 70.0 L 6400.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="6400.0,140.0 6408.1,136.1 6408.3,143.5" fill="#1e1e1e"/>
+<path d="M 9361.0 70.0 L 8928.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="8928.0,140.0 8935.5,135.1 8936.7,142.3" fill="#1e1e1e"/>
+<path d="M 9361.0 70.0 L 11480.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="11480.0,140.0 11471.7,143.4 11471.9,136.1" fill="#1e1e1e"/>
+<path d="M 9361.0 70.0 L 13120.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="13120.0,140.0 13111.7,143.5 13111.9,136.2" fill="#1e1e1e"/>
+<path d="M 9361.0 70.0 L 14773.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="14773.0,140.0 14764.7,143.6 14764.8,136.2" fill="#1e1e1e"/>
+<path d="M 9361.0 70.0 L 15680.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="15680.0,140.0 15671.7,143.6 15671.8,136.2" fill="#1e1e1e"/>
+<rect x="20.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="340.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="660.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="980.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="500.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="1300.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="1620.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="1940.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="2260.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="1780.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="2580.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="2900.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="2740.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="3220.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="3540.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="3860.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="3540.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="4180.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="4500.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="4340.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="4820.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="5140.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="3726.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="5460.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="5780.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="6100.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="5780.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="6420.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="6740.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="7060.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="6740.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="6260.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="7380.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="7700.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="7540.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="8020.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="8340.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="8180.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="8660.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="8980.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="8820.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="9300.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="9620.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="9460.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="9940.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="8788.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="10260.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="10580.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="10420.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="10900.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="11220.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="11060.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="11540.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="11860.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="11700.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="12180.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="11340.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="12500.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="12820.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="13140.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="13460.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="12980.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="13780.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="14100.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="14420.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="14100.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="14740.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="15060.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="14633.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="15380.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="15700.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="15540.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="9221.0" y="0.0" width="280.0" height="70.0" rx="8" fill="#d0bfff" stroke="#1e1e1e" stroke-width="1.2"/>
+<text x="28.0" y="308.6" font-size="16" fill="#1e1e1e">Kundenorientierte</text>
+<text x="28.0" y="328.6" font-size="16" fill="#1e1e1e">Unternehmensstrategie</text>
+<text x="348.0" y="308.6" font-size="16" fill="#1e1e1e">Abgrenzung: Werbung, Vertrieb,</text>
+<text x="348.0" y="328.6" font-size="16" fill="#1e1e1e">Marketing</text>
+<text x="668.0" y="308.6" font-size="16" fill="#1e1e1e">AIDA-Modell: Attention,</text>
+<text x="668.0" y="328.6" font-size="16" fill="#1e1e1e">Interest, Desire, Action</text>
+<text x="988.0" y="308.6" font-size="16" fill="#1e1e1e">Historie: Produkt- bis</text>
+<text x="988.0" y="328.6" font-size="16" fill="#1e1e1e">Marktorientierung</text>
+<text x="508.0" y="178.6" font-size="16" fill="#1e1e1e">Grundlagen &amp; Definition</text>
+<text x="1308.0" y="448.6" font-size="16" fill="#1e1e1e">Soziodemografisch: Alter,</text>
+<text x="1308.0" y="468.6" font-size="16" fill="#1e1e1e">Einkommen</text>
+<text x="1628.0" y="458.6" font-size="16" fill="#1e1e1e">Geografisch: Region, Stadt</text>
+<text x="1948.0" y="458.6" font-size="16" fill="#1e1e1e">Psychografisch: Werte, Ästhetik</text>
+<text x="2268.0" y="448.6" font-size="16" fill="#1e1e1e">Verhaltensorientiert:</text>
+<text x="2268.0" y="468.6" font-size="16" fill="#1e1e1e">Sanierungsabsicht</text>
+<text x="1788.0" y="318.6" font-size="16" fill="#1e1e1e">Zielgruppenanalyse</text>
+<text x="2588.0" y="458.6" font-size="16" fill="#1e1e1e">Intern: Stärken &amp; Schwächen</text>
+<text x="2908.0" y="458.6" font-size="16" fill="#1e1e1e">Extern: Chancen &amp; Risiken</text>
+<text x="2748.0" y="318.6" font-size="16" fill="#1e1e1e">SWOT-Analyse</text>
+<text x="3228.0" y="458.6" font-size="16" fill="#1e1e1e">Identifikation: Branche, Region</text>
+<text x="3548.0" y="448.6" font-size="16" fill="#1e1e1e">Kriterien: Image, Qualität,</text>
+<text x="3548.0" y="468.6" font-size="16" fill="#1e1e1e">Preise</text>
+<text x="3868.0" y="448.6" font-size="16" fill="#1e1e1e">Nutzwertanalyse &amp;</text>
+<text x="3868.0" y="468.6" font-size="16" fill="#1e1e1e">Punktwertverfahren</text>
+<text x="3548.0" y="318.6" font-size="16" fill="#1e1e1e">Wettbewerbsanalyse</text>
+<text x="4188.0" y="448.6" font-size="16" fill="#1e1e1e">Phasen: Einführung, Wachstum,</text>
+<text x="4188.0" y="468.6" font-size="16" fill="#1e1e1e">Reife, Sättigung</text>
+<text x="4508.0" y="448.6" font-size="16" fill="#1e1e1e">Diversifizierung: Innovation,</text>
+<text x="4508.0" y="468.6" font-size="16" fill="#1e1e1e">Variation, Elimination</text>
+<text x="4348.0" y="318.6" font-size="16" fill="#1e1e1e">Produktlebenszyklus</text>
+<text x="4828.0" y="318.6" font-size="16" fill="#1e1e1e">USP (Alleinstellungsmerkmal)</text>
+<text x="5148.0" y="318.6" font-size="16" fill="#1e1e1e">Portfolio-Analyse (BCG-Matrix)</text>
+<text x="3734.0" y="178.6" font-size="16" fill="#1e1e1e">Analyse-Instrumente</text>
+<text x="5468.0" y="458.6" font-size="16" fill="#1e1e1e">Spezifisch &amp; Messbar</text>
+<text x="5788.0" y="458.6" font-size="16" fill="#1e1e1e">Ansprechend &amp; Realistisch</text>
+<text x="6108.0" y="458.6" font-size="16" fill="#1e1e1e">Terminiert</text>
+<text x="5788.0" y="318.6" font-size="16" fill="#1e1e1e">SMART-Methode</text>
+<text x="6428.0" y="458.6" font-size="16" fill="#1e1e1e">Normativ: Vision &amp; Politik</text>
+<text x="6748.0" y="458.6" font-size="16" fill="#1e1e1e">Strategisch: Erfolgssicherung</text>
+<text x="7068.0" y="458.6" font-size="16" fill="#1e1e1e">Operativ: Umsetzung &amp; Führung</text>
+<text x="6748.0" y="318.6" font-size="16" fill="#1e1e1e">Hierarchieebenen</text>
+<text x="6268.0" y="178.6" font-size="16" fill="#1e1e1e">Marketing-Ziele</text>
+<text x="7388.0" y="458.6" font-size="16" fill="#1e1e1e">Kernleistung: z.B. Dachstuhlbau</text>
+<text x="7708.0" y="448.6" font-size="16" fill="#1e1e1e">Zusatzleistung: Beratung,</text>
+<text x="7708.0" y="468.6" font-size="16" fill="#1e1e1e">Visualisierung</text>
+<text x="7548.0" y="318.6" font-size="16" fill="#1e1e1e">Product (Produktpolitik)</text>
+<text x="8028.0" y="458.6" font-size="16" fill="#1e1e1e">Kalkulation: Kosten, Wettbewerb</text>
+<text x="8348.0" y="448.6" font-size="16" fill="#1e1e1e">Psychologie: Paketangebote,</text>
+<text x="8348.0" y="468.6" font-size="16" fill="#1e1e1e">Rabatte</text>
+<text x="8188.0" y="318.6" font-size="16" fill="#1e1e1e">Price (Preispolitik)</text>
+<text x="8668.0" y="448.6" font-size="16" fill="#1e1e1e">Kanäle: Direktvertrieb,</text>
+<text x="8668.0" y="468.6" font-size="16" fill="#1e1e1e">Kooperationen</text>
+<text x="8988.0" y="448.6" font-size="16" fill="#1e1e1e">Nachfassaktionen &amp;</text>
+<text x="8988.0" y="468.6" font-size="16" fill="#1e1e1e">Dokumentation</text>
+<text x="8828.0" y="318.6" font-size="16" fill="#1e1e1e">Place (Vertriebspolitik)</text>
+<text x="9308.0" y="458.6" font-size="16" fill="#1e1e1e">Analoge Werbung: Flyer, Banner</text>
+<text x="9628.0" y="458.6" font-size="16" fill="#1e1e1e">PR &amp; Veranstaltungen</text>
+<text x="9468.0" y="318.6" font-size="16" fill="#1e1e1e">Promotion (Kommunikation)</text>
+<text x="9948.0" y="308.6" font-size="16" fill="#1e1e1e">Erweiterung (7P): People,</text>
+<text x="9948.0" y="328.6" font-size="16" fill="#1e1e1e">Process, Physical Evidence</text>
+<text x="8796.0" y="178.6" font-size="16" fill="#1e1e1e">Marketing-Mix (4P/7P)</text>
+<text x="10268.0" y="448.6" font-size="16" fill="#1e1e1e">Herzstück: Referenzen, Team,</text>
+<text x="10268.0" y="468.6" font-size="16" fill="#1e1e1e">Kontakt</text>
+<text x="10588.0" y="448.6" font-size="16" fill="#1e1e1e">Design: Struktur, Datenschutz,</text>
+<text x="10588.0" y="468.6" font-size="16" fill="#1e1e1e">AIDA</text>
+<text x="10428.0" y="318.6" font-size="16" fill="#1e1e1e">Webseite</text>
+<text x="10908.0" y="448.6" font-size="16" fill="#1e1e1e">Kanäle: Instagram, Facebook,</text>
+<text x="10908.0" y="468.6" font-size="16" fill="#1e1e1e">TikTok, YouTube</text>
+<text x="11228.0" y="448.6" font-size="16" fill="#1e1e1e">Content: Zeitraffer,</text>
+<text x="11228.0" y="468.6" font-size="16" fill="#1e1e1e">Vorher-Nachher, Stories</text>
+<text x="11068.0" y="318.6" font-size="16" fill="#1e1e1e">Social Media</text>
+<text x="11548.0" y="448.6" font-size="16" fill="#1e1e1e">SEO: Onpage-Optimierung,</text>
+<text x="11548.0" y="468.6" font-size="16" fill="#1e1e1e">Keywords</text>
+<text x="11868.0" y="458.6" font-size="16" fill="#1e1e1e">SEA: Google Ads, Verkaufs-Tags</text>
+<text x="11708.0" y="318.6" font-size="16" fill="#1e1e1e">Suchmaschinen (SEM)</text>
+<text x="12188.0" y="308.6" font-size="16" fill="#1e1e1e">Bewertungsmanagement: Google,</text>
+<text x="12188.0" y="328.6" font-size="16" fill="#1e1e1e">Vertrauensaufbau</text>
+<text x="11348.0" y="178.6" font-size="16" fill="#1e1e1e">Digitale Sichtbarkeit</text>
+<text x="12508.0" y="308.6" font-size="16" fill="#1e1e1e">Design: Logo, Farbwelt,</text>
+<text x="12508.0" y="328.6" font-size="16" fill="#1e1e1e">Schriftart</text>
+<text x="12828.0" y="308.6" font-size="16" fill="#1e1e1e">Kleidung: Einheitliches</text>
+<text x="12828.0" y="328.6" font-size="16" fill="#1e1e1e">Auftreten</text>
+<text x="13148.0" y="308.6" font-size="16" fill="#1e1e1e">Fahrzeugdesign: Sichtbarkeit im</text>
+<text x="13148.0" y="328.6" font-size="16" fill="#1e1e1e">Verkehr</text>
+<text x="13468.0" y="318.6" font-size="16" fill="#1e1e1e">Communication &amp; Philosophy</text>
+<text x="12988.0" y="178.6" font-size="16" fill="#1e1e1e">Corporate Identity (CI)</text>
+<text x="13788.0" y="458.6" font-size="16" fill="#1e1e1e">Sicherheit &amp; Vertrauen</text>
+<text x="14108.0" y="448.6" font-size="16" fill="#1e1e1e">Soziale Bedürfnisse &amp;</text>
+<text x="14108.0" y="468.6" font-size="16" fill="#1e1e1e">Kommunikation</text>
+<text x="14428.0" y="458.6" font-size="16" fill="#1e1e1e">Anerkennung &amp; Prestige</text>
+<text x="14108.0" y="318.6" font-size="16" fill="#1e1e1e">Bedürfnisse</text>
+<text x="14748.0" y="308.6" font-size="16" fill="#1e1e1e">CRM: Gezielte</text>
+<text x="14748.0" y="328.6" font-size="16" fill="#1e1e1e">Beziehungsgestaltung</text>
+<text x="15068.0" y="318.6" font-size="16" fill="#1e1e1e">Storytelling: Kunde als Held</text>
+<text x="14641.0" y="178.6" font-size="16" fill="#1e1e1e">Kundenorientierung &amp; CRM</text>
+<text x="15388.0" y="308.6" font-size="16" fill="#1e1e1e">Schritte: Ziel, Zielgruppe,</text>
+<text x="15388.0" y="328.6" font-size="16" fill="#1e1e1e">USP, Mix, Budget, Kontrolle</text>
+<text x="15708.0" y="298.6" font-size="16" fill="#1e1e1e">Methoden: Direkt-,</text>
+<text x="15708.0" y="318.6" font-size="16" fill="#1e1e1e">Empfehlungs-,</text>
+<text x="15708.0" y="338.6" font-size="16" fill="#1e1e1e">Guerilla-Marketing</text>
+<text x="15548.0" y="178.6" font-size="16" fill="#1e1e1e">Marketingkonzept &amp; Planung</text>
+<text x="9229.0" y="38.6" font-size="16" fill="#1e1e1e">🧠 Marketing im Handwerk</text>
+</svg>

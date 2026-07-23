@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selbsttest HF 2f – Mengen- &amp; Materialberechnungen</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/deck.css">
+<link rel="stylesheet" href="../assets/pomodoro.css">
+</head>
+<body>
+
+<a class="tophub" href="../index.html">← Zurück zum Selbsttest-Hub</a>
+<div class="kicker">Lernwerkstatt · Meisterprüfung · HF2F</div>
+<h1>HF 2f – Mengen- &amp; Materialberechnungen</h1>
+<p class="lead">Selbsttest &middot; 9 Fragen &middot; Active Recall. Erst denken, dann Musterlösung, dann ehrlich werten.</p>
+
+<div class="note mnemonic" style="font-size:0.9rem">
+<strong>MPO-Bezug:</strong> HF 2f &middot; 10 Std. &middot; Taxonomiestufe „Können" &middot; <em>Baustellen-/logistikbezogene Mengen- und Materialberechnungen erstellen.</em>
+</div>
+
+<div class="deck-wrap"><div id="deck"></div></div>
+
+<div class="srcbox">
+<h3>📚 Quellen &amp; Vertiefung (aus deinem Vault)</h3>
+<ul>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=HF2%20Baustoffe%20%26%20Arbeitsvorbereitung">HF2 Baustoffe &amp; Arbeitsvorbereitung</a></li>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=Holzarten%20%26%20Eigenschaften">Holzarten &amp; Eigenschaften</a></li>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=Holzschutz">Holzschutz</a></li>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=Glossar%20Zimmerermeister%20%28Fachbegriffe%29">Glossar Zimmerermeister (Fachbegriffe)</a></li>
+</ul>
+<div class="quelle">Fragen-Quelle: Quellen: eigene HF-Notizen, Altklausuren Teil II (3-4), DIN 276, ATV DIN 18334. Lernfragen-Set HF 2f · 9 Fragen.</div>
+<div class="quelle">🗺️ Noch keine Mind Map – zeichne eine (Papier/Canvas), das strukturiert das Thema (Methode 5).</div>
+<div class="quelle">Klick öffnet die Notiz direkt in Obsidian (Vault „Zweites_Gehirn“).</div>
+</div>
+
+<div class="methods">🧠 <b>Methoden aktiv:</b> Active Recall (Abfrage) · Feynman (erst erklären) · Spaced Repetition (Ampel &amp; „Heute dran“) · Pomodoro (Timer). Übersicht: <a href="obsidian://open?vault=Zweites_Gehirn&file=Lernmethoden%20%C3%9Cbersicht">Lernmethoden Übersicht</a>.</div>
+
+<footer>
+  <span class="pill">HF2F</span> · generiert aus hf2f.json ·
+  Fortschritt wird lokal gespeichert. Ergebnis melden → Vault-Lernampel wird aktualisiert.
+</footer>
+
+<script>window.DECK_CFG = {"id": "hf2f", "title": "HF 2f – Mengen- & Materialberechnungen"};</script>
+<script type="application/json" id="deck-data">[{"n": 1, "typ": "p", "kennung": "HF2f-1", "tax": "Können", "frage": "Berechnen Sie das <b>Holzvolumen</b> für 12 Sparren mit Querschnitt 8/20 cm und Länge 4,50 m.", "erklaerung": "<p>Das Volumen eines Kantholzes ist Breite × Höhe × Länge (alles in Metern → m³). Bei Stückzahlen die Anzahl multiplizieren.</p><div class=\"formula\">V = b · h · l · n</div>", "loesung": "<div class=\"formula\">V = 0,08 · 0,20 · 4,50 · 12 = 0,016 · 4,50 · 12</div><div class=\"formula\">= 0,072 · 12 = <b>0,864 m³</b></div><p>Pro Sparren 0,072 m³, gesamt <b>0,864 m³</b> (netto, ohne Verschnitt).</p>"}, {"n": 2, "typ": "p", "kennung": "HF2f-1", "tax": "Können", "frage": "Nennen Sie die typischen <b>Verschnittzuschläge</b> und berechnen Sie die Bestellmenge für 0,864 m³ Bauholz (1,5 %).", "erklaerung": "<p>Beim Zuschnitt entsteht Verschnitt. Auf das Netto-Volumen wird ein materialabhängiger Zuschlag addiert.</p><div class=\"formula\">V<sub>bestell</sub> = V<sub>netto</sub> · (1 + Verschnitt/100)</div>", "loesung": "<p><b>Verschnittsätze (aus Altklausuren):</b> Bauholz <b>1,5 %</b>, Traufbohlen <b>8 %</b>, Profilbretter <b>15 %</b>, Lattung 10–15 %, Dämmplatten 5–10 %.</p><div class=\"formula\">V<sub>bestell</sub> = 0,864 · 1,015 = <b>0,877 m³</b></div>"}, {"n": 3, "typ": "p", "kennung": "HF2f-2", "tax": "Können", "frage": "Ein Satteldach hat eine Halbspannweite a = 4,00 m und eine Firsthöhe h = 3,00 m. <b>Berechnen Sie die Sparrenlänge</b> (ohne Überstand).", "erklaerung": "<p>Der Sparren ist die Hypotenuse des rechtwinkligen Dreiecks aus Halbspannweite und Firsthöhe (Satz des Pythagoras).</p><div class=\"formula\">s = √(a² + h²)</div>", "loesung": "<div class=\"formula\">s = √(4,00² + 3,00²) = √(16 + 9) = √25 = <b>5,00 m</b></div><p>Klassisches 3-4-5-Dreieck. Für die Bestelllänge Dachüberstand (z. B. 0,40–0,70 m) addieren.</p>"}, {"n": 4, "typ": "p", "kennung": "HF2f-2", "tax": "Können", "frage": "Eine Dachfläche hat eine Grundfläche (Projektion) von 60 m² bei einer Dachneigung von 40°. <b>Berechnen Sie die wahre Dachfläche.</b>", "erklaerung": "<p>Die geneigte Dachfläche ist größer als ihre waagerechte Projektion. Man rechnet mit 1/cos α hoch.</p><div class=\"formula\">A<sub>schräg</sub> = A<sub>grund</sub> / cos α</div>", "loesung": "<div class=\"formula\">A<sub>schräg</sub> = 60 / cos 40° = 60 / 0,766 = <b>78,3 m²</b></div><p>Für Deckung/Lattung/Dämmung immer die <b>wahre (schräge) Fläche</b> verwenden, nicht die Grundfläche.</p>"}, {"n": 5, "typ": "p", "kennung": "HF2f-3", "tax": "Können", "frage": "Wie viel <b>Lattung (Laufmeter)</b> wird für eine Dachfläche von 78 m² bei einer Lattweite von 0,35 m benötigt (inkl. 12 % Verschnitt)?", "erklaerung": "<p>Die Lattenmenge ergibt sich aus Dachfläche / Lattweite (= Gesamtlänge der Latten), plus Verschnitt.</p><div class=\"formula\">L = A / LW · (1 + Verschnitt/100)</div>", "loesung": "<div class=\"formula\">L = 78 / 0,35 = 222,9 lfm</div><div class=\"formula\">L<sub>bestell</sub> = 222,9 · 1,12 = <b>≈ 250 lfm</b></div><p>Pro m² Dachfläche werden also rund 1/0,35 ≈ 2,86 lfm Latten benötigt.</p>"}, {"n": 6, "typ": "p", "kennung": "HF2f-2", "tax": "Können", "frage": "Für ein Sparrendach ist die <b>Zwischensparrendämmung</b> zu ermitteln: 10 Felder à 0,78 m Breite, Sparrenlänge 5,00 m. <b>Berechnen Sie die Dämmfläche</b> (5 % Verschnitt).", "erklaerung": "<p>Die Dämmfläche ist die Summe der Gefachflächen (Feldbreite × Sparrenlänge × Anzahl), plus Verschnitt.</p>", "loesung": "<div class=\"formula\">A = 0,78 · 5,00 · 10 = 39,0 m²</div><div class=\"formula\">A<sub>bestell</sub> = 39,0 · 1,05 = <b>≈ 41,0 m²</b></div><p>Dicke nach U-Wert-Anforderung wählen (z. B. 200 mm).</p>"}, {"n": 7, "typ": "v", "kennung": "HF2f-1", "tax": "Wissen", "frage": "Wie ist eine <b>Holzliste / Massenermittlung</b> aufgebaut und wozu dient sie?", "erklaerung": "<p>Die Holzliste übersetzt die Zeichnung in bestellbare Mengen – Grundlage für Einkauf und Kalkulation. Häufigste Rechenaufgabe in HF2.</p>", "loesung": "<p>Spalten: <b>Pos. | Stk. | Querschnitt | Länge | Volumen | Material | Bemerkung</b>.</p><ol><li>je Position Volumen = b·h·l·Stk.</li><li>Positionen aufsummieren → Netto-Volumen</li><li>+ Verschnitt → Bestellmenge</li></ol><p>Dient als Basis für Materialbestellung, Kalkulation und Transportplanung.</p>"}, {"n": 8, "typ": "p", "kennung": "HF2f-1", "tax": "Können", "frage": "Eine Probe wiegt feucht 470 g, darrtrocken 400 g. <b>Berechnen Sie die Holzfeuchte</b> – darf das Holz eingebaut werden?", "erklaerung": "<p>Standardaufgabe: Darrformel anwenden und mit der zulässigen Einbaufeuchte (18 %) vergleichen.</p><div class=\"formula\">u = (m<sub>feucht</sub> − m<sub>darr</sub>) / m<sub>darr</sub> · 100 %</div>", "loesung": "<div class=\"formula\">u = (470 − 400) / 400 · 100 = 70 / 400 · 100 = <b>17,5 %</b></div><p>17,5 % &lt; 18 % → das Holz <b>darf eingebaut werden</b> (ATV DIN 18334 erfüllt).</p>"}, {"n": 9, "typ": "v", "kennung": "HF2f-1", "tax": "Wissen", "frage": "Welche Norm regelt die <b>Aufmaßregeln</b> für Zimmerarbeiten, und was besagt das Prinzip der Abrechnung?", "erklaerung": "<p>Damit Leistungen einheitlich abgerechnet werden, gibt es genormte Aufmaßregeln (welche Flächen brutto, welche Abzüge).</p>", "loesung": "<ul><li><b>ATV DIN 18334</b> (VOB/C) regelt Aufmaß/Abrechnung der Zimmerarbeiten.</li><li>Häufig <b>Brutto-Flächen</b> mit definierten <b>Abzugsregeln</b> (kleine Öffnungen bis zu einer Grenze nicht abgezogen).</li><li><b>DIN 276</b> ordnet die Kosten (Kostengruppen) für die Kalkulation.</li></ul>"}]</script>
+<script src="../progress-sync.js"></script>
+<script src="../assets/sync.js"></script>
+<script src="../assets/deck.js"></script>
+<script src="../assets/pomodoro.js"></script>
+</body>
+</html>

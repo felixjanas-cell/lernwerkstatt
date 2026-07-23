@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiederhol-Deck · Meisterprüfung</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/deck.css">
+<link rel="stylesheet" href="assets/pomodoro.css">
+</head>
+<body>
+
+<a class="tophub" href="index.html">← Zurück zum Hub</a>
+<div class="kicker">Lernwerkstatt · gezielte Wiederholung</div>
+<h1>🎯 Wiederhol-Deck</h1>
+<p class="lead">Alle Fragen, die du zuletzt „falsch" hattest – HF-übergreifend an einem Ort. Richtig beantwortet = raus aus dem Pool.</p>
+
+<div class="deck-wrap"><div id="exam"></div></div>
+
+<footer>Speist sich automatisch aus deinen „✗ Falsch"-Bewertungen in allen Decks & im Simulator.</footer>
+
+<script>window.EXAM_CFG = { mode:'review' };</script>
+<script src="progress-sync.js"></script>
+<script src="assets/sync.js"></script>
+<script src="assets/pool.js"></script>
+<script src="assets/exam.js"></script>
+<script src="assets/pomodoro.js"></script>
+</body>
+</html>

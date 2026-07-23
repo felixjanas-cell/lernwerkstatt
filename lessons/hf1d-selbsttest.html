@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selbsttest HF 1d – Holztreppen</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/deck.css">
+<link rel="stylesheet" href="../assets/pomodoro.css">
+</head>
+<body>
+
+<a class="tophub" href="../index.html">← Zurück zum Selbsttest-Hub</a>
+<div class="kicker">Lernwerkstatt · Meisterprüfung · HF1D</div>
+<h1>HF 1d – Holztreppen</h1>
+<p class="lead">Selbsttest &middot; 8 Fragen &middot; Active Recall. Erst denken, dann Musterlösung, dann ehrlich werten.</p>
+
+<div class="note mnemonic" style="font-size:0.9rem">
+<strong>MPO-Bezug:</strong> HF 1d &middot; 50 Std. &middot; Taxonomiestufe „Werten" &middot; <em>Holztreppen entwerfen, planen und berechnen.</em>
+</div>
+
+<div class="deck-wrap"><div id="deck"></div></div>
+
+<div class="srcbox">
+<h3>📚 Quellen &amp; Vertiefung (aus deinem Vault)</h3>
+<ul>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=HF1%20Bautechnik">HF1 Bautechnik</a></li>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=Eurocode%205%20%28EC5%29">Eurocode 5 (EC5)</a></li>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=Formelsammlung%20EC5">Formelsammlung EC5</a></li>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=Festigkeitsklassen%20%28C24%2C%20GL24%29">Festigkeitsklassen (C24, GL24)</a></li>
+<li><a href="obsidian://open?vault=Zweites_Gehirn&file=Glossar%20Zimmerermeister%20%28Fachbegriffe%29">Glossar Zimmerermeister (Fachbegriffe)</a></li>
+</ul>
+<div class="quelle">Fragen-Quelle: Quellen: eigene HF-Notizen, DIN 18065, Aufgabensammlung Teil I, Altklausuren Teil II. Lernfragen-Set HF 1d · 8 Fragen.</div>
+<div class="quelle">🗺️ Noch keine Mind Map – zeichne eine (Papier/Canvas), das strukturiert das Thema (Methode 5).</div>
+<div class="quelle">Klick öffnet die Notiz direkt in Obsidian (Vault „Zweites_Gehirn“).</div>
+</div>
+
+<div class="methods">🧠 <b>Methoden aktiv:</b> Active Recall (Abfrage) · Feynman (erst erklären) · Spaced Repetition (Ampel &amp; „Heute dran“) · Pomodoro (Timer). Übersicht: <a href="obsidian://open?vault=Zweites_Gehirn&file=Lernmethoden%20%C3%9Cbersicht">Lernmethoden Übersicht</a>.</div>
+
+<footer>
+  <span class="pill">HF1D</span> · generiert aus hf1d.json ·
+  Fortschritt wird lokal gespeichert. Ergebnis melden → Vault-Lernampel wird aktualisiert.
+</footer>
+
+<script>window.DECK_CFG = {"id": "hf1d", "title": "HF 1d – Holztreppen"};</script>
+<script type="application/json" id="deck-data">[{"n": 1, "typ": "p", "kennung": "HF1d-2", "tax": "Können", "frage": "Erklären Sie die <b>Schrittmaßregel</b> nach DIN 18065 mit ihren drei Bedingungen. Berechnen Sie für eine Steigung s = 18 cm den passenden Auftritt a.", "erklaerung": "<p>Die Schrittmaßregel sorgt dafür, dass eine Treppe bequem und sicher begehbar ist. Sie beruht auf der durchschnittlichen Schrittlänge (ca. 59–65 cm). Drei Regeln müssen zusammenpassen.</p>", "loesung": "<ul><li><b>Schrittmaßregel:</b> 2s + a = 59–65 cm (Mittel 63)</li><li><b>Bequemlichkeitsregel:</b> a − s = 12 cm</li><li><b>Sicherheitsregel:</b> a + s = 46 cm</li></ul><p><b>Für s = 18 cm</b> nach Schrittmaßregel (63):</p><div class=\"formula\">a = 63 − 2·18 = 63 − 36 = <b>27 cm</b></div><p>Kontrolle: a − s = 27 − 18 = 9 (etwas unter 12, akzeptabel im Bereich); a + s = 45 ≈ 46 ✓. Steigungsverhältnis 18/27 ist bequem.</p>"}, {"n": 2, "typ": "p", "kennung": "HF1d-2", "tax": "Können", "frage": "Eine Geschosshöhe beträgt H = 2,88 m. Geplant ist eine Steigung von ca. 18 cm. <b>Bestimmen Sie die Steigungsanzahl, die genaue Steigungshöhe, den Auftritt und die Lauflänge.</b>", "erklaerung": "<p>Die Steigungsanzahl ergibt sich aus Geschosshöhe / gewünschte Steigung (ganzzahlig). Daraus folgt die genaue Steigung. Die Auftrittsanzahl ist immer eine weniger als die Steigungsanzahl.</p><div class=\"formula\">n<sub>Stg</sub> = H / s &nbsp;|&nbsp; s = H / n<sub>Stg</sub> &nbsp;|&nbsp; n<sub>Auftr</sub> = n<sub>Stg</sub> − 1</div>", "loesung": "<div class=\"formula\">n<sub>Stg</sub> = 288 / 18 = 16 → <b>16 Steigungen</b></div><div class=\"formula\">s = 288 / 16 = <b>18,0 cm</b></div><p>Auftritt nach Schrittmaßregel: a = 63 − 2·18 = <b>27 cm</b>. Auftritte: 16 − 1 = <b>15</b>.</p><div class=\"formula\">Lauflänge = n<sub>Auftr</sub> · a = 15 · 27 = <b>405 cm</b></div>"}, {"n": 3, "typ": "v", "kennung": "HF1d-3", "tax": "Wissen", "frage": "Nennen und beschreiben Sie die wichtigsten <b>Konstruktionsarten von Wangentreppen</b>.", "erklaerung": "<p>Bei Wangentreppen tragen seitliche Wangen die Stufen. Wie die Stufen mit der Wange verbunden sind, unterscheidet die Bauarten.</p>", "loesung": "<ul><li><b>Eingestemmte (gestemmte) Treppe:</b> Tritt- UND Setzstufen in Nuten der Wange eingelassen, von unten verkeilt – geschlossen, hochwertig.</li><li><b>Halbgestemmte Treppe:</b> nur Trittstufen eingelassen, keine Setzstufen (offen).</li><li><b>Eingeschobene Treppe:</b> Stufen von vorn in die Wange eingeschoben.</li><li><b>Aufgesattelte Treppe:</b> Wange treppenförmig ausgeschnitten, Stufen liegen oben auf.</li><li><b>Abgehängte Treppe:</b> Stufen hängen an Zugstäben.</li></ul>"}, {"n": 4, "typ": "v", "kennung": "HF1d-2", "tax": "Wissen", "frage": "Welche <b>geometrischen Mindestanforderungen</b> stellt die DIN 18065 an notwendige Treppen?", "erklaerung": "<p>Damit Treppen sicher begehbar sind, gibt es Mindestmaße für Durchgang, Breite und Auftritt – besonders bei gewendelten Treppen.</p>", "loesung": "<ul><li><b>Mindestdurchgangshöhe (lichte Höhe):</b> 2,00 m – senkrecht über der Gehlinie.</li><li><b>Mindestauftritt</b> an gewendelten Stufen: 10 cm (an der Innenseite), an der Freiwange/Gehlinie 15 cm.</li><li><b>nutzbare Laufbreite</b> nach Gebäudetyp (z. B. notwendige Treppe Wohngebäude ≥ 80–100 cm).</li><li><b>Steigungs-/Auftrittsgrenzen</b> je Nutzung (notwendige Treppe: s ≤ 19/20 cm, a ≥ 23/26 cm).</li></ul>"}, {"n": 5, "typ": "v", "kennung": "HF1d-3", "tax": "Wissen", "frage": "Was versteht man unter <b>Unterschneidung</b>, und wann ist sie erforderlich?", "erklaerung": "<p>Die Unterschneidung ist das Vorspringen der Trittstufe über die darunterliegende Stufe bzw. Setzstufe. Sie vergrößert die nutzbare Auftrittsfläche, ohne die Lauflänge zu verlängern.</p>", "loesung": "<p>Bei <b>offenen Treppen ohne Setzstufe</b> oder bei kleinem Auftritt sorgt die Unterschneidung dafür, dass der Fuß genug Platz findet.</p><div class=\"formula\">u ≥ 3 cm, wenn der Auftritt a &lt; 26 cm</div><p>So bleibt der effektive Gehbereich ausreichend groß und man stößt nicht an die Stufenkante.</p>"}, {"n": 6, "typ": "p", "kennung": "HF1d-4", "tax": "Können", "frage": "Erklären Sie das <b>Stufenverziehen</b> bei gewendelten Treppen. Nennen Sie zeichnerische Methoden.", "erklaerung": "<p>In gewendelten Bereichen ändert sich die Stufenrichtung. Damit der Auftritt entlang der Gehlinie möglichst gleichmäßig bleibt, werden die Stufen <b>verzogen</b> – die Auftritte an der Innenwange werden kleiner, an der Außenwange größer, schön gleichmäßig übergehend.</p>", "loesung": "<p><b>Ziel:</b> gleichmäßiger Auftritt entlang der Gehlinie (ca. 30–40 cm vom inneren Handlauf bzw. Mitte).</p><p><b>Zeichnerische Methoden:</b></p><ul><li><b>Fluchtlinienverfahren (Bogenmethode):</b> Hilfslinie, auf der die Auftritte gleichmäßig übergehen.</li><li><b>Verhältnisverfahren / Proportionsmethode</b></li><li><b>Winkel- bzw. Kreisbogenmethode</b></li></ul><p>Zusätzlich gibt es das <b>rechnerische Verziehen</b>. Praktisch werden Wangen und Krümmlinge nach dem verzogenen Grundriss angerissen.</p>"}, {"n": 7, "typ": "v", "kennung": "HF1d-3", "tax": "Wissen", "frage": "Welche <b>Holzfeuchte</b> sollte das Holz beim Einbau einer Innentreppe haben und warum?", "erklaerung": "<p>Holz arbeitet (schwindet/quillt) mit der Umgebungsfeuchte. Eine Innentreppe muss an das spätere Raumklima angepasst sein, sonst entstehen Risse, Fugen oder Knarren.</p>", "loesung": "<p>Einbau-Holzfeuchte: <b>12 % ± 2 %</b> (nach DIN 68368 für Treppenholz). Das entspricht dem Ausgleichsfeuchtebereich beheizter Wohnräume. So bleiben Schwind-/Quellbewegungen minimal → keine Risse, dauerhaft geschlossene Verbindungen.</p>"}, {"n": 8, "typ": "v", "kennung": "HF1d-1", "tax": "Wissen", "frage": "Welche Anforderungen gelten an <b>Geländer und Handläufe</b>?", "erklaerung": "<p>Geländer sichern gegen Absturz und müssen Horizontalkräfte (Holmdruck) aufnehmen. Maße ergeben sich aus BauO/DIN 18065.</p>", "loesung": "<ul><li><b>Geländerhöhe:</b> i. d. R. ≥ 90 cm (bei Absturzhöhe &gt; 12 m ≥ 110 cm).</li><li><b>Füllstababstand:</b> ≤ 12 cm (Kindersicherheit – Kopf darf nicht durchpassen).</li><li><b>Holmdruck:</b> Geländer + Pfosten + Anschlüsse auf horizontale Linienlast bemessen (Wohnbau ca. 0,5–1,0 kN/m).</li><li><b>Handlauf:</b> griffsicher, durchgehend, gut umgreifbar.</li></ul>"}]</script>
+<script src="../progress-sync.js"></script>
+<script src="../assets/sync.js"></script>
+<script src="../assets/deck.js"></script>
+<script src="../assets/pomodoro.js"></script>
+</body>
+</html>
