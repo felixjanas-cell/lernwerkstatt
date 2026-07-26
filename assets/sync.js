@@ -88,4 +88,28 @@
     if (mergeInto(db, window.SYNC_STATE)) save(db);
   }
   window.SYNC = { autoExport: function () { if (OWNER) autoExport(); }, mergeInto: mergeInto };
+
+  // --- Mobil-Fix für Obsidian-Deeplinks --------------------------------------
+  // Der Desktop-Vault heißt "Zweites_Gehirn", der Handy-Vault "Handy_Gehirn".
+  // Fest verdrahtete Links (obsidian://open?vault=Zweites_Gehirn&file=…) öffnen
+  // deshalb auf dem iPhone Obsidian, aber nicht die Notiz. Auf Mobilgeräten
+  // entfernen wir daher den vault-Parameter → Obsidian öffnet die Notiz im
+  // gerade aktiven Vault (= Handy_Gehirn). Das %20/%C3%9C-Encoding im file-Teil
+  // bleibt unangetastet. Auf Desktop passiert nichts (early return).
+  function fixObsidianLinks() {
+    if (!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) return;
+    var links = document.querySelectorAll('a[href^="obsidian://"]');
+    for (var i = 0; i < links.length; i++) {
+      var h = links[i].getAttribute('href');
+      var n = h.replace(/([?&])vault=[^&]*(&|$)/, function (m, pre, post) {
+        return post === '&' ? pre : '';
+      });
+      if (n !== h) links[i].setAttribute('href', n);
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fixObsidianLinks);
+  } else {
+    fixObsidianLinks();
+  }
 })();
