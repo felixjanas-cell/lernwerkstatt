@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fachgespräch-Trainer · Meisterprüfung Teil I</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💬</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/deck.css">
+<link rel="stylesheet" href="assets/pomodoro.css">
+<style>
+ .katpill{background:#6b4fa0;color:#fff;border-radius:99px;padding:0.1rem 0.7rem;font-size:0.78rem}
+ .leit{background:#fff;border:1px solid #ddd6c8;border-radius:8px;padding:0.8rem 1rem;margin:0.7rem 0;line-height:1.55}
+ .quelle2{display:inline-block;background:#efe9db;border-radius:99px;padding:0.1rem 0.6rem;font-size:0.78rem;color:#6b5b39;margin-top:0.4rem}
+ .sprich{background:#f3eefb;border-left:4px solid #6b4fa0;border-radius:8px;padding:0.6rem 0.9rem;margin:0.6rem 0;font-size:0.92rem}
+ .grade .btn{min-width:8.5rem}
+</style>
+</head>
+<body>
+<a class="tophub" href="index.html">← Zurück zum Selbsttest-Hub</a>
+<div class="kicker">Lernwerkstatt · Teil I · Fachgespräch (§ 5 ZimMstrV)</div>
+<h1>💬 Fachgespräch-Trainer</h1>
+<p class="lead">30 Minuten Rede und Antwort zum eigenen Projekt: Zusammenhänge zeigen, Entscheidungen <b>begründen</b>, neue Entwicklungen kennen. Hier trainierst du das <b>laut</b> – Feynman-Stil.</p>
+<div class="note mnemonic" style="font-size:0.9rem"><b>So geht's:</b> Frage lesen → Antwort <b>laut und frei formulieren</b> (wie vor dem Ausschuss) → Leitantwort aufdecken → ehrlich werten. MPP-spezifische Karten folgen nach der MPP-Mappen-Session.</div>
+<div class="deck-wrap"><div id="app"></div></div>
+<footer><span class="pill">FG</span> · Kartenbank v1 (generisch) · Quellen: ZimMstrV, Fachregeln, EC5/Schopbach, BbgBO, VOB, Musterarbeiten-Analyse.</footer>
+<script src="assets/fg-cards.js"></script>
+<script src="progress-sync.js"></script>
+<script src="assets/sync.js"></script>
+<script>
+(function(){
+ var STORE='lernwerkstatt.v1';
+ var app=document.getElementById('app');
+ var ALL=window.FG_CARDS||[];
+ var list=[], idx=0, score=0;
+ function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+ function load(){try{return JSON.parse(localStorage.getItem(STORE))||{decks:{}};}catch(e){return {decks:{}};}}
+ function today(){var d=new Date();return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
+ function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t;}return a;}
+ function cats(){var m={};ALL.forEach(function(c){m[c.k]=(m[c.k]||0)+1;});return m;}
+
+ function start(){
+  var c=cats();
+  var opts=Object.keys(c).map(function(k){return '<button class="btn ghost katbtn" data-k="'+esc(k)+'">'+esc(k)+' ('+c[k]+')</button>';}).join('');
+  app.innerHTML='<div class="card"><div class="frage">Simulation starten</div>'+
+   '<p style="color:var(--muted,#666)">'+ALL.length+' Begründungsfragen · Antworte <b>laut</b>, in ganzen Sätzen, mit dem „Warum". Der Ausschuss will Zusammenhänge hören, keine Stichworte.</p>'+
+   '<div class="actions" style="justify-content:center"><button class="btn" id="all">🎤 Ganzes Gespräch ('+ALL.length+')</button>'+
+   '<button class="btn" id="short">⏱️ Kurzrunde (8 zufällig)</button></div>'+
+   '<p style="margin-top:0.8rem;color:var(--muted,#666)">…oder nur eine Kategorie:</p>'+
+   '<div class="actions">'+opts+'</div></div>';
+  document.getElementById('all').onclick=function(){run(shuffle(ALL.slice()));};
+  document.getElementById('short').onclick=function(){run(shuffle(ALL.slice()).slice(0,8));};
+  var bs=app.querySelectorAll('.katbtn');
+  Array.prototype.forEach.call(bs,function(b){
+   b.onclick=function(){run(shuffle(ALL.filter(function(x){return x.k===b.getAttribute('data-k');})));};
+  });
+ }
+
+ function run(sel){list=sel;idx=0;score=0;card();}
+
+ function card(){
+  if(idx>=list.length) return finish();
+  var c=list[idx];
+  app.innerHTML='<div class="deck-bar"><span>Frage&nbsp;<b>'+(idx+1)+'</b>&nbsp;/&nbsp;'+list.length+' <span class="katpill">'+esc(c.k)+'</span></span>'+
+   '<div class="track"><div class="fill" style="width:'+Math.round(idx/list.length*100)+'%"></div></div>'+
+   '<span class="known">'+score+' P.</span></div>'+
+   '<div class="card"><div class="frage">'+esc(c.f)+'</div>'+
+   '<div class="sprich">🎤 Antworte jetzt <b>laut</b> – Struktur: Entscheidung → Begründung → Regelwerk → ggf. Alternative.</div>'+
+   '<div class="actions" style="justify-content:center"><button class="btn" id="reveal">🔓 Leitantwort aufdecken</button>'+
+   '<a class="btn ghost" href="index.html">Abbrechen</a></div></div>';
+  document.getElementById('reveal').onclick=function(){reveal(c);};
+ }
+
+ function reveal(c){
+  app.innerHTML='<div class="deck-bar"><span>Frage&nbsp;<b>'+(idx+1)+'</b>&nbsp;/&nbsp;'+list.length+' <span class="katpill">'+esc(c.k)+'</span></span>'+
+   '<div class="track"><div class="fill" style="width:'+Math.round((idx+0.5)/list.length*100)+'%"></div></div>'+
+   '<span class="known">'+score+' P.</span></div>'+
+   '<div class="card"><div class="frage">'+esc(c.f)+'</div>'+
+   '<div class="leit">'+esc(c.a)+'<br><span class="quelle2">📖 '+esc(c.q)+'</span></div>'+
+   '<p><b>Wie nah warst du dran?</b></p>'+
+   '<div class="actions grade" style="justify-content:center">'+
+   '<button class="btn" id="g2">✅ getroffen (1 P.)</button>'+
+   '<button class="btn ghost" id="g1">🟡 teilweise (½ P.)</button>'+
+   '<button class="btn ghost" id="g0">❌ daneben (0 P.)</button></div></div>';
+  document.getElementById('g2').onclick=function(){score+=1;idx++;card();};
+  document.getElementById('g1').onclick=function(){score+=0.5;idx++;card();};
+  document.getElementById('g0').onclick=function(){idx++;card();};
+ }
+
+ function saveRun(known,total){
+  var db=load(); db.decks=db.decks||{};
+  if(!db.decks.fg) db.decks.fg={title:'Fachgespräch-Simulation',runs:[],q:{}};
+  db.decks.fg.runs.push({date:today(),known:known,total:total,pct:Math.round(known/total*100)});
+  db.sessions=db.sessions||[];
+  db.sessions.push({date:today(),mode:'fg',known:known,total:total});
+  try{localStorage.setItem(STORE,JSON.stringify(db));}catch(e){}
+  if(window.SYNC) SYNC.autoExport();
+ }
+
+ function finish(){
+  var total=list.length, known=Math.round(score*10)/10;
+  var pct=total?Math.round(score/total*100):0;
+  saveRun(known,total);
+  var amp=pct>=90?'🟢 souverän – so darfst du vor den Ausschuss':(pct>=60?'🟡 Substanz da – Begründungen schärfen':'🔴 Leitantworten nochmal durcharbeiten');
+  app.innerHTML='<div class="card result"><div class="score">'+known+'/'+total+'</div>'+
+   '<div class="ampel">'+amp+' · '+pct+'%</div>'+
+   '<p style="color:var(--muted,#666)">Tipp: Die beste Fachgespräch-Vorbereitung ist, jede Projektentscheidung EINEM Laien in 3 Sätzen erklären zu können.</p>'+
+   '<div class="actions" style="justify-content:center"><button class="btn" id="again">🔁 Neue Runde</button>'+
+   '<a class="btn ghost" href="sa3.html">🔍 Zum SA3-Trainer</a>'+
+   '<a class="btn ghost" href="index.html">← Hub</a></div></div>';
+  document.getElementById('again').onclick=start;
+ }
+
+ start();
+})();
+</script>
+<script src="assets/pomodoro.js"></script>
+</body>
+</html>
