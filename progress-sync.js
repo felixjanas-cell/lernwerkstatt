@@ -1,1 +1,1 @@
-window.SYNC_STATE = {"decks": {}, "sessions": [], "syncedAt": "2026-07-26 18:24"};
+window.SYNC_STATE = {"decks": {}, "sessions": [], "syncedAt": "2026-07-26 18:43"};
