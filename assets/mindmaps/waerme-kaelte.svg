@@ -1,277 +1,288 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.0 -24.0 15368.0 538.0" font-family="Segoe UI, system-ui, sans-serif">
-<path d="M 1280.0 350.0 L 800.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="800.0,420.0 807.6,415.2 808.7,422.4" fill="#1e1e1e"/>
-<path d="M 1280.0 350.0 L 1120.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1120.0,420.0 1126.1,413.3 1129.0,420.1" fill="#1e1e1e"/>
-<path d="M 1280.0 350.0 L 1440.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1440.0,420.0 1431.0,420.1 1433.9,413.3" fill="#1e1e1e"/>
-<path d="M 1280.0 350.0 L 1760.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1760.0,420.0 1751.3,422.4 1752.4,415.2" fill="#1e1e1e"/>
-<path d="M 640.0 210.0 L 160.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="160.0,280.0 167.6,275.2 168.7,282.4" fill="#1e1e1e"/>
-<path d="M 640.0 210.0 L 480.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="480.0,280.0 486.1,273.3 489.0,280.1" fill="#1e1e1e"/>
-<path d="M 640.0 210.0 L 1280.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1280.0,280.0 1271.4,282.8 1272.2,275.5" fill="#1e1e1e"/>
-<path d="M 2400.0 350.0 L 2080.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="2080.0,420.0 2087.2,414.7 2088.8,421.8" fill="#1e1e1e"/>
-<path d="M 2400.0 350.0 L 2400.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="2400.0,420.0 2396.3,411.8 2403.7,411.8" fill="#1e1e1e"/>
-<path d="M 2400.0 350.0 L 2720.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="2720.0,420.0 2711.2,421.8 2712.8,414.7" fill="#1e1e1e"/>
-<path d="M 3520.0 350.0 L 3040.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3040.0,420.0 3047.6,415.2 3048.7,422.4" fill="#1e1e1e"/>
-<path d="M 3520.0 350.0 L 3360.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3360.0,420.0 3366.1,413.3 3369.0,420.1" fill="#1e1e1e"/>
-<path d="M 3520.0 350.0 L 3680.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3680.0,420.0 3671.0,420.1 3673.9,413.3" fill="#1e1e1e"/>
-<path d="M 3520.0 350.0 L 4000.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4000.0,420.0 3991.3,422.4 3992.4,415.2" fill="#1e1e1e"/>
-<path d="M 4800.0 350.0 L 4320.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4320.0,420.0 4327.6,415.2 4328.7,422.4" fill="#1e1e1e"/>
-<path d="M 4800.0 350.0 L 4640.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4640.0,420.0 4646.1,413.3 4649.0,420.1" fill="#1e1e1e"/>
-<path d="M 4800.0 350.0 L 4960.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4960.0,420.0 4951.0,420.1 4953.9,413.3" fill="#1e1e1e"/>
-<path d="M 4800.0 350.0 L 5280.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="5280.0,420.0 5271.3,422.4 5272.4,415.2" fill="#1e1e1e"/>
-<path d="M 3573.0 210.0 L 2400.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="2400.0,280.0 2408.0,275.8 2408.4,283.2" fill="#1e1e1e"/>
-<path d="M 3573.0 210.0 L 3520.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3520.0,280.0 3522.0,271.2 3527.9,275.7" fill="#1e1e1e"/>
-<path d="M 3573.0 210.0 L 4800.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4800.0,280.0 4791.6,283.2 4792.0,275.9" fill="#1e1e1e"/>
-<path d="M 5920.0 350.0 L 5600.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="5600.0,420.0 5607.2,414.7 5608.8,421.8" fill="#1e1e1e"/>
-<path d="M 5920.0 350.0 L 5920.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="5920.0,420.0 5916.3,411.8 5923.7,411.8" fill="#1e1e1e"/>
-<path d="M 5920.0 350.0 L 6240.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6240.0,420.0 6231.2,421.8 6232.8,414.7" fill="#1e1e1e"/>
-<path d="M 6880.0 350.0 L 6560.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6560.0,420.0 6567.2,414.7 6568.8,421.8" fill="#1e1e1e"/>
-<path d="M 6880.0 350.0 L 6880.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6880.0,420.0 6876.3,411.8 6883.7,411.8" fill="#1e1e1e"/>
-<path d="M 6880.0 350.0 L 7200.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="7200.0,420.0 7191.2,421.8 7192.8,414.7" fill="#1e1e1e"/>
-<path d="M 6773.0 210.0 L 5920.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="5920.0,280.0 5927.9,275.7 5928.5,283.0" fill="#1e1e1e"/>
-<path d="M 6773.0 210.0 L 6880.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6880.0,280.0 6871.1,278.6 6875.1,272.4" fill="#1e1e1e"/>
-<path d="M 6773.0 210.0 L 7520.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="7520.0,280.0 7511.5,282.9 7512.2,275.6" fill="#1e1e1e"/>
-<path d="M 8320.0 350.0 L 7840.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="7840.0,420.0 7847.6,415.2 7848.7,422.4" fill="#1e1e1e"/>
-<path d="M 8320.0 350.0 L 8160.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="8160.0,420.0 8166.1,413.3 8169.0,420.1" fill="#1e1e1e"/>
-<path d="M 8320.0 350.0 L 8480.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="8480.0,420.0 8471.0,420.1 8473.9,413.3" fill="#1e1e1e"/>
-<path d="M 8320.0 350.0 L 8800.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="8800.0,420.0 8791.3,422.4 8792.4,415.2" fill="#1e1e1e"/>
-<path d="M 9440.0 350.0 L 9120.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="9120.0,420.0 9127.2,414.7 9128.8,421.8" fill="#1e1e1e"/>
-<path d="M 9440.0 350.0 L 9440.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="9440.0,420.0 9436.3,411.8 9443.7,411.8" fill="#1e1e1e"/>
-<path d="M 9440.0 350.0 L 9760.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="9760.0,420.0 9751.2,421.8 9752.8,414.7" fill="#1e1e1e"/>
-<path d="M 10400.0 350.0 L 10080.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="10080.0,420.0 10087.2,414.7 10088.8,421.8" fill="#1e1e1e"/>
-<path d="M 10400.0 350.0 L 10400.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="10400.0,420.0 10396.3,411.8 10403.7,411.8" fill="#1e1e1e"/>
-<path d="M 10400.0 350.0 L 10720.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="10720.0,420.0 10711.2,421.8 10712.8,414.7" fill="#1e1e1e"/>
-<path d="M 9386.0 210.0 L 8320.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="8320.0,280.0 8328.0,275.8 8328.4,283.1" fill="#1e1e1e"/>
-<path d="M 9386.0 210.0 L 9440.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="9440.0,280.0 9432.1,275.7 9437.9,271.3" fill="#1e1e1e"/>
-<path d="M 9386.0 210.0 L 10400.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="10400.0,280.0 10391.5,283.1 10392.1,275.8" fill="#1e1e1e"/>
-<path d="M 11520.0 350.0 L 11040.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="11040.0,420.0 11047.6,415.2 11048.7,422.4" fill="#1e1e1e"/>
-<path d="M 11520.0 350.0 L 11360.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="11360.0,420.0 11366.1,413.3 11369.0,420.1" fill="#1e1e1e"/>
-<path d="M 11520.0 350.0 L 11680.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="11680.0,420.0 11671.0,420.1 11673.9,413.3" fill="#1e1e1e"/>
-<path d="M 11520.0 350.0 L 12000.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="12000.0,420.0 11991.3,422.4 11992.4,415.2" fill="#1e1e1e"/>
-<path d="M 12640.0 350.0 L 12320.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="12320.0,420.0 12327.2,414.7 12328.8,421.8" fill="#1e1e1e"/>
-<path d="M 12640.0 350.0 L 12640.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="12640.0,420.0 12636.3,411.8 12643.7,411.8" fill="#1e1e1e"/>
-<path d="M 12640.0 350.0 L 12960.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="12960.0,420.0 12951.2,421.8 12952.8,414.7" fill="#1e1e1e"/>
-<path d="M 13440.0 350.0 L 13280.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="13280.0,420.0 13286.1,413.3 13289.0,420.1" fill="#1e1e1e"/>
-<path d="M 13440.0 350.0 L 13600.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="13600.0,420.0 13591.0,420.1 13593.9,413.3" fill="#1e1e1e"/>
-<path d="M 12533.0 210.0 L 11520.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="11520.0,280.0 11527.9,275.8 11528.5,283.1" fill="#1e1e1e"/>
-<path d="M 12533.0 210.0 L 12640.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="12640.0,280.0 12631.1,278.6 12635.1,272.4" fill="#1e1e1e"/>
-<path d="M 12533.0 210.0 L 13440.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="13440.0,280.0 13431.5,283.0 13432.1,275.7" fill="#1e1e1e"/>
-<path d="M 14560.0 210.0 L 13920.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="13920.0,280.0 13927.8,275.5 13928.6,282.8" fill="#1e1e1e"/>
-<path d="M 14560.0 210.0 L 14240.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="14240.0,280.0 14247.2,274.7 14248.8,281.8" fill="#1e1e1e"/>
-<path d="M 14560.0 210.0 L 14560.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="14560.0,280.0 14556.3,271.8 14563.7,271.8" fill="#1e1e1e"/>
-<path d="M 14560.0 210.0 L 14880.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="14880.0,280.0 14871.2,281.8 14872.8,274.7" fill="#1e1e1e"/>
-<path d="M 14560.0 210.0 L 15200.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="15200.0,280.0 15191.4,282.8 15192.2,275.5" fill="#1e1e1e"/>
-<path d="M 7911.0 70.0 L 640.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="640.0,140.0 648.2,136.3 648.3,143.6" fill="#1e1e1e"/>
-<path d="M 7911.0 70.0 L 3573.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3573.0,140.0 3581.2,136.2 3581.3,143.5" fill="#1e1e1e"/>
-<path d="M 7911.0 70.0 L 6773.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6773.0,140.0 6781.0,135.8 6781.4,143.2" fill="#1e1e1e"/>
-<path d="M 7911.0 70.0 L 9386.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="9386.0,140.0 9377.6,143.3 9378.0,135.9" fill="#1e1e1e"/>
-<path d="M 7911.0 70.0 L 12533.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="12533.0,140.0 12524.7,143.5 12524.8,136.2" fill="#1e1e1e"/>
-<path d="M 7911.0 70.0 L 14560.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="14560.0,140.0 14551.7,143.6 14551.8,136.2" fill="#1e1e1e"/>
-<rect x="20.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="340.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="660.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="980.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1300.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1620.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1140.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="500.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1940.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="2260.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="2580.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="2260.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="2900.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3220.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3540.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3860.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3380.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="4180.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="4500.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="4820.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="5140.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="4660.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3433.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="5460.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="5780.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6100.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="5780.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6420.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6740.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="7060.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6740.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="7380.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6633.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="7700.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8020.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8340.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8660.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8180.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8980.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="9300.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="9620.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="9300.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="9940.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="10260.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="10580.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="10260.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="9246.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="10900.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="11220.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="11540.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="11860.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="11380.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="12180.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="12500.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="12820.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="12500.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="13140.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="13460.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="13300.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="12393.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="13780.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="14100.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="14420.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="14740.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="15060.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="14420.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="7771.0" y="0.0" width="280.0" height="70.0" rx="8" fill="#d0bfff" stroke="#1e1e1e" stroke-width="1.2"/>
-<text x="28.0" y="318.6" font-size="16" fill="#1e1e1e">Energieeinsparverordnung (EnEV)</text>
-<text x="348.0" y="318.6" font-size="16" fill="#1e1e1e">Gebäudeenergiegesetz (GEG)</text>
-<text x="668.0" y="458.6" font-size="16" fill="#1e1e1e">DIN EN 832 (Heizenergiebedarf)</text>
-<text x="988.0" y="458.6" font-size="16" fill="#1e1e1e">DIN V 4108 (Wärmeschutz)</text>
-<text x="1308.0" y="458.6" font-size="16" fill="#1e1e1e">DIN V 4701 (Anlagentechnik)</text>
-<text x="1628.0" y="448.6" font-size="16" fill="#1e1e1e">DIN EN 13829</text>
-<text x="1628.0" y="468.6" font-size="16" fill="#1e1e1e">(Luftdurchlässigkeit)</text>
-<text x="1148.0" y="318.6" font-size="16" fill="#1e1e1e">DIN-Normen</text>
-<text x="508.0" y="178.6" font-size="16" fill="#1e1e1e">Rechtliche Grundlagen</text>
-<text x="1948.0" y="458.6" font-size="16" fill="#1e1e1e">Konvektion</text>
-<text x="2268.0" y="458.6" font-size="16" fill="#1e1e1e">Strahlung</text>
-<text x="2588.0" y="458.6" font-size="16" fill="#1e1e1e">Leitung</text>
-<text x="2268.0" y="318.6" font-size="16" fill="#1e1e1e">Wärmeübertragungsarten</text>
-<text x="2908.0" y="448.6" font-size="16" fill="#1e1e1e">Wärmedurchgangskoeffizient</text>
-<text x="2908.0" y="468.6" font-size="16" fill="#1e1e1e">(U-Wert)</text>
-<text x="3228.0" y="458.6" font-size="16" fill="#1e1e1e">Wärmeleitfähigkeit (Lambda)</text>
-<text x="3548.0" y="458.6" font-size="16" fill="#1e1e1e">Wärmedurchlasswiderstand (R)</text>
-<text x="3868.0" y="458.6" font-size="16" fill="#1e1e1e">Wärmespeicherkapazität</text>
-<text x="3388.0" y="318.6" font-size="16" fill="#1e1e1e">Technische Kennwerte</text>
-<text x="4188.0" y="458.6" font-size="16" fill="#1e1e1e">Vermeidung von Kondensation</text>
-<text x="4508.0" y="458.6" font-size="16" fill="#1e1e1e">Taupunkt-Berechnung</text>
-<text x="4828.0" y="458.6" font-size="16" fill="#1e1e1e">Schimmelpilzvermeidung</text>
-<text x="5148.0" y="458.6" font-size="16" fill="#1e1e1e">Dampfdiffusion</text>
-<text x="4668.0" y="318.6" font-size="16" fill="#1e1e1e">Feuchteschutz</text>
-<text x="3441.0" y="178.6" font-size="16" fill="#1e1e1e">Bauphysikalische Grundlagen</text>
-<text x="5468.0" y="448.6" font-size="16" fill="#1e1e1e">Gebäude mit normalen</text>
-<text x="5468.0" y="468.6" font-size="16" fill="#1e1e1e">Innentemperaturen</text>
-<text x="5788.0" y="448.6" font-size="16" fill="#1e1e1e">Gebäude mit niedrigen</text>
-<text x="5788.0" y="468.6" font-size="16" fill="#1e1e1e">Innentemperaturen</text>
-<text x="6108.0" y="458.6" font-size="16" fill="#1e1e1e">Wohn- vs. Nichtwohngebäude</text>
-<text x="5788.0" y="318.6" font-size="16" fill="#1e1e1e">Gebäudetypen</text>
-<text x="6428.0" y="458.6" font-size="16" fill="#1e1e1e">Jahres-Primärenergiebedarf</text>
-<text x="6748.0" y="458.6" font-size="16" fill="#1e1e1e">Transmissionswärmeverlust</text>
-<text x="7068.0" y="458.6" font-size="16" fill="#1e1e1e">Sommerlicher Wärmeschutz</text>
-<text x="6748.0" y="318.6" font-size="16" fill="#1e1e1e">Grenzwerte</text>
-<text x="7388.0" y="318.6" font-size="16" fill="#1e1e1e">Neubau vs. Sanierung im Bestand</text>
-<text x="6641.0" y="178.6" font-size="16" fill="#1e1e1e">Anforderungen an Gebäude</text>
-<text x="7708.0" y="458.6" font-size="16" fill="#1e1e1e">Außenwanddämmung</text>
-<text x="8028.0" y="458.6" font-size="16" fill="#1e1e1e">Dachdämmung</text>
-<text x="8348.0" y="448.6" font-size="16" fill="#1e1e1e">Kellerdecken- und</text>
-<text x="8348.0" y="468.6" font-size="16" fill="#1e1e1e">Fußbodendämmung</text>
-<text x="8668.0" y="458.6" font-size="16" fill="#1e1e1e">Fenster- und Türenerneuerung</text>
-<text x="8188.0" y="318.6" font-size="16" fill="#1e1e1e">Gebäudehülle</text>
-<text x="8988.0" y="448.6" font-size="16" fill="#1e1e1e">Geometrische vs. Konstruktive</text>
-<text x="8988.0" y="468.6" font-size="16" fill="#1e1e1e">Brücken</text>
-<text x="9308.0" y="458.6" font-size="16" fill="#1e1e1e">Thermographie-Analyse</text>
-<text x="9628.0" y="458.6" font-size="16" fill="#1e1e1e">Minimierung nach DIN 4108 Bbl 2</text>
-<text x="9308.0" y="318.6" font-size="16" fill="#1e1e1e">Wärmebrücken</text>
-<text x="9948.0" y="458.6" font-size="16" fill="#1e1e1e">Blower-Door-Test</text>
-<text x="10268.0" y="458.6" font-size="16" fill="#1e1e1e">Fugendurchlässigkeit</text>
-<text x="10588.0" y="458.6" font-size="16" fill="#1e1e1e">Dauerhafte Abdichtung</text>
-<text x="10268.0" y="318.6" font-size="16" fill="#1e1e1e">Luftdichtheit</text>
-<text x="9254.0" y="178.6" font-size="16" fill="#1e1e1e">Bauliche Maßnahmen</text>
-<text x="10908.0" y="458.6" font-size="16" fill="#1e1e1e">Niedertemperaturkessel</text>
-<text x="11228.0" y="458.6" font-size="16" fill="#1e1e1e">Brennwertkessel</text>
-<text x="11548.0" y="458.6" font-size="16" fill="#1e1e1e">Wärmepumpen</text>
-<text x="11868.0" y="448.6" font-size="16" fill="#1e1e1e">Inbetriebnahme-Vorschriften</text>
-<text x="11868.0" y="468.6" font-size="16" fill="#1e1e1e">(CE-Kennzeichnung)</text>
-<text x="11388.0" y="318.6" font-size="16" fill="#1e1e1e">Heizungssysteme</text>
-<text x="12188.0" y="448.6" font-size="16" fill="#1e1e1e">Dämmung von Leitungen und</text>
-<text x="12188.0" y="468.6" font-size="16" fill="#1e1e1e">Armaturen</text>
-<text x="12508.0" y="458.6" font-size="16" fill="#1e1e1e">Zirkulationspumpen-Regelung</text>
-<text x="12828.0" y="458.6" font-size="16" fill="#1e1e1e">Raumweise Temperaturregelung</text>
-<text x="12508.0" y="318.6" font-size="16" fill="#1e1e1e">Warmwasser &amp; Verteilung</text>
-<text x="13148.0" y="458.6" font-size="16" fill="#1e1e1e">Mindestluftwechsel</text>
-<text x="13468.0" y="458.6" font-size="16" fill="#1e1e1e">Wärmerückgewinnung</text>
-<text x="13308.0" y="318.6" font-size="16" fill="#1e1e1e">Lüftung</text>
-<text x="12401.0" y="178.6" font-size="16" fill="#1e1e1e">Anlagentechnik</text>
-<text x="13788.0" y="318.6" font-size="16" fill="#1e1e1e">Energiebedarfsausweis</text>
-<text x="14108.0" y="318.6" font-size="16" fill="#1e1e1e">Wärmebedarfsausweis</text>
-<text x="14428.0" y="318.6" font-size="16" fill="#1e1e1e">Energieverbrauchskennwerte</text>
-<text x="14748.0" y="318.6" font-size="16" fill="#1e1e1e">CO2-Emissionsminderung</text>
-<text x="15068.0" y="318.6" font-size="16" fill="#1e1e1e">Kostensenkung und Behaglichkeit</text>
-<text x="14428.0" y="178.6" font-size="16" fill="#1e1e1e">Nachweise und Ziele</text>
-<text x="7779.0" y="28.6" font-size="16" fill="#1e1e1e">🧠 Energieeffizienz und</text>
-<text x="7779.0" y="48.6" font-size="16" fill="#1e1e1e">Wärmeschutz bei Gebäuden</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1164.0 -954.0 2328.0 1908.0" font-family="Segoe UI, system-ui, sans-serif">
+<path d="M 806.0 -624.0 L 900.0 -741.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-741.0 897.7,-732.3 892.0,-736.9" fill="#1e1e1e"/>
+<path d="M 806.0 -624.0 L 900.0 -663.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-663.0 893.8,-656.5 891.0,-663.2" fill="#1e1e1e"/>
+<path d="M 806.0 -624.0 L 900.0 -585.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-585.0 891.0,-584.8 893.8,-591.5" fill="#1e1e1e"/>
+<path d="M 806.0 -624.0 L 900.0 -507.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-507.0 892.0,-511.1 897.7,-515.7" fill="#1e1e1e"/>
+<path d="M 475.0 -761.0 L 554.0 -897.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-897.0 553.0,-888.1 546.7,-891.7" fill="#1e1e1e"/>
+<path d="M 475.0 -761.0 L 554.0 -819.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-819.0 549.5,-811.2 545.2,-817.1" fill="#1e1e1e"/>
+<path d="M 475.0 -761.0 L 554.0 -624.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-624.0 546.7,-629.3 553.1,-633.0" fill="#1e1e1e"/>
+<path d="M 806.0 -351.0 L 900.0 -429.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-429.0 896.0,-420.9 891.3,-426.6" fill="#1e1e1e"/>
+<path d="M 806.0 -351.0 L 900.0 -351.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-351.0 891.8,-347.3 891.8,-354.7" fill="#1e1e1e"/>
+<path d="M 806.0 -351.0 L 900.0 -273.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-273.0 891.3,-275.4 896.0,-281.1" fill="#1e1e1e"/>
+<path d="M 806.0 -78.0 L 900.0 -195.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-195.0 897.7,-186.3 892.0,-190.9" fill="#1e1e1e"/>
+<path d="M 806.0 -78.0 L 900.0 -117.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-117.0 893.8,-110.5 891.0,-117.2" fill="#1e1e1e"/>
+<path d="M 806.0 -78.0 L 900.0 -39.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,-39.0 891.0,-38.8 893.8,-45.5" fill="#1e1e1e"/>
+<path d="M 806.0 -78.0 L 900.0 39.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,39.0 892.0,34.9 897.7,30.3" fill="#1e1e1e"/>
+<path d="M 806.0 234.0 L 900.0 117.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,117.0 897.7,125.7 892.0,121.1" fill="#1e1e1e"/>
+<path d="M 806.0 234.0 L 900.0 195.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,195.0 893.8,201.5 891.0,194.8" fill="#1e1e1e"/>
+<path d="M 806.0 234.0 L 900.0 273.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,273.0 891.0,273.2 893.8,266.5" fill="#1e1e1e"/>
+<path d="M 806.0 234.0 L 900.0 351.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,351.0 892.0,346.9 897.7,342.3" fill="#1e1e1e"/>
+<path d="M 475.0 -59.0 L 554.0 -351.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-351.0 555.4,-342.1 548.3,-344.0" fill="#1e1e1e"/>
+<path d="M 475.0 -59.0 L 554.0 -78.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-78.0 546.9,-72.5 545.2,-79.6" fill="#1e1e1e"/>
+<path d="M 475.0 -59.0 L 554.0 234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,234.0 548.3,227.0 555.4,225.1" fill="#1e1e1e"/>
+<path d="M 806.0 507.0 L 900.0 429.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,429.0 896.0,437.1 891.3,431.4" fill="#1e1e1e"/>
+<path d="M 806.0 507.0 L 900.0 507.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,507.0 891.8,510.7 891.8,503.3" fill="#1e1e1e"/>
+<path d="M 806.0 507.0 L 900.0 585.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,585.0 891.3,582.6 896.0,576.9" fill="#1e1e1e"/>
+<path d="M 806.0 741.0 L 900.0 663.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,663.0 896.0,671.1 891.3,665.4" fill="#1e1e1e"/>
+<path d="M 806.0 741.0 L 900.0 741.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,741.0 891.8,744.7 891.8,737.3" fill="#1e1e1e"/>
+<path d="M 806.0 741.0 L 900.0 819.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,819.0 891.3,816.6 896.0,810.9" fill="#1e1e1e"/>
+<path d="M 475.0 702.0 L 554.0 507.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,507.0 554.3,516.0 547.5,513.2" fill="#1e1e1e"/>
+<path d="M 475.0 702.0 L 554.0 741.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,741.0 545.0,740.7 548.3,734.1" fill="#1e1e1e"/>
+<path d="M 475.0 702.0 L 554.0 897.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,897.0 547.5,890.8 554.3,888.0" fill="#1e1e1e"/>
+<path d="M -806.0 -780.0 L -900.0 -897.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-897.0 -892.0,-892.9 -897.7,-888.3" fill="#1e1e1e"/>
+<path d="M -806.0 -780.0 L -900.0 -819.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-819.0 -891.0,-819.2 -893.8,-812.5" fill="#1e1e1e"/>
+<path d="M -806.0 -780.0 L -900.0 -741.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-741.0 -893.8,-747.5 -891.0,-740.8" fill="#1e1e1e"/>
+<path d="M -806.0 -780.0 L -900.0 -663.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-663.0 -897.7,-671.7 -892.0,-667.1" fill="#1e1e1e"/>
+<path d="M -806.0 -507.0 L -900.0 -585.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-585.0 -891.3,-582.6 -896.0,-576.9" fill="#1e1e1e"/>
+<path d="M -806.0 -507.0 L -900.0 -507.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-507.0 -891.8,-510.7 -891.8,-503.3" fill="#1e1e1e"/>
+<path d="M -806.0 -507.0 L -900.0 -429.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-429.0 -896.0,-437.1 -891.3,-431.4" fill="#1e1e1e"/>
+<path d="M -806.0 -273.0 L -900.0 -351.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-351.0 -891.3,-348.6 -896.0,-342.9" fill="#1e1e1e"/>
+<path d="M -806.0 -273.0 L -900.0 -273.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-273.0 -891.8,-276.7 -891.8,-269.3" fill="#1e1e1e"/>
+<path d="M -806.0 -273.0 L -900.0 -195.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-195.0 -896.0,-203.1 -891.3,-197.4" fill="#1e1e1e"/>
+<path d="M -475.0 -527.0 L -554.0 -780.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-780.0 -548.0,-773.2 -555.1,-771.1" fill="#1e1e1e"/>
+<path d="M -475.0 -527.0 L -554.0 -507.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-507.0 -546.9,-512.6 -545.1,-505.5" fill="#1e1e1e"/>
+<path d="M -475.0 -527.0 L -554.0 -273.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-273.0 -555.1,-281.9 -548.1,-279.8" fill="#1e1e1e"/>
+<path d="M -806.0 0.0 L -900.0 -117.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-117.0 -892.0,-112.9 -897.7,-108.3" fill="#1e1e1e"/>
+<path d="M -806.0 0.0 L -900.0 -39.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-39.0 -891.0,-39.2 -893.8,-32.5" fill="#1e1e1e"/>
+<path d="M -806.0 0.0 L -900.0 39.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,39.0 -893.8,32.5 -891.0,39.2" fill="#1e1e1e"/>
+<path d="M -806.0 0.0 L -900.0 117.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,117.0 -897.7,108.3 -892.0,112.9" fill="#1e1e1e"/>
+<path d="M -806.0 273.0 L -900.0 195.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,195.0 -891.3,197.4 -896.0,203.1" fill="#1e1e1e"/>
+<path d="M -806.0 273.0 L -900.0 273.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,273.0 -891.8,269.3 -891.8,276.7" fill="#1e1e1e"/>
+<path d="M -806.0 273.0 L -900.0 351.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,351.0 -896.0,342.9 -891.3,348.6" fill="#1e1e1e"/>
+<path d="M -806.0 468.0 L -900.0 429.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,429.0 -891.0,428.8 -893.8,435.5" fill="#1e1e1e"/>
+<path d="M -806.0 468.0 L -900.0 507.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,507.0 -893.8,500.5 -891.0,507.2" fill="#1e1e1e"/>
+<path d="M -475.0 234.0 L -554.0 0.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,0.0 -547.9,6.6 -554.8,9.0" fill="#1e1e1e"/>
+<path d="M -475.0 234.0 L -554.0 273.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,273.0 -548.3,266.1 -545.0,272.7" fill="#1e1e1e"/>
+<path d="M -475.0 234.0 L -554.0 468.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,468.0 -554.8,459.0 -547.9,461.4" fill="#1e1e1e"/>
+<path d="M -475.0 741.0 L -554.0 585.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,585.0 -547.0,590.7 -553.6,594.0" fill="#1e1e1e"/>
+<path d="M -475.0 741.0 L -554.0 663.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,663.0 -545.6,666.2 -550.7,671.4" fill="#1e1e1e"/>
+<path d="M -475.0 741.0 L -554.0 741.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,741.0 -545.8,737.3 -545.8,744.7" fill="#1e1e1e"/>
+<path d="M -475.0 741.0 L -554.0 819.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,819.0 -550.7,810.6 -545.6,815.8" fill="#1e1e1e"/>
+<path d="M -475.0 741.0 L -554.0 897.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,897.0 -553.6,888.0 -547.0,891.3" fill="#1e1e1e"/>
+<path d="M 165.0 0.0 L 205.0 -761.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="205.0,-761.0 208.2,-752.6 200.9,-753.0" fill="#1e1e1e"/>
+<path d="M 165.0 0.0 L 205.0 -59.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="205.0,-59.0 203.4,-50.1 197.4,-54.3" fill="#1e1e1e"/>
+<path d="M 165.0 0.0 L 205.0 702.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="205.0,702.0 200.9,694.0 208.2,693.6" fill="#1e1e1e"/>
+<path d="M -165.0 0.0 L -205.0 -527.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,-527.0 -200.7,-519.1 -208.0,-518.5" fill="#1e1e1e"/>
+<path d="M -165.0 0.0 L -205.0 234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,234.0 -207.2,225.3 -200.0,226.5" fill="#1e1e1e"/>
+<path d="M -165.0 0.0 L -205.0 741.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,741.0 -208.2,732.6 -200.9,733.0" fill="#1e1e1e"/>
+<rect x="554.0" y="-930.0" width="252.0" height="66.0" rx="8" fill="#b8e0ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-852.0" width="252.0" height="66.0" rx="8" fill="#b8e0ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-772.0" width="240.0" height="62.0" rx="8" fill="#cae8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-694.0" width="240.0" height="62.0" rx="8" fill="#cae8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-616.0" width="240.0" height="62.0" rx="8" fill="#cae8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-538.0" width="240.0" height="62.0" rx="8" fill="#cae8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-657.0" width="252.0" height="66.0" rx="8" fill="#b8e0ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="205.0" y="-802.0" width="270.0" height="82.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-460.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-382.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-304.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-384.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-226.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-148.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="-70.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="8.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-111.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="86.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="164.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="242.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="320.0" width="240.0" height="62.0" rx="8" fill="#d2f7d7" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="201.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="205.0" y="-100.0" width="270.0" height="82.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="398.0" width="240.0" height="62.0" rx="8" fill="#ffe8cc" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="476.0" width="240.0" height="62.0" rx="8" fill="#ffe8cc" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="554.0" width="240.0" height="62.0" rx="8" fill="#ffe8cc" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="474.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="632.0" width="240.0" height="62.0" rx="8" fill="#ffe8cc" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="710.0" width="240.0" height="62.0" rx="8" fill="#ffe8cc" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="788.0" width="240.0" height="62.0" rx="8" fill="#ffe8cc" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="708.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="864.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="205.0" y="661.0" width="270.0" height="82.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-928.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-850.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-772.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-694.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-813.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-616.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-538.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-460.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-540.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-382.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-304.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-226.0" width="240.0" height="62.0" rx="8" fill="#e3d9ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-306.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="-568.0" width="270.0" height="82.0" rx="8" fill="#d0bfff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-148.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-70.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="8.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="86.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-33.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="164.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="242.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="320.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="240.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="398.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="476.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="435.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="193.0" width="270.0" height="82.0" rx="8" fill="#ffc9c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="552.0" width="252.0" height="66.0" rx="8" fill="#fff0af" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="630.0" width="252.0" height="66.0" rx="8" fill="#fff0af" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="708.0" width="252.0" height="66.0" rx="8" fill="#fff0af" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="786.0" width="252.0" height="66.0" rx="8" fill="#fff0af" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="864.0" width="252.0" height="66.0" rx="8" fill="#fff0af" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="700.0" width="270.0" height="82.0" rx="8" fill="#ffec99" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-165.0" y="-52.0" width="330.0" height="104.0" rx="8" fill="#ffe066" stroke="#1e1e1e" stroke-width="1.2"/>
+<text x="562.0" y="-903.8" font-size="17" fill="#1e1e1e">Energieeinsparverordnung</text>
+<text x="562.0" y="-882.5" font-size="17" fill="#1e1e1e">(EnEV)</text>
+<text x="562.0" y="-815.2" font-size="17" fill="#1e1e1e">Gebäudeenergiegesetz (GEG)</text>
+<text x="908.0" y="-747.4" font-size="16" fill="#1e1e1e">DIN EN 832</text>
+<text x="908.0" y="-727.4" font-size="16" fill="#1e1e1e">(Heizenergiebedarf)</text>
+<text x="908.0" y="-659.4" font-size="16" fill="#1e1e1e">DIN V 4108 (Wärmeschutz)</text>
+<text x="908.0" y="-581.4" font-size="16" fill="#1e1e1e">DIN V 4701 (Anlagentechnik)</text>
+<text x="908.0" y="-513.4" font-size="16" fill="#1e1e1e">DIN EN 13829</text>
+<text x="908.0" y="-493.4" font-size="16" fill="#1e1e1e">(Luftdurchlässigkeit)</text>
+<text x="562.0" y="-620.2" font-size="17" fill="#1e1e1e">DIN-Normen</text>
+<text x="213.0" y="-756.3" font-size="21" fill="#1e1e1e">Rechtliche Grundlagen</text>
+<text x="908.0" y="-425.4" font-size="16" fill="#1e1e1e">Konvektion</text>
+<text x="908.0" y="-347.4" font-size="16" fill="#1e1e1e">Strahlung</text>
+<text x="908.0" y="-269.4" font-size="16" fill="#1e1e1e">Leitung</text>
+<text x="562.0" y="-347.2" font-size="17" fill="#1e1e1e">Wärmeübertragungsarten</text>
+<text x="908.0" y="-201.4" font-size="16" fill="#1e1e1e">Wärmedurchgangskoeffizient</text>
+<text x="908.0" y="-181.4" font-size="16" fill="#1e1e1e">(U-Wert)</text>
+<text x="908.0" y="-113.4" font-size="16" fill="#1e1e1e">Wärmeleitfähigkeit (Lambda)</text>
+<text x="908.0" y="-45.4" font-size="16" fill="#1e1e1e">Wärmedurchlasswiderstand</text>
+<text x="908.0" y="-25.4" font-size="16" fill="#1e1e1e">(R)</text>
+<text x="908.0" y="42.6" font-size="16" fill="#1e1e1e">Wärmespeicherkapazität</text>
+<text x="562.0" y="-74.2" font-size="17" fill="#1e1e1e">Technische Kennwerte</text>
+<text x="908.0" y="120.6" font-size="16" fill="#1e1e1e">Vermeidung von Kondensation</text>
+<text x="908.0" y="198.6" font-size="16" fill="#1e1e1e">Taupunkt-Berechnung</text>
+<text x="908.0" y="276.6" font-size="16" fill="#1e1e1e">Schimmelpilzvermeidung</text>
+<text x="908.0" y="354.6" font-size="16" fill="#1e1e1e">Dampfdiffusion</text>
+<text x="562.0" y="237.8" font-size="17" fill="#1e1e1e">Feuchteschutz</text>
+<text x="213.0" y="-67.4" font-size="21" fill="#1e1e1e">Bauphysikalische</text>
+<text x="213.0" y="-41.2" font-size="21" fill="#1e1e1e">Grundlagen</text>
+<text x="908.0" y="422.6" font-size="16" fill="#1e1e1e">Gebäude mit normalen</text>
+<text x="908.0" y="442.6" font-size="16" fill="#1e1e1e">Innentemperaturen</text>
+<text x="908.0" y="500.6" font-size="16" fill="#1e1e1e">Gebäude mit niedrigen</text>
+<text x="908.0" y="520.6" font-size="16" fill="#1e1e1e">Innentemperaturen</text>
+<text x="908.0" y="588.6" font-size="16" fill="#1e1e1e">Wohn- vs. Nichtwohngebäude</text>
+<text x="562.0" y="510.8" font-size="17" fill="#1e1e1e">Gebäudetypen</text>
+<text x="908.0" y="666.6" font-size="16" fill="#1e1e1e">Jahres-Primärenergiebedarf</text>
+<text x="908.0" y="744.6" font-size="16" fill="#1e1e1e">Transmissionswärmeverlust</text>
+<text x="908.0" y="822.6" font-size="16" fill="#1e1e1e">Sommerlicher Wärmeschutz</text>
+<text x="562.0" y="744.8" font-size="17" fill="#1e1e1e">Grenzwerte</text>
+<text x="562.0" y="890.2" font-size="17" fill="#1e1e1e">Neubau vs. Sanierung im</text>
+<text x="562.0" y="911.5" font-size="17" fill="#1e1e1e">Bestand</text>
+<text x="213.0" y="693.6" font-size="21" fill="#1e1e1e">Anforderungen an</text>
+<text x="213.0" y="719.9" font-size="21" fill="#1e1e1e">Gebäude</text>
+<text x="-1132.0" y="-893.4" font-size="16" fill="#1e1e1e">Außenwanddämmung</text>
+<text x="-1132.0" y="-815.4" font-size="16" fill="#1e1e1e">Dachdämmung</text>
+<text x="-1132.0" y="-747.4" font-size="16" fill="#1e1e1e">Kellerdecken- und</text>
+<text x="-1132.0" y="-727.4" font-size="16" fill="#1e1e1e">Fußbodendämmung</text>
+<text x="-1132.0" y="-669.4" font-size="16" fill="#1e1e1e">Fenster- und</text>
+<text x="-1132.0" y="-649.4" font-size="16" fill="#1e1e1e">Türenerneuerung</text>
+<text x="-798.0" y="-776.2" font-size="17" fill="#1e1e1e">Gebäudehülle</text>
+<text x="-1132.0" y="-591.4" font-size="16" fill="#1e1e1e">Geometrische vs.</text>
+<text x="-1132.0" y="-571.4" font-size="16" fill="#1e1e1e">Konstruktive Brücken</text>
+<text x="-1132.0" y="-503.4" font-size="16" fill="#1e1e1e">Thermographie-Analyse</text>
+<text x="-1132.0" y="-435.4" font-size="16" fill="#1e1e1e">Minimierung nach DIN 4108</text>
+<text x="-1132.0" y="-415.4" font-size="16" fill="#1e1e1e">Bbl 2</text>
+<text x="-798.0" y="-503.2" font-size="17" fill="#1e1e1e">Wärmebrücken</text>
+<text x="-1132.0" y="-347.4" font-size="16" fill="#1e1e1e">Blower-Door-Test</text>
+<text x="-1132.0" y="-269.4" font-size="16" fill="#1e1e1e">Fugendurchlässigkeit</text>
+<text x="-1132.0" y="-191.4" font-size="16" fill="#1e1e1e">Dauerhafte Abdichtung</text>
+<text x="-798.0" y="-269.2" font-size="17" fill="#1e1e1e">Luftdichtheit</text>
+<text x="-467.0" y="-522.3" font-size="21" fill="#1e1e1e">Bauliche Maßnahmen</text>
+<text x="-1132.0" y="-113.4" font-size="16" fill="#1e1e1e">Niedertemperaturkessel</text>
+<text x="-1132.0" y="-35.4" font-size="16" fill="#1e1e1e">Brennwertkessel</text>
+<text x="-1132.0" y="42.6" font-size="16" fill="#1e1e1e">Wärmepumpen</text>
+<text x="-1132.0" y="110.6" font-size="16" fill="#1e1e1e">Inbetriebnahme-Vorschriften</text>
+<text x="-1132.0" y="130.6" font-size="16" fill="#1e1e1e">(CE-Kennzeichnung)</text>
+<text x="-798.0" y="3.8" font-size="17" fill="#1e1e1e">Heizungssysteme</text>
+<text x="-1132.0" y="188.6" font-size="16" fill="#1e1e1e">Dämmung von Leitungen und</text>
+<text x="-1132.0" y="208.6" font-size="16" fill="#1e1e1e">Armaturen</text>
+<text x="-1132.0" y="276.6" font-size="16" fill="#1e1e1e">Zirkulationspumpen-Regelung</text>
+<text x="-1132.0" y="344.6" font-size="16" fill="#1e1e1e">Raumweise</text>
+<text x="-1132.0" y="364.6" font-size="16" fill="#1e1e1e">Temperaturregelung</text>
+<text x="-798.0" y="276.8" font-size="17" fill="#1e1e1e">Warmwasser &amp; Verteilung</text>
+<text x="-1132.0" y="432.6" font-size="16" fill="#1e1e1e">Mindestluftwechsel</text>
+<text x="-1132.0" y="510.6" font-size="16" fill="#1e1e1e">Wärmerückgewinnung</text>
+<text x="-798.0" y="471.8" font-size="17" fill="#1e1e1e">Lüftung</text>
+<text x="-467.0" y="238.7" font-size="21" fill="#1e1e1e">Anlagentechnik</text>
+<text x="-798.0" y="588.8" font-size="17" fill="#1e1e1e">Energiebedarfsausweis</text>
+<text x="-798.0" y="666.8" font-size="17" fill="#1e1e1e">Wärmebedarfsausweis</text>
+<text x="-798.0" y="744.8" font-size="17" fill="#1e1e1e">Energieverbrauchskennwerte</text>
+<text x="-798.0" y="822.8" font-size="17" fill="#1e1e1e">CO2-Emissionsminderung</text>
+<text x="-798.0" y="890.2" font-size="17" fill="#1e1e1e">Kostensenkung und</text>
+<text x="-798.0" y="911.5" font-size="17" fill="#1e1e1e">Behaglichkeit</text>
+<text x="-467.0" y="745.7" font-size="21" fill="#1e1e1e">Nachweise und Ziele</text>
+<text x="-157.0" y="-26.7" font-size="26" fill="#1e1e1e">🧠 Energieeffizienz und</text>
+<text x="-157.0" y="5.8" font-size="26" fill="#1e1e1e">Wärmeschutz bei</text>
+<text x="-157.0" y="38.3" font-size="26" fill="#1e1e1e">Gebäuden</text>
 </svg>

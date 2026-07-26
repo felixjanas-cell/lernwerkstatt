@@ -1,117 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24.0 -24.0 1868.0 798.0" font-family="Segoe UI, system-ui, sans-serif">
-<path d="M 920.0 80.0 L 150.0 200.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="150.0,200.0 157.6,195.1 158.7,202.4" fill="#1e1e1e"/>
-<path d="M 920.0 80.0 L 530.0 200.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="530.0,200.0 536.8,194.1 538.9,201.1" fill="#1e1e1e"/>
-<path d="M 920.0 80.0 L 910.0 200.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="910.0,200.0 907.0,191.5 914.3,192.1" fill="#1e1e1e"/>
-<path d="M 920.0 80.0 L 1290.0 200.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1290.0,200.0 1281.1,201.0 1283.3,194.0" fill="#1e1e1e"/>
-<path d="M 920.0 80.0 L 1670.0 200.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1670.0,200.0 1661.3,202.3 1662.5,195.1" fill="#1e1e1e"/>
-<path d="M 150.0 270.0 L 150.0 340.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="150.0,340.0 146.3,331.8 153.7,331.8" fill="#1e1e1e"/>
-<path d="M 150.0 400.0 L 150.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="150.0,420.0 146.3,411.8 153.7,411.8" fill="#1e1e1e"/>
-<path d="M 150.0 480.0 L 150.0 500.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="150.0,500.0 146.3,491.8 153.7,491.8" fill="#1e1e1e"/>
-<path d="M 150.0 560.0 L 150.0 580.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="150.0,580.0 146.3,571.8 153.7,571.8" fill="#1e1e1e"/>
-<path d="M 530.0 270.0 L 530.0 340.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="530.0,340.0 526.3,331.8 533.7,331.8" fill="#1e1e1e"/>
-<path d="M 530.0 270.0 L 530.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="530.0,420.0 526.3,411.8 533.7,411.8" fill="#1e1e1e"/>
-<path d="M 530.0 270.0 L 530.0 500.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="530.0,500.0 526.3,491.8 533.7,491.8" fill="#1e1e1e"/>
-<path d="M 530.0 270.0 L 530.0 580.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="530.0,580.0 526.3,571.8 533.7,571.8" fill="#1e1e1e"/>
-<path d="M 530.0 270.0 L 530.0 660.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="530.0,660.0 526.3,651.8 533.7,651.8" fill="#1e1e1e"/>
-<path d="M 910.0 270.0 L 910.0 340.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="910.0,340.0 906.3,331.8 913.7,331.8" fill="#1e1e1e"/>
-<path d="M 910.0 270.0 L 910.0 440.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="910.0,440.0 906.3,431.8 913.7,431.8" fill="#1e1e1e"/>
-<path d="M 1290.0 270.0 L 1290.0 340.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1290.0,340.0 1286.3,331.8 1293.7,331.8" fill="#1e1e1e"/>
-<path d="M 1290.0 270.0 L 1290.0 440.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1290.0,440.0 1286.3,431.8 1293.7,431.8" fill="#1e1e1e"/>
-<path d="M 1290.0 270.0 L 1290.0 540.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1290.0,540.0 1286.3,531.8 1293.7,531.8" fill="#1e1e1e"/>
-<path d="M 1290.0 270.0 L 1290.0 660.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1290.0,660.0 1286.3,651.8 1293.7,651.8" fill="#1e1e1e"/>
-<path d="M 1670.0 270.0 L 1670.0 340.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1670.0,340.0 1666.3,331.8 1673.7,331.8" fill="#1e1e1e"/>
-<path d="M 1670.0 270.0 L 1670.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1670.0,420.0 1666.3,411.8 1673.7,411.8" fill="#1e1e1e"/>
-<path d="M 1670.0 270.0 L 1670.0 500.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1670.0,500.0 1666.3,491.8 1673.7,491.8" fill="#1e1e1e"/>
-<path d="M 1670.0 270.0 L 1670.0 580.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1670.0,580.0 1666.3,571.8 1673.7,571.8" fill="#1e1e1e"/>
-<rect x="760.0" y="0.0" width="320.0" height="80.0" rx="8" fill="#d0bfff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="0.0" y="200.0" width="300.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="380.0" y="200.0" width="300.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="760.0" y="200.0" width="300.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1140.0" y="200.0" width="300.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1520.0" y="200.0" width="300.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="0.0" y="340.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="0.0" y="420.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="0.0" y="500.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="0.0" y="580.0" width="300.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="380.0" y="340.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="380.0" y="420.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="380.0" y="500.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="380.0" y="580.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="380.0" y="660.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="760.0" y="340.0" width="300.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="760.0" y="440.0" width="300.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1140.0" y="340.0" width="300.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1140.0" y="440.0" width="300.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1140.0" y="540.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1520.0" y="340.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1520.0" y="420.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1520.0" y="500.0" width="300.0" height="60.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1520.0" y="580.0" width="300.0" height="80.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1140.0" y="660.0" width="300.0" height="90.0" rx="8" fill="#ffc9c9" stroke="#1e1e1e" stroke-width="1.2"/>
-<text x="768.0" y="43.6" font-size="16" fill="#1e1e1e">💶 Kostenarten (HF 4a)</text>
-<text x="8.0" y="238.6" font-size="16" fill="#1e1e1e">Abgrenzung der Begriffe</text>
-<text x="388.0" y="238.6" font-size="16" fill="#1e1e1e">Nach Art der Güter</text>
-<text x="768.0" y="238.6" font-size="16" fill="#1e1e1e">Nach Zurechenbarkeit</text>
-<text x="1148.0" y="238.6" font-size="16" fill="#1e1e1e">Nach Beschäftigung</text>
-<text x="1528.0" y="238.6" font-size="16" fill="#1e1e1e">Bezug Zimmerei / SVS</text>
-<text x="8.0" y="373.6" font-size="16" fill="#1e1e1e">Auszahlung (Geldabfluss)</text>
-<text x="8.0" y="453.6" font-size="16" fill="#1e1e1e">Ausgabe (Beschaffungswert)</text>
-<text x="8.0" y="523.6" font-size="16" fill="#1e1e1e">Aufwand (period. Werteverzehr,</text>
-<text x="8.0" y="543.6" font-size="16" fill="#1e1e1e">GuV)</text>
-<text x="8.0" y="603.6" font-size="16" fill="#1e1e1e">Kosten = betriebl. Werteverzehr →</text>
-<text x="8.0" y="623.6" font-size="16" fill="#1e1e1e">Grundkosten + Zusatzkosten</text>
-<text x="8.0" y="643.6" font-size="16" fill="#1e1e1e">(kalkulatorisch)</text>
-<text x="388.0" y="373.6" font-size="16" fill="#1e1e1e">Materialkosten (Holz, Dämmung…)</text>
-<text x="388.0" y="443.6" font-size="16" fill="#1e1e1e">Personalkosten (Lohn +</text>
-<text x="388.0" y="463.6" font-size="16" fill="#1e1e1e">Lohnnebenkosten)</text>
-<text x="388.0" y="523.6" font-size="16" fill="#1e1e1e">Kapital-/Abschreibungskosten</text>
-<text x="388.0" y="543.6" font-size="16" fill="#1e1e1e">(Maschinen)</text>
-<text x="388.0" y="603.6" font-size="16" fill="#1e1e1e">Fremdleistungskosten</text>
-<text x="388.0" y="623.6" font-size="16" fill="#1e1e1e">(Subunternehmer)</text>
-<text x="388.0" y="693.6" font-size="16" fill="#1e1e1e">Wagnis · Steuern &amp; Abgaben</text>
-<text x="768.0" y="373.6" font-size="16" fill="#1e1e1e">Einzelkosten – direkt zurechenbar</text>
-<text x="768.0" y="393.6" font-size="16" fill="#1e1e1e">(Materialholz f. Auftrag)</text>
-<text x="768.0" y="473.6" font-size="16" fill="#1e1e1e">Gemeinkosten – nur indirekt (Büro,</text>
-<text x="768.0" y="493.6" font-size="16" fill="#1e1e1e">Werkstatt, Verwaltung) → Zuschlag</text>
-<text x="1148.0" y="363.6" font-size="16" fill="#1e1e1e">Fixkosten –</text>
-<text x="1148.0" y="383.6" font-size="16" fill="#1e1e1e">beschäftigungsunabhängig (Miete,</text>
-<text x="1148.0" y="403.6" font-size="16" fill="#1e1e1e">Versicherung)</text>
-<text x="1148.0" y="473.6" font-size="16" fill="#1e1e1e">Variable Kosten – mit Leistung</text>
-<text x="1148.0" y="493.6" font-size="16" fill="#1e1e1e">steigend (Material, Akkordlohn)</text>
-<text x="1148.0" y="563.6" font-size="16" fill="#1e1e1e">Mischkosten (z.B. Strom: Grund +</text>
-<text x="1148.0" y="583.6" font-size="16" fill="#1e1e1e">Verbrauch)</text>
-<text x="1528.0" y="363.6" font-size="16" fill="#1e1e1e">Lohn → Stundenverrechnungssatz</text>
-<text x="1528.0" y="383.6" font-size="16" fill="#1e1e1e">(SVS)</text>
-<text x="1528.0" y="453.6" font-size="16" fill="#1e1e1e">Holz / Material</text>
-<text x="1528.0" y="523.6" font-size="16" fill="#1e1e1e">Maschinen &amp; Fuhrpark</text>
-<text x="1528.0" y="543.6" font-size="16" fill="#1e1e1e">(Abschreibung, Sprit)</text>
-<text x="1528.0" y="613.6" font-size="16" fill="#1e1e1e">Verwaltung / Gemeinkosten → siehe</text>
-<text x="1528.0" y="633.6" font-size="16" fill="#1e1e1e">[[BWL Allgemein (Mindmap).canvas]]</text>
-<text x="1148.0" y="688.6" font-size="16" fill="#1e1e1e">❓ Active Recall: 3 eigene</text>
-<text x="1148.0" y="708.6" font-size="16" fill="#1e1e1e">Kostenbeispiele aus deinem Betrieb</text>
-<text x="1148.0" y="728.6" font-size="16" fill="#1e1e1e">je Kategorie eintragen</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1844.0 -369.0 2674.0 738.0" font-family="Segoe UI, system-ui, sans-serif">
+<path d="M -165.0 0.0 L -205.0 -234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,-234.0 -200.0,-226.5 -207.2,-225.3" fill="#1e1e1e"/>
+<path d="M 165.0 0.0 L 205.0 -156.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="205.0,-156.0 206.5,-147.1 199.4,-149.0" fill="#1e1e1e"/>
+<path d="M -165.0 0.0 L -205.0 -117.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,-117.0 -198.9,-110.4 -205.8,-108.0" fill="#1e1e1e"/>
+<path d="M -165.0 0.0 L -205.0 117.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,117.0 -205.8,108.0 -198.9,110.4" fill="#1e1e1e"/>
+<path d="M 165.0 0.0 L 205.0 195.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="205.0,195.0 199.8,187.7 206.9,186.2" fill="#1e1e1e"/>
+<path d="M -475.0 -234.0 L -554.0 -234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-234.0 -545.8,-237.7 -545.8,-230.3" fill="#1e1e1e"/>
+<path d="M -806.0 -234.0 L -900.0 -234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-900.0,-234.0 -891.8,-237.7 -891.8,-230.3" fill="#1e1e1e"/>
+<path d="M -1140.0 -234.0 L -1240.0 -234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-1240.0,-234.0 -1231.8,-237.7 -1231.8,-230.3" fill="#1e1e1e"/>
+<path d="M -1480.0 -234.0 L -1580.0 -234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-1580.0,-234.0 -1571.8,-237.7 -1571.8,-230.3" fill="#1e1e1e"/>
+<path d="M 475.0 -156.0 L 554.0 -312.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-312.0 553.6,-303.0 547.0,-306.3" fill="#1e1e1e"/>
+<path d="M 475.0 -156.0 L 554.0 -234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-234.0 550.7,-225.6 545.6,-230.8" fill="#1e1e1e"/>
+<path d="M 475.0 -156.0 L 554.0 -156.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-156.0 545.8,-152.3 545.8,-159.7" fill="#1e1e1e"/>
+<path d="M 475.0 -156.0 L 554.0 -78.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-78.0 545.6,-81.2 550.7,-86.4" fill="#1e1e1e"/>
+<path d="M 475.0 -156.0 L 554.0 0.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,0.0 547.0,-5.7 553.6,-9.0" fill="#1e1e1e"/>
+<path d="M -475.0 -117.0 L -554.0 -156.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-156.0 -545.0,-155.7 -548.3,-149.1" fill="#1e1e1e"/>
+<path d="M -475.0 -117.0 L -554.0 -78.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-78.0 -548.3,-84.9 -545.0,-78.3" fill="#1e1e1e"/>
+<path d="M -475.0 117.0 L -554.0 0.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,0.0 -546.4,4.8 -552.4,8.9" fill="#1e1e1e"/>
+<path d="M -475.0 117.0 L -554.0 78.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,78.0 -545.0,78.3 -548.3,84.9" fill="#1e1e1e"/>
+<path d="M -475.0 117.0 L -554.0 156.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,156.0 -548.3,149.1 -545.0,155.7" fill="#1e1e1e"/>
+<path d="M -475.0 117.0 L -554.0 234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,234.0 -552.4,225.1 -546.4,229.2" fill="#1e1e1e"/>
+<path d="M 475.0 195.0 L 554.0 78.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,78.0 552.4,86.9 546.4,82.8" fill="#1e1e1e"/>
+<path d="M 475.0 195.0 L 554.0 156.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,156.0 548.3,162.9 545.0,156.3" fill="#1e1e1e"/>
+<path d="M 475.0 195.0 L 554.0 234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,234.0 545.0,233.7 548.3,227.1" fill="#1e1e1e"/>
+<path d="M 475.0 195.0 L 554.0 312.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,312.0 546.4,307.2 552.4,303.1" fill="#1e1e1e"/>
+<rect x="-165.0" y="-52.0" width="330.0" height="104.0" rx="8" fill="#ffe066" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="-275.0" width="270.0" height="82.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="205.0" y="-197.0" width="270.0" height="82.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="-158.0" width="270.0" height="82.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="76.0" width="270.0" height="82.0" rx="8" fill="#d0bfff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="205.0" y="154.0" width="270.0" height="82.0" rx="8" fill="#ffc9c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-267.0" width="252.0" height="66.0" rx="8" fill="#b8e0ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1140.0" y="-265.0" width="240.0" height="62.0" rx="8" fill="#cae8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1480.0" y="-265.0" width="240.0" height="62.0" rx="8" fill="#cae8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-1820.0" y="-265.0" width="240.0" height="62.0" rx="8" fill="#cae8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-345.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-267.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-189.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-111.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-33.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-189.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-111.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-33.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="45.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="123.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="45.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="123.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="201.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="279.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="201.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<text x="-157.0" y="6.1" font-size="27" fill="#1e1e1e">💶 Kostenarten (HF 4a)</text>
+<text x="-467.0" y="-229.3" font-size="21" fill="#1e1e1e">Abgrenzung der Begriffe</text>
+<text x="213.0" y="-151.3" font-size="21" fill="#1e1e1e">Nach Art der Güter</text>
+<text x="-467.0" y="-112.3" font-size="21" fill="#1e1e1e">Nach Zurechenbarkeit</text>
+<text x="-467.0" y="121.7" font-size="21" fill="#1e1e1e">Nach Beschäftigung</text>
+<text x="213.0" y="199.7" font-size="21" fill="#1e1e1e">Bezug Zimmerei / SVS</text>
+<text x="-798.0" y="-230.2" font-size="17" fill="#1e1e1e">Auszahlung (Geldabfluss)</text>
+<text x="-1132.0" y="-230.4" font-size="16" fill="#1e1e1e">Ausgabe (Beschaffungswert)</text>
+<text x="-1472.0" y="-240.4" font-size="16" fill="#1e1e1e">Aufwand (period.</text>
+<text x="-1472.0" y="-220.4" font-size="16" fill="#1e1e1e">Werteverzehr, GuV)</text>
+<text x="-1812.0" y="-248.3" font-size="14" fill="#1e1e1e">Kosten = betriebl. Werteverzehr</text>
+<text x="-1812.0" y="-230.8" font-size="14" fill="#1e1e1e">→ Grundkosten + Zusatzkosten</text>
+<text x="-1812.0" y="-213.3" font-size="14" fill="#1e1e1e">(kalkulatorisch)</text>
+<text x="562.0" y="-318.8" font-size="17" fill="#1e1e1e">Materialkosten (Holz,</text>
+<text x="562.0" y="-297.6" font-size="17" fill="#1e1e1e">Dämmung…)</text>
+<text x="562.0" y="-240.8" font-size="17" fill="#1e1e1e">Personalkosten (Lohn +</text>
+<text x="562.0" y="-219.6" font-size="17" fill="#1e1e1e">Lohnnebenkosten)</text>
+<text x="562.0" y="-162.8" font-size="17" fill="#1e1e1e">Kapital-/Abschreibungskost</text>
+<text x="562.0" y="-141.6" font-size="17" fill="#1e1e1e">en (Maschinen)</text>
+<text x="562.0" y="-84.8" font-size="17" fill="#1e1e1e">Fremdleistungskosten</text>
+<text x="562.0" y="-63.5" font-size="17" fill="#1e1e1e">(Subunternehmer)</text>
+<text x="562.0" y="3.8" font-size="17" fill="#1e1e1e">Wagnis · Steuern &amp; Abgaben</text>
+<text x="-798.0" y="-172.4" font-size="16" fill="#1e1e1e">Einzelkosten – direkt</text>
+<text x="-798.0" y="-152.4" font-size="16" fill="#1e1e1e">zurechenbar (Materialholz f.</text>
+<text x="-798.0" y="-132.4" font-size="16" fill="#1e1e1e">Auftrag)</text>
+<text x="-798.0" y="-94.4" font-size="16" fill="#1e1e1e">Gemeinkosten – nur indirekt</text>
+<text x="-798.0" y="-74.4" font-size="16" fill="#1e1e1e">(Büro, Werkstatt,</text>
+<text x="-798.0" y="-54.4" font-size="16" fill="#1e1e1e">Verwaltung) → Zuschlag</text>
+<text x="-798.0" y="-16.4" font-size="16" fill="#1e1e1e">Fixkosten –</text>
+<text x="-798.0" y="3.6" font-size="16" fill="#1e1e1e">beschäftigungsunabhängig</text>
+<text x="-798.0" y="23.6" font-size="16" fill="#1e1e1e">(Miete, Versicherung)</text>
+<text x="-798.0" y="61.6" font-size="16" fill="#1e1e1e">Variable Kosten – mit</text>
+<text x="-798.0" y="81.6" font-size="16" fill="#1e1e1e">Leistung steigend (Material,</text>
+<text x="-798.0" y="101.6" font-size="16" fill="#1e1e1e">Akkordlohn)</text>
+<text x="-798.0" y="149.2" font-size="17" fill="#1e1e1e">Mischkosten (z.B. Strom:</text>
+<text x="-798.0" y="170.4" font-size="17" fill="#1e1e1e">Grund + Verbrauch)</text>
+<text x="562.0" y="61.6" font-size="16" fill="#1e1e1e">Lohn →</text>
+<text x="562.0" y="81.6" font-size="16" fill="#1e1e1e">Stundenverrechnungssatz</text>
+<text x="562.0" y="101.6" font-size="16" fill="#1e1e1e">(SVS)</text>
+<text x="562.0" y="159.8" font-size="17" fill="#1e1e1e">Holz / Material</text>
+<text x="562.0" y="227.2" font-size="17" fill="#1e1e1e">Maschinen &amp; Fuhrpark</text>
+<text x="562.0" y="248.4" font-size="17" fill="#1e1e1e">(Abschreibung, Sprit)</text>
+<text x="562.0" y="295.6" font-size="16" fill="#1e1e1e">Verwaltung / Gemeinkosten →</text>
+<text x="562.0" y="315.6" font-size="16" fill="#1e1e1e">siehe [[BWL Allgemein</text>
+<text x="562.0" y="335.6" font-size="16" fill="#1e1e1e">(Mindmap).canvas]]</text>
+<text x="-798.0" y="218.6" font-size="15" fill="#1e1e1e">❓ Active Recall: 3 eigene</text>
+<text x="-798.0" y="237.4" font-size="15" fill="#1e1e1e">Kostenbeispiele aus deinem</text>
+<text x="-798.0" y="256.1" font-size="15" fill="#1e1e1e">Betrieb je Kategorie eintragen</text>
 </svg>

@@ -122,43 +122,58 @@
 <rect x="-30.0" y="820.0" width="440.0" height="90.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
 <rect x="460.0" y="820.0" width="440.0" height="90.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
 <rect x="950.0" y="820.0" width="440.0" height="90.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<text x="-192.0" y="13.6" font-size="16" fill="#1e1e1e">🎓 Meisterprüfung</text>
-<text x="-192.0" y="33.6" font-size="16" fill="#1e1e1e">Zimmerer 2026</text>
-<text x="-192.0" y="53.6" font-size="16" fill="#1e1e1e">(HWK Bln/Bbg/FFO)</text>
-<text x="-192.0" y="-471.4" font-size="16" fill="#1e1e1e">🔨 TEIL I – Fachpraxis</text>
-<text x="-192.0" y="-451.4" font-size="16" fill="#1e1e1e">(Meisterprojekt + Fachgespräch)</text>
-<text x="-1492.0" y="-711.4" font-size="16" fill="#1e1e1e">🔴 SEMA-Meisterprojekt 🔄</text>
-<text x="-1062.0" y="-711.4" font-size="16" fill="#1e1e1e">🔴 Dachausmittlung &amp; rechn. Abbund 🔄/❌</text>
-<text x="-632.0" y="-711.4" font-size="16" fill="#1e1e1e">🟡 Arbeits-/Material-/Zeitplanung 🔄</text>
-<text x="-202.0" y="-711.4" font-size="16" fill="#1e1e1e">🟡 Baustellenorganisation 🔄</text>
-<text x="228.0" y="-711.4" font-size="16" fill="#1e1e1e">🟢 Kundenkommunikation</text>
-<text x="658.0" y="-711.4" font-size="16" fill="#1e1e1e">🟡 Dokumentation 🔄</text>
-<text x="1088.0" y="-711.4" font-size="16" fill="#1e1e1e">🔴 Fachgespräch 🔄</text>
-<text x="-1392.0" y="18.6" font-size="16" fill="#1e1e1e">📐 TEIL II – Fachtheorie</text>
-<text x="-2092.0" y="-286.4" font-size="16" fill="#1e1e1e">📄 Werkstoffkunde (Teil II)</text>
-<text x="-2092.0" y="-106.4" font-size="16" fill="#1e1e1e">📄 Normen &amp; Regelwerke (Teil II)</text>
-<text x="-2092.0" y="73.6" font-size="16" fill="#1e1e1e">📄 Statik (Teil II)</text>
-<text x="-2092.0" y="253.6" font-size="16" fill="#1e1e1e">📄 Holzbaukonstruktion (Teil II)</text>
-<text x="-2092.0" y="433.6" font-size="16" fill="#1e1e1e">📄 Bauphysik (Teil II)</text>
-<text x="-2092.0" y="613.6" font-size="16" fill="#1e1e1e">📄 Arbeitsvorbereitung (Teil II)</text>
-<text x="-2092.0" y="768.6" font-size="16" fill="#1e1e1e">🗺️ Detail: 31 Themen →</text>
-<text x="-2092.0" y="788.6" font-size="16" fill="#1e1e1e">[[Teil II – Wissensgraph (Karte).canvas]]</text>
-<text x="1108.0" y="18.6" font-size="16" fill="#1e1e1e">💰 TEIL III – Betriebswirtschaft</text>
-<text x="1608.0" y="-301.4" font-size="16" fill="#1e1e1e">🔴 Kostenrechnung / BWL (HF4a) ❌</text>
-<text x="1608.0" y="-151.4" font-size="16" fill="#1e1e1e">🔴 Kalkulation (HF3b/3i) ❌</text>
-<text x="1608.0" y="-1.4" font-size="16" fill="#1e1e1e">🔴 Angebotserstellung ❌</text>
-<text x="1608.0" y="148.6" font-size="16" fill="#1e1e1e">🟡 Vor-/Nachkalkulation ❌</text>
-<text x="1608.0" y="298.6" font-size="16" fill="#1e1e1e">🟡 Controlling &amp; Kennzahlen ❌</text>
-<text x="1608.0" y="448.6" font-size="16" fill="#1e1e1e">🟢 Finanzierung &amp; Investition</text>
-<text x="1608.0" y="598.6" font-size="16" fill="#1e1e1e">🟡 Marketing 🔄</text>
-<text x="1608.0" y="748.6" font-size="16" fill="#1e1e1e">🟡 Unternehmensführung</text>
-<text x="-252.0" y="618.6" font-size="16" fill="#1e1e1e">👷 TEIL IV – Ausbildung &amp; Mitarbeiterführung (AEVO)</text>
-<text x="-1492.0" y="868.6" font-size="16" fill="#1e1e1e">🟡 Ausbildung planen</text>
-<text x="-1002.0" y="868.6" font-size="16" fill="#1e1e1e">🟡 Mitarbeitergespräche</text>
-<text x="-512.0" y="868.6" font-size="16" fill="#1e1e1e">🟢 Konfliktmanagement</text>
-<text x="-22.0" y="868.6" font-size="16" fill="#1e1e1e">🟢 Motivation</text>
-<text x="468.0" y="868.6" font-size="16" fill="#1e1e1e">🟡 Personalwirtschaft (HF4e) ❌</text>
-<text x="958.0" y="868.6" font-size="16" fill="#1e1e1e">🟡 Arbeitsschutzunterweisung 🔄</text>
+<text x="-192.0" y="1.3" font-size="28" fill="#1e1e1e">🎓 Meisterprüfung</text>
+<text x="-192.0" y="36.3" font-size="28" fill="#1e1e1e">Zimmerer 2026</text>
+<text x="-192.0" y="71.3" font-size="28" fill="#1e1e1e">(HWK Bln/Bbg/FFO)</text>
+<text x="-192.0" y="-492.7" font-size="27" fill="#1e1e1e">🔨 TEIL I – Fachpraxis</text>
+<text x="-192.0" y="-458.9" font-size="27" fill="#1e1e1e">(Meisterprojekt +</text>
+<text x="-192.0" y="-425.2" font-size="27" fill="#1e1e1e">Fachgespräch)</text>
+<text x="-1492.0" y="-709.8" font-size="23" fill="#1e1e1e">🔴 SEMA-Meisterprojekt 🔄</text>
+<text x="-1062.0" y="-724.2" font-size="23" fill="#1e1e1e">🔴 Dachausmittlung &amp; rechn.</text>
+<text x="-1062.0" y="-695.5" font-size="23" fill="#1e1e1e">Abbund 🔄/❌</text>
+<text x="-632.0" y="-737.5" font-size="22" fill="#1e1e1e">🟡</text>
+<text x="-632.0" y="-710.0" font-size="22" fill="#1e1e1e">Arbeits-/Material-/Zeitplanung</text>
+<text x="-632.0" y="-682.5" font-size="22" fill="#1e1e1e">🔄</text>
+<text x="-202.0" y="-709.8" font-size="23" fill="#1e1e1e">🟡 Baustellenorganisation 🔄</text>
+<text x="228.0" y="-709.8" font-size="23" fill="#1e1e1e">🟢 Kundenkommunikation</text>
+<text x="658.0" y="-709.8" font-size="23" fill="#1e1e1e">🟡 Dokumentation 🔄</text>
+<text x="1088.0" y="-709.8" font-size="23" fill="#1e1e1e">🔴 Fachgespräch 🔄</text>
+<text x="-1392.0" y="3.8" font-size="28" fill="#1e1e1e">📐 TEIL II –</text>
+<text x="-1392.0" y="38.8" font-size="28" fill="#1e1e1e">Fachtheorie</text>
+<text x="-2092.0" y="-301.2" font-size="28" fill="#1e1e1e">📄 Werkstoffkunde (Teil</text>
+<text x="-2092.0" y="-266.2" font-size="28" fill="#1e1e1e">II)</text>
+<text x="-2092.0" y="-121.2" font-size="28" fill="#1e1e1e">📄 Normen &amp; Regelwerke</text>
+<text x="-2092.0" y="-86.2" font-size="28" fill="#1e1e1e">(Teil II)</text>
+<text x="-2092.0" y="76.3" font-size="28" fill="#1e1e1e">📄 Statik (Teil II)</text>
+<text x="-2092.0" y="238.8" font-size="28" fill="#1e1e1e">📄 Holzbaukonstruktion</text>
+<text x="-2092.0" y="273.8" font-size="28" fill="#1e1e1e">(Teil II)</text>
+<text x="-2092.0" y="436.3" font-size="28" fill="#1e1e1e">📄 Bauphysik (Teil II)</text>
+<text x="-2092.0" y="598.8" font-size="28" fill="#1e1e1e">📄 Arbeitsvorbereitung</text>
+<text x="-2092.0" y="633.8" font-size="28" fill="#1e1e1e">(Teil II)</text>
+<text x="-2092.0" y="752.5" font-size="22" fill="#1e1e1e">🗺️ Detail: 31 Themen →</text>
+<text x="-2092.0" y="780.0" font-size="22" fill="#1e1e1e">[[Teil II – Wissensgraph</text>
+<text x="-2092.0" y="807.5" font-size="22" fill="#1e1e1e">(Karte).canvas]]</text>
+<text x="1108.0" y="3.8" font-size="28" fill="#1e1e1e">💰 TEIL III –</text>
+<text x="1108.0" y="38.8" font-size="28" fill="#1e1e1e">Betriebswirtschaft</text>
+<text x="1608.0" y="-316.2" font-size="28" fill="#1e1e1e">🔴 Kostenrechnung / BWL</text>
+<text x="1608.0" y="-281.2" font-size="28" fill="#1e1e1e">(HF4a) ❌</text>
+<text x="1608.0" y="-148.7" font-size="28" fill="#1e1e1e">🔴 Kalkulation (HF3b/3i) ❌</text>
+<text x="1608.0" y="1.3" font-size="28" fill="#1e1e1e">🔴 Angebotserstellung ❌</text>
+<text x="1608.0" y="151.3" font-size="28" fill="#1e1e1e">🟡 Vor-/Nachkalkulation ❌</text>
+<text x="1608.0" y="283.8" font-size="28" fill="#1e1e1e">🟡 Controlling &amp;</text>
+<text x="1608.0" y="318.8" font-size="28" fill="#1e1e1e">Kennzahlen ❌</text>
+<text x="1608.0" y="433.8" font-size="28" fill="#1e1e1e">🟢 Finanzierung &amp;</text>
+<text x="1608.0" y="468.8" font-size="28" fill="#1e1e1e">Investition</text>
+<text x="1608.0" y="601.3" font-size="28" fill="#1e1e1e">🟡 Marketing 🔄</text>
+<text x="1608.0" y="751.3" font-size="28" fill="#1e1e1e">🟡 Unternehmensführung</text>
+<text x="-252.0" y="603.8" font-size="28" fill="#1e1e1e">👷 TEIL IV – Ausbildung &amp;</text>
+<text x="-252.0" y="638.8" font-size="28" fill="#1e1e1e">Mitarbeiterführung (AEVO)</text>
+<text x="-1492.0" y="870.2" font-size="23" fill="#1e1e1e">🟡 Ausbildung planen</text>
+<text x="-1002.0" y="870.2" font-size="23" fill="#1e1e1e">🟡 Mitarbeitergespräche</text>
+<text x="-512.0" y="870.2" font-size="23" fill="#1e1e1e">🟢 Konfliktmanagement</text>
+<text x="-22.0" y="870.2" font-size="23" fill="#1e1e1e">🟢 Motivation</text>
+<text x="468.0" y="870.2" font-size="23" fill="#1e1e1e">🟡 Personalwirtschaft (HF4e) ❌</text>
+<text x="958.0" y="870.2" font-size="23" fill="#1e1e1e">🟡 Arbeitsschutzunterweisung 🔄</text>
 <text x="-1920.0" y="-103.8" font-size="12" text-anchor="middle" fill="#1e1e1e" stroke="#ffffff" stroke-width="4" paint-order="stroke" font-weight="600">Voraussetzung: Festigkeitsklassen</text>
 <text x="-1920.0" y="-13.8" font-size="12" text-anchor="middle" fill="#1e1e1e" stroke="#ffffff" stroke-width="4" paint-order="stroke" font-weight="600">Voraussetzung: EC5-Bemessung</text>
 <text x="-1920.0" y="166.2" font-size="12" text-anchor="middle" fill="#1e1e1e" stroke="#ffffff" stroke-width="4" paint-order="stroke" font-weight="600">Voraussetzung: GEG/DIN</text>

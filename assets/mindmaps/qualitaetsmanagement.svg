@@ -1,157 +1,165 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.0 -24.0 9288.0 538.0" font-family="Segoe UI, system-ui, sans-serif">
-<path d="M 640.0 210.0 L 160.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="160.0,280.0 167.6,275.2 168.7,282.4" fill="#1e1e1e"/>
-<path d="M 640.0 210.0 L 480.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="480.0,280.0 486.1,273.3 489.0,280.1" fill="#1e1e1e"/>
-<path d="M 640.0 210.0 L 800.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="800.0,280.0 791.0,280.1 793.9,273.3" fill="#1e1e1e"/>
-<path d="M 640.0 210.0 L 1120.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1120.0,280.0 1111.3,282.4 1112.4,275.2" fill="#1e1e1e"/>
-<path d="M 2080.0 210.0 L 1440.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1440.0,280.0 1447.8,275.5 1448.6,282.8" fill="#1e1e1e"/>
-<path d="M 2080.0 210.0 L 1760.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="1760.0,280.0 1767.2,274.7 1768.8,281.8" fill="#1e1e1e"/>
-<path d="M 2080.0 210.0 L 2080.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="2080.0,280.0 2076.3,271.8 2083.7,271.8" fill="#1e1e1e"/>
-<path d="M 2080.0 210.0 L 2400.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="2400.0,280.0 2391.2,281.8 2392.8,274.7" fill="#1e1e1e"/>
-<path d="M 2080.0 210.0 L 2720.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="2720.0,280.0 2711.4,282.8 2712.2,275.5" fill="#1e1e1e"/>
-<path d="M 3840.0 210.0 L 3040.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3040.0,280.0 3047.9,275.6 3048.5,282.9" fill="#1e1e1e"/>
-<path d="M 3840.0 210.0 L 3360.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3360.0,280.0 3367.6,275.2 3368.7,282.4" fill="#1e1e1e"/>
-<path d="M 3840.0 210.0 L 3680.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3680.0,280.0 3686.1,273.3 3689.0,280.1" fill="#1e1e1e"/>
-<path d="M 3840.0 210.0 L 4000.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4000.0,280.0 3991.0,280.1 3993.9,273.3" fill="#1e1e1e"/>
-<path d="M 3840.0 210.0 L 4320.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4320.0,280.0 4311.3,282.4 4312.4,275.2" fill="#1e1e1e"/>
-<path d="M 3840.0 210.0 L 4640.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4640.0,280.0 4631.5,282.9 4632.1,275.6" fill="#1e1e1e"/>
-<path d="M 5440.0 210.0 L 4960.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="4960.0,280.0 4967.6,275.2 4968.7,282.4" fill="#1e1e1e"/>
-<path d="M 5440.0 210.0 L 5280.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="5280.0,280.0 5286.1,273.3 5289.0,280.1" fill="#1e1e1e"/>
-<path d="M 5440.0 210.0 L 5600.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="5600.0,280.0 5591.0,280.1 5593.9,273.3" fill="#1e1e1e"/>
-<path d="M 5440.0 210.0 L 5920.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="5920.0,280.0 5911.3,282.4 5912.4,275.2" fill="#1e1e1e"/>
-<path d="M 7680.0 350.0 L 7200.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="7200.0,420.0 7207.6,415.2 7208.7,422.4" fill="#1e1e1e"/>
-<path d="M 7680.0 350.0 L 7520.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="7520.0,420.0 7526.1,413.3 7529.0,420.1" fill="#1e1e1e"/>
-<path d="M 7680.0 350.0 L 7840.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="7840.0,420.0 7831.0,420.1 7833.9,413.3" fill="#1e1e1e"/>
-<path d="M 7680.0 350.0 L 8160.0 420.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="8160.0,420.0 8151.3,422.4 8152.4,415.2" fill="#1e1e1e"/>
-<path d="M 6840.0 210.0 L 6240.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6240.0,280.0 6247.7,275.4 6248.6,282.7" fill="#1e1e1e"/>
-<path d="M 6840.0 210.0 L 6560.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6560.0,280.0 6567.1,274.4 6568.9,281.6" fill="#1e1e1e"/>
-<path d="M 6840.0 210.0 L 6880.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6880.0,280.0 6872.7,274.7 6879.1,271.0" fill="#1e1e1e"/>
-<path d="M 6840.0 210.0 L 7680.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="7680.0,280.0 7671.5,283.0 7672.1,275.7" fill="#1e1e1e"/>
-<path d="M 8800.0 210.0 L 8480.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="8480.0,280.0 8487.2,274.7 8488.8,281.8" fill="#1e1e1e"/>
-<path d="M 8800.0 210.0 L 8800.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="8800.0,280.0 8796.3,271.8 8803.7,271.8" fill="#1e1e1e"/>
-<path d="M 8800.0 210.0 L 9120.0 280.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="9120.0,280.0 9111.2,281.8 9112.8,274.7" fill="#1e1e1e"/>
-<path d="M 4606.0 70.0 L 640.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="640.0,140.0 648.2,136.2 648.3,143.5" fill="#1e1e1e"/>
-<path d="M 4606.0 70.0 L 2080.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="2080.0,140.0 2088.1,136.1 2088.3,143.4" fill="#1e1e1e"/>
-<path d="M 4606.0 70.0 L 3840.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="3840.0,140.0 3847.8,135.6 3848.5,142.9" fill="#1e1e1e"/>
-<path d="M 4606.0 70.0 L 5440.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="5440.0,140.0 5431.5,143.0 5432.1,135.7" fill="#1e1e1e"/>
-<path d="M 4606.0 70.0 L 6840.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="6840.0,140.0 6831.7,143.4 6831.9,136.1" fill="#1e1e1e"/>
-<path d="M 4606.0 70.0 L 8800.0 140.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
-<polygon points="8800.0,140.0 8791.7,143.5 8791.8,136.2" fill="#1e1e1e"/>
-<rect x="20.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="340.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="660.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="980.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="500.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1300.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1620.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1940.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="2260.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="2580.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="1940.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="2900.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3220.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3540.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3860.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="4180.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="4500.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="3700.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="4820.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="5140.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="5460.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="5780.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="5300.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6100.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6420.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6740.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="7060.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="7380.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="7700.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8020.0" y="420.0" width="280.0" height="70.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="7540.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="6700.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8340.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8660.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8980.0" y="280.0" width="280.0" height="70.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="8660.0" y="140.0" width="280.0" height="70.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
-<rect x="4466.0" y="0.0" width="280.0" height="70.0" rx="8" fill="#d0bfff" stroke="#1e1e1e" stroke-width="1.2"/>
-<text x="28.0" y="318.6" font-size="16" fill="#1e1e1e">Vertraulichkeit</text>
-<text x="348.0" y="318.6" font-size="16" fill="#1e1e1e">Pünktlichkeit &amp; Respekt</text>
-<text x="668.0" y="318.6" font-size="16" fill="#1e1e1e">Feedback &amp; Spaß</text>
-<text x="988.0" y="318.6" font-size="16" fill="#1e1e1e">Vorstellungsrunde &amp; Ziele</text>
-<text x="508.0" y="178.6" font-size="16" fill="#1e1e1e">Einführung &amp; Vereinbarungen</text>
-<text x="1308.0" y="318.6" font-size="16" fill="#1e1e1e">Über 1 Mio. Betriebe</text>
-<text x="1628.0" y="318.6" font-size="16" fill="#1e1e1e">5,56 Mio. Beschäftigte</text>
-<text x="1948.0" y="318.6" font-size="16" fill="#1e1e1e">342.000 Auszubildende</text>
-<text x="2268.0" y="318.6" font-size="16" fill="#1e1e1e">Umsatz ca. 757 Mrd. €</text>
-<text x="2588.0" y="318.6" font-size="16" fill="#1e1e1e">20.000 neue Meister jährlich</text>
-<text x="1948.0" y="178.6" font-size="16" fill="#1e1e1e">Das Deutsche Handwerk (ZDF)</text>
-<text x="2908.0" y="318.6" font-size="16" fill="#1e1e1e">Personalbedarfsplanung</text>
-<text x="3228.0" y="308.6" font-size="16" fill="#1e1e1e">Beschaffung &amp;</text>
-<text x="3228.0" y="328.6" font-size="16" fill="#1e1e1e">Stellenbeschreibung</text>
-<text x="3548.0" y="318.6" font-size="16" fill="#1e1e1e">Entlohnung &amp; Lohnabrechnung</text>
-<text x="3868.0" y="318.6" font-size="16" fill="#1e1e1e">Arbeits- &amp; Sozialrecht</text>
-<text x="4188.0" y="308.6" font-size="16" fill="#1e1e1e">Personalentwicklung &amp;</text>
-<text x="4188.0" y="328.6" font-size="16" fill="#1e1e1e">Motivation</text>
-<text x="4508.0" y="318.6" font-size="16" fill="#1e1e1e">Zustandsmanagement</text>
-<text x="3708.0" y="178.6" font-size="16" fill="#1e1e1e">Personalmanagement Themen</text>
-<text x="4828.0" y="308.6" font-size="16" fill="#1e1e1e">BIP Berechnung</text>
-<text x="4828.0" y="328.6" font-size="16" fill="#1e1e1e">(Verwendungsrechnung)</text>
-<text x="5148.0" y="318.6" font-size="16" fill="#1e1e1e">Staatsquote (ca. 48-50%)</text>
-<text x="5468.0" y="308.6" font-size="16" fill="#1e1e1e">Bundeshaushalt: Arbeit &amp;</text>
-<text x="5468.0" y="328.6" font-size="16" fill="#1e1e1e">Soziales als Kostentreiber</text>
-<text x="5788.0" y="318.6" font-size="16" fill="#1e1e1e">Insolvenzentwicklung 2024/2025</text>
-<text x="5308.0" y="168.6" font-size="16" fill="#1e1e1e">Wirtschaftliche</text>
-<text x="5308.0" y="188.6" font-size="16" fill="#1e1e1e">Rahmenbedingungen</text>
-<text x="6108.0" y="318.6" font-size="16" fill="#1e1e1e">Geschäftsidee &amp; Franchise</text>
-<text x="6428.0" y="318.6" font-size="16" fill="#1e1e1e">Rechtsform &amp; Finanzierung</text>
-<text x="6748.0" y="318.6" font-size="16" fill="#1e1e1e">Juristische Voraussetzungen</text>
-<text x="7068.0" y="458.6" font-size="16" fill="#1e1e1e">Eigenmotivation</text>
-<text x="7388.0" y="458.6" font-size="16" fill="#1e1e1e">Glaube an Machbarkeit</text>
-<text x="7708.0" y="458.6" font-size="16" fill="#1e1e1e">Resilienz</text>
-<text x="8028.0" y="458.6" font-size="16" fill="#1e1e1e">Problemlösungsorientierung</text>
-<text x="7548.0" y="308.6" font-size="16" fill="#1e1e1e">Eigenschaften erfolgreicher</text>
-<text x="7548.0" y="328.6" font-size="16" fill="#1e1e1e">Unternehmer</text>
-<text x="6708.0" y="178.6" font-size="16" fill="#1e1e1e">Unternehmensgründung</text>
-<text x="8348.0" y="318.6" font-size="16" fill="#1e1e1e">Anlage A: Meisterpflicht</text>
-<text x="8668.0" y="318.6" font-size="16" fill="#1e1e1e">Anlage B1: Zulassungsfrei</text>
-<text x="8988.0" y="308.6" font-size="16" fill="#1e1e1e">Anlage B2: Handwerksähnliche</text>
-<text x="8988.0" y="328.6" font-size="16" fill="#1e1e1e">Gewerke</text>
-<text x="8668.0" y="178.6" font-size="16" fill="#1e1e1e">Handwerksordnung (HWO) Anlagen</text>
-<text x="4474.0" y="18.6" font-size="16" fill="#1e1e1e">🧠 Meisterschule</text>
-<text x="4474.0" y="38.6" font-size="16" fill="#1e1e1e">Zimmerer-Handwerk:</text>
-<text x="4474.0" y="58.6" font-size="16" fill="#1e1e1e">Personalmanagement</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-830.0 -603.0 1994.0 1206.0" font-family="Segoe UI, system-ui, sans-serif">
+<path d="M 475.0 -390.0 L 554.0 -507.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-507.0 552.4,-498.1 546.4,-502.2" fill="#1e1e1e"/>
+<path d="M 475.0 -390.0 L 554.0 -429.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-429.0 548.3,-422.1 545.0,-428.7" fill="#1e1e1e"/>
+<path d="M 475.0 -390.0 L 554.0 -351.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-351.0 545.0,-351.3 548.3,-357.9" fill="#1e1e1e"/>
+<path d="M 475.0 -390.0 L 554.0 -273.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-273.0 546.4,-277.8 552.4,-281.9" fill="#1e1e1e"/>
+<path d="M -475.0 -390.0 L -554.0 -546.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-546.0 -547.0,-540.3 -553.6,-537.0" fill="#1e1e1e"/>
+<path d="M -475.0 -390.0 L -554.0 -468.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-468.0 -545.6,-464.8 -550.7,-459.6" fill="#1e1e1e"/>
+<path d="M -475.0 -390.0 L -554.0 -390.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-390.0 -545.8,-393.7 -545.8,-386.3" fill="#1e1e1e"/>
+<path d="M -475.0 -390.0 L -554.0 -312.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-312.0 -550.7,-320.4 -545.6,-315.2" fill="#1e1e1e"/>
+<path d="M -475.0 -390.0 L -554.0 -234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-234.0 -553.6,-243.0 -547.0,-239.7" fill="#1e1e1e"/>
+<path d="M -475.0 39.0 L -554.0 -156.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-156.0 -547.5,-149.8 -554.3,-147.0" fill="#1e1e1e"/>
+<path d="M -475.0 39.0 L -554.0 -78.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,-78.0 -546.4,-73.2 -552.4,-69.1" fill="#1e1e1e"/>
+<path d="M -475.0 39.0 L -554.0 0.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,0.0 -545.0,0.3 -548.3,6.9" fill="#1e1e1e"/>
+<path d="M -475.0 39.0 L -554.0 78.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,78.0 -548.3,71.1 -545.0,77.7" fill="#1e1e1e"/>
+<path d="M -475.0 39.0 L -554.0 156.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,156.0 -552.4,147.1 -546.4,151.2" fill="#1e1e1e"/>
+<path d="M -475.0 39.0 L -554.0 234.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,234.0 -554.3,225.0 -547.5,227.8" fill="#1e1e1e"/>
+<path d="M -475.0 429.0 L -554.0 312.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,312.0 -546.4,316.8 -552.4,320.9" fill="#1e1e1e"/>
+<path d="M -475.0 429.0 L -554.0 390.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,390.0 -545.0,390.3 -548.3,396.9" fill="#1e1e1e"/>
+<path d="M -475.0 429.0 L -554.0 468.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,468.0 -548.3,461.1 -545.0,467.7" fill="#1e1e1e"/>
+<path d="M -475.0 429.0 L -554.0 546.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-554.0,546.0 -552.4,537.1 -546.4,541.2" fill="#1e1e1e"/>
+<path d="M 806.0 156.0 L 900.0 39.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,39.0 897.7,47.7 892.0,43.1" fill="#1e1e1e"/>
+<path d="M 806.0 156.0 L 900.0 117.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,117.0 893.8,123.5 891.0,116.8" fill="#1e1e1e"/>
+<path d="M 806.0 156.0 L 900.0 195.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,195.0 891.0,195.2 893.8,188.5" fill="#1e1e1e"/>
+<path d="M 806.0 156.0 L 900.0 273.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="900.0,273.0 892.0,268.9 897.7,264.3" fill="#1e1e1e"/>
+<path d="M 475.0 -19.0 L 554.0 -195.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-195.0 554.0,-186.0 547.3,-189.0" fill="#1e1e1e"/>
+<path d="M 475.0 -19.0 L 554.0 -117.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-117.0 551.7,-108.3 546.0,-112.9" fill="#1e1e1e"/>
+<path d="M 475.0 -19.0 L 554.0 -39.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,-39.0 546.9,-33.4 545.1,-40.5" fill="#1e1e1e"/>
+<path d="M 475.0 -19.0 L 554.0 156.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,156.0 547.3,150.0 554.0,147.0" fill="#1e1e1e"/>
+<path d="M 475.0 429.0 L 554.0 351.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,351.0 550.7,359.4 545.6,354.2" fill="#1e1e1e"/>
+<path d="M 475.0 429.0 L 554.0 429.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,429.0 545.8,432.7 545.8,425.3" fill="#1e1e1e"/>
+<path d="M 475.0 429.0 L 554.0 507.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="554.0,507.0 545.6,503.8 550.7,498.6" fill="#1e1e1e"/>
+<path d="M 165.0 0.0 L 205.0 -390.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="205.0,-390.0 207.8,-381.5 200.5,-382.2" fill="#1e1e1e"/>
+<path d="M -165.0 0.0 L -205.0 -390.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,-390.0 -200.5,-382.2 -207.8,-381.5" fill="#1e1e1e"/>
+<path d="M -165.0 0.0 L -205.0 39.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,39.0 -201.7,30.6 -196.6,35.9" fill="#1e1e1e"/>
+<path d="M -165.0 0.0 L -205.0 429.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="-205.0,429.0 -207.9,420.5 -200.6,421.2" fill="#1e1e1e"/>
+<path d="M 165.0 0.0 L 205.0 -19.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="205.0,-19.0 199.2,-12.2 196.0,-18.8" fill="#1e1e1e"/>
+<path d="M 165.0 0.0 L 205.0 429.0" fill="none" stroke="#1e1e1e" stroke-width="1.4"/>
+<polygon points="205.0,429.0 200.6,421.2 207.9,420.5" fill="#1e1e1e"/>
+<rect x="554.0" y="-540.0" width="252.0" height="66.0" rx="8" fill="#b8e0ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-462.0" width="252.0" height="66.0" rx="8" fill="#b8e0ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-384.0" width="252.0" height="66.0" rx="8" fill="#b8e0ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-306.0" width="252.0" height="66.0" rx="8" fill="#b8e0ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="205.0" y="-431.0" width="270.0" height="82.0" rx="8" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-579.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-501.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-423.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-345.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-267.0" width="252.0" height="66.0" rx="8" fill="#c2f4c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="-431.0" width="270.0" height="82.0" rx="8" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-189.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-111.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="-33.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="45.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="123.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="201.0" width="252.0" height="66.0" rx="8" fill="#ffe0bb" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="-2.0" width="270.0" height="82.0" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="279.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="357.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="435.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-806.0" y="513.0" width="252.0" height="66.0" rx="8" fill="#dacdff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-475.0" y="388.0" width="270.0" height="82.0" rx="8" fill="#d0bfff" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-228.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-150.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="-72.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="8.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="86.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="164.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="900.0" y="242.0" width="240.0" height="62.0" rx="8" fill="#ffdfdf" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="123.0" width="252.0" height="66.0" rx="8" fill="#ffd4d4" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="205.0" y="-60.0" width="270.0" height="82.0" rx="8" fill="#ffc9c9" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="318.0" width="252.0" height="66.0" rx="8" fill="#fff0af" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="396.0" width="252.0" height="66.0" rx="8" fill="#fff0af" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="554.0" y="474.0" width="252.0" height="66.0" rx="8" fill="#fff0af" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="205.0" y="388.0" width="270.0" height="82.0" rx="8" fill="#ffec99" stroke="#1e1e1e" stroke-width="1.2"/>
+<rect x="-165.0" y="-52.0" width="330.0" height="104.0" rx="8" fill="#ffe066" stroke="#1e1e1e" stroke-width="1.2"/>
+<text x="562.0" y="-503.2" font-size="17" fill="#1e1e1e">Vertraulichkeit</text>
+<text x="562.0" y="-425.2" font-size="17" fill="#1e1e1e">Pünktlichkeit &amp; Respekt</text>
+<text x="562.0" y="-347.2" font-size="17" fill="#1e1e1e">Feedback &amp; Spaß</text>
+<text x="562.0" y="-269.2" font-size="17" fill="#1e1e1e">Vorstellungsrunde &amp; Ziele</text>
+<text x="213.0" y="-398.4" font-size="21" fill="#1e1e1e">Einführung &amp;</text>
+<text x="213.0" y="-372.1" font-size="21" fill="#1e1e1e">Vereinbarungen</text>
+<text x="-798.0" y="-542.2" font-size="17" fill="#1e1e1e">Über 1 Mio. Betriebe</text>
+<text x="-798.0" y="-464.2" font-size="17" fill="#1e1e1e">5,56 Mio. Beschäftigte</text>
+<text x="-798.0" y="-386.2" font-size="17" fill="#1e1e1e">342.000 Auszubildende</text>
+<text x="-798.0" y="-308.2" font-size="17" fill="#1e1e1e">Umsatz ca. 757 Mrd. €</text>
+<text x="-798.0" y="-240.8" font-size="17" fill="#1e1e1e">20.000 neue Meister</text>
+<text x="-798.0" y="-219.6" font-size="17" fill="#1e1e1e">jährlich</text>
+<text x="-467.0" y="-398.4" font-size="21" fill="#1e1e1e">Das Deutsche Handwerk</text>
+<text x="-467.0" y="-372.1" font-size="21" fill="#1e1e1e">(ZDF)</text>
+<text x="-798.0" y="-152.2" font-size="17" fill="#1e1e1e">Personalbedarfsplanung</text>
+<text x="-798.0" y="-84.8" font-size="17" fill="#1e1e1e">Beschaffung &amp;</text>
+<text x="-798.0" y="-63.5" font-size="17" fill="#1e1e1e">Stellenbeschreibung</text>
+<text x="-798.0" y="-6.8" font-size="17" fill="#1e1e1e">Entlohnung &amp;</text>
+<text x="-798.0" y="14.4" font-size="17" fill="#1e1e1e">Lohnabrechnung</text>
+<text x="-798.0" y="81.8" font-size="17" fill="#1e1e1e">Arbeits- &amp; Sozialrecht</text>
+<text x="-798.0" y="149.2" font-size="17" fill="#1e1e1e">Personalentwicklung &amp;</text>
+<text x="-798.0" y="170.4" font-size="17" fill="#1e1e1e">Motivation</text>
+<text x="-798.0" y="237.8" font-size="17" fill="#1e1e1e">Zustandsmanagement</text>
+<text x="-467.0" y="30.6" font-size="21" fill="#1e1e1e">Personalmanagement</text>
+<text x="-467.0" y="56.8" font-size="21" fill="#1e1e1e">Themen</text>
+<text x="-798.0" y="305.2" font-size="17" fill="#1e1e1e">BIP Berechnung</text>
+<text x="-798.0" y="326.4" font-size="17" fill="#1e1e1e">(Verwendungsrechnung)</text>
+<text x="-798.0" y="393.8" font-size="17" fill="#1e1e1e">Staatsquote (ca. 48-50%)</text>
+<text x="-798.0" y="461.2" font-size="17" fill="#1e1e1e">Bundeshaushalt: Arbeit &amp;</text>
+<text x="-798.0" y="482.4" font-size="17" fill="#1e1e1e">Soziales als Kostentreiber</text>
+<text x="-798.0" y="539.2" font-size="17" fill="#1e1e1e">Insolvenzentwicklung</text>
+<text x="-798.0" y="560.5" font-size="17" fill="#1e1e1e">2024/2025</text>
+<text x="-467.0" y="420.6" font-size="21" fill="#1e1e1e">Wirtschaftliche</text>
+<text x="-467.0" y="446.9" font-size="21" fill="#1e1e1e">Rahmenbedingungen</text>
+<text x="562.0" y="-191.2" font-size="17" fill="#1e1e1e">Geschäftsidee &amp; Franchise</text>
+<text x="562.0" y="-113.2" font-size="17" fill="#1e1e1e">Rechtsform &amp; Finanzierung</text>
+<text x="562.0" y="-45.8" font-size="17" fill="#1e1e1e">Juristische</text>
+<text x="562.0" y="-24.5" font-size="17" fill="#1e1e1e">Voraussetzungen</text>
+<text x="908.0" y="42.6" font-size="16" fill="#1e1e1e">Eigenmotivation</text>
+<text x="908.0" y="120.6" font-size="16" fill="#1e1e1e">Glaube an Machbarkeit</text>
+<text x="908.0" y="198.6" font-size="16" fill="#1e1e1e">Resilienz</text>
+<text x="908.0" y="276.6" font-size="16" fill="#1e1e1e">Problemlösungsorientierung</text>
+<text x="562.0" y="149.2" font-size="17" fill="#1e1e1e">Eigenschaften</text>
+<text x="562.0" y="170.4" font-size="17" fill="#1e1e1e">erfolgreicher Unternehmer</text>
+<text x="213.0" y="-14.3" font-size="21" fill="#1e1e1e">Unternehmensgründung</text>
+<text x="562.0" y="354.8" font-size="17" fill="#1e1e1e">Anlage A: Meisterpflicht</text>
+<text x="562.0" y="432.8" font-size="17" fill="#1e1e1e">Anlage B1: Zulassungsfrei</text>
+<text x="562.0" y="500.2" font-size="17" fill="#1e1e1e">Anlage B2:</text>
+<text x="562.0" y="521.5" font-size="17" fill="#1e1e1e">Handwerksähnliche Gewerke</text>
+<text x="213.0" y="420.6" font-size="21" fill="#1e1e1e">Handwerksordnung (HWO)</text>
+<text x="213.0" y="446.9" font-size="21" fill="#1e1e1e">Anlagen</text>
+<text x="-157.0" y="-26.7" font-size="26" fill="#1e1e1e">🧠 Meisterschule</text>
+<text x="-157.0" y="5.8" font-size="26" fill="#1e1e1e">Zimmerer-Handwerk:</text>
+<text x="-157.0" y="38.3" font-size="26" fill="#1e1e1e">Personalmanagement</text>
 </svg>
