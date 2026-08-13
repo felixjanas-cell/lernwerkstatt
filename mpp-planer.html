@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPP-Planer · Meisterprüfungsprojekt 2026</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>">
+<style>
+  :root { --blau:#1971c2; --orange:#e8590c; --gruen:#2b8a3e; --rot:#c92a2a; --bg:#f6f8fa; --ink:#1e1e1e; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; margin:0; background:var(--bg); color:var(--ink); }
+  header { background:#243b53; color:#fff; padding:1rem 1.2rem; }
+  header h1 { margin:0; font-size:1.25rem; }
+  header .sub { font-size:.85rem; opacity:.85; margin-top:.2rem; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 1rem 1rem 6rem; }
+  .progress { display:flex; gap:4px; margin:.8rem 0; flex-wrap:wrap; }
+  .pill { flex:1 1 30px; height:10px; border-radius:5px; background:#d5dde5; cursor:pointer; min-width:22px; }
+  .pill.a { background:#a5d8ff; } .pill.b { background:#ffd8a8; }
+  .pill.done { background:var(--gruen) !important; }
+  .pill.cur { outline:3px solid #243b53; }
+  .teilbadge { display:inline-block; padding:.15rem .6rem; border-radius:6px; font-size:.75rem; font-weight:700; color:#fff; }
+  .tA { background:var(--blau); } .tB { background:var(--orange); }
+  .card { background:#fff; border:1px solid #d7dee6; border-radius:12px; padding:1rem 1.1rem; margin:.9rem 0; }
+  .card h2 { margin:.1rem 0 .3rem; font-size:1.15rem; }
+  .intro { color:#4a5560; font-size:.92rem; }
+  .item { border-top:1px dashed #ccd4dc; margin-top:.9rem; padding-top:.8rem; }
+  .q { font-weight:700; margin:.2rem 0 .35rem; }
+  .info { background:#eef4fa; border-left:4px solid var(--blau); padding:.5rem .7rem; font-size:.86rem; border-radius:0 8px 8px 0; margin:.4rem 0; white-space:pre-wrap; }
+  .opt { display:block; margin:.3rem 0; padding:.45rem .6rem; border:1px solid #ccd4dc; border-radius:8px; cursor:pointer; font-size:.92rem; background:#fbfcfd; }
+  .opt:hover { border-color:var(--blau); }
+  .opt input { margin-right:.5rem; }
+  .opt small { color:#5b6670; display:block; margin-left:1.55rem; }
+  textarea { width:100%; min-height:52px; border:1px solid #ccd4dc; border-radius:8px; padding:.5rem; font:inherit; font-size:.9rem; margin-top:.35rem; }
+  .doneline { margin-top:.5rem; font-size:.9rem; }
+  .doneline input { transform:scale(1.3); margin-right:.5rem; }
+  .nav { position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid #d7dee6; padding:.6rem 1rem; display:flex; gap:.6rem; justify-content:space-between; align-items:center; }
+  .nav .mid { font-size:.85rem; color:#4a5560; text-align:center; flex:1; }
+  button { font:inherit; border:none; border-radius:9px; padding:.55rem 1rem; cursor:pointer; font-weight:600; }
+  .btn { background:#243b53; color:#fff; } .btn[disabled] { opacity:.35; cursor:default; }
+  .ghost { background:#e4e9ee; color:#243b53; }
+  .save { background:var(--gruen); color:#fff; }
+  .warn { background:#fff4e6; border-left:4px solid var(--orange); padding:.5rem .7rem; font-size:.86rem; border-radius:0 8px 8px 0; margin:.4rem 0; }
+  .top { display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.6rem; }
+  .top button { font-size:.8rem; padding:.4rem .7rem; }
+  a { color:var(--blau); }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏗️ MPP-Planer — Meisterprüfungsprojekt 2026</h1>
+  <div class="sub">Vorgabe HWK: EFH Holzbau · 100–110 m² Grundfläche · 145–165 m² Wohn-/Nutzfläche · DG ausgebaut · DN 32–50° mit Gaube · BbgBO · <b>Konzept-PDF bis 31.08.</b> · Prüfungswoche 12.–16.10.</div>
+  <div class="top">
+    <button class="save" onclick="exportMd()">💾 Als Version speichern (Markdown)</button>
+    <button class="ghost" onclick="newRun()">🔄 Neuer Durchlauf</button>
+    <button class="ghost" onclick="jumpOpen()">⏭️ Zum nächsten offenen Punkt</button>
+  </div>
+</header>
+<div class="wrap">
+  <div class="progress" id="prog"></div>
+  <div id="page"></div>
+</div>
+<div class="nav">
+  <button class="btn" id="prev" onclick="go(-1)">◀ Zurück</button>
+  <div class="mid" id="stat"></div>
+  <button class="btn" id="next" onclick="go(1)">Weiter ▶</button>
+</div>
+<script>
+const S = [
+// ================= TEIL A — KONZEPT (bis 31.08.) =================
+{part:'A', title:'A1 · Vorgabe-Check (fixe Anforderungen)', intro:'Diese Punkte sind vom Prüfungsausschuss GESETZT — hier gibt es nichts zu entscheiden, nur zu erfüllen. Hake ab, dass du jeden Punkt in deinem Entwurf berücksichtigt hast.', items:[
+ {id:'a1_1', q:'Alle Pflicht-Anforderungen im Entwurf berücksichtigt?', info:'• Wohn-/Nutzfläche 145–165 m² gesamt\n• 2 geräumige Kinderzimmer im DG\n• separates Büro (Homeoffice)\n• Bad im DG + Gäste-WC im EG\n• ökologisch, nachhaltig, modern\n• Dachform frei, FLACHDACH AUSGESCHLOSSEN\n• Gaube vergrößert Raumkubatur in Raumebene DG (nicht Spitzboden!)\n• helle, gut belichtete Räume\n• energieeffiziente Hülle, gute Dämmung\n• Fassade mit hohem Holzanteil oder ganz Holz\n• optional Kamin im Wohnbereich\n• OHNE Keller · Grundfläche max. 100–110 m² · DG ausgebaut · DN 32–50° zimmermannsmäßiger Abbund · aktuelle BbgBO', options:[{v:'ok', label:'✅ Alle Punkte fließen in den Entwurf ein', hint:''}]},
+ {id:'a1_2', q:'Abgabeformat klar?', info:'Bis Mo 31.08.: PDF · Projektbeschreibung MAX. 1 DIN-A4-Seite · Skizzen aller Grundrisse + aller Gebäudeansichten, JE auf separatem Blatt · Bemaßung nicht zwingend, Räume eindeutig beschriften · abschließend kurz den Planungsschwerpunkt benennen.', options:[{v:'ok', label:'✅ Verstanden — Beschreibung 1 Seite + Skizzenblätter', hint:''}]}
+]},
+{part:'A', title:'A2 · Grundfläche & Gebäudekubatur', intro:'Erste ECHTE Entscheidung — sie steuert Wohnfläche, Bauvorlageberechtigung und Proportionen.', items:[
+ {id:'a2_1', q:'Welche Grundfläche wählst du?', info:'§ 65 BbgBO: Zimmerermeister ist als Entwurfsverfasser nur bis 100 m² Grundfläche (freistehend, ≤ 2 Geschosse) bauvorlageberechtigt. Bei 100–110 m² Vorgabe heißt das: GENAU 100 m² = du darfst dich selbst eintragen · >100 m² = ehrlicher Hinweis in der Vorbemerkung nötig (so hat es Pranzner gemacht). Fürs Fachgespräch ist BEIDES gut begründbar!', options:[
+   {v:'100', label:'≤ 100 m² (z. B. 8,00 × 12,50 m)', hint:'Ich bleibe bauvorlageberechtigt — starkes Argument im Fachgespräch.'},
+   {v:'105', label:'~105 m² (z. B. 8,40 × 12,50 m)', hint:'Mehr Raumreserve; Vorbemerkung zur § 65-Grenze schreiben.'},
+   {v:'110', label:'110 m² voll ausnutzen (z. B. 8,50 × 13,00 m)', hint:'Maximale Fläche; Vorbemerkung zur § 65-Grenze schreiben.'}], input:true},
+ {id:'a2_2', q:'Gebäudeproportion / Grundriss-Form?', info:'Rechteck ist wirtschaftlich und abbund-freundlich. Seitenverhältnis ~1:1,4–1,6 wirkt gut proportioniert und gibt sinnvolle Sparrenlängen. L-Form/Versprünge = mehr Kehlen (Kür!), aber mehr Zeitrisiko in der Prüfungswoche.', options:[
+   {v:'rechteck', label:'Klares Rechteck', hint:'Sicher, schnell, sauber — Kür kommt über Dachform+Gaube.'},
+   {v:'versprung', label:'Rechteck mit kleinem Versprung/Erker', hint:'Mehr Anspruch (Kehle/Verschneidung), mehr Aufwand.'}], input:true}
+]},
+{part:'A', title:'A3 · Dachform & Dachneigung', intro:'DN 32–50° ist vorgegeben, die Form ist frei (kein Flachdach). Hier entsteht dein Abbund-Anspruch.', items:[
+ {id:'a3_1', q:'Welche Dachform?', info:'Bewertungskern = zimmermannsmäßiger Abbund. Satteldach = solide Basis, Kür nur über Gaube. Krüppelwalm = Schifter + Walmgeometrie (Lehrbauhof-Können zeigen!) und trotzdem volle DG-Nutzung. Vollwalm = max. Schiftung, ABER frisst DG-Wohnfläche (kritisch bei 145–165-m²-Ziel + 2 Kinderzimmer im DG!).', options:[
+   {v:'sattel', label:'Satteldach', hint:'Maximale DG-Fläche, geringster Abbund-Anspruch.'},
+   {v:'krueppelwalm', label:'Krüppelwalm (Empfehlung aus der Musteranalyse)', hint:'Schiftungs-Kür + DG bleibt nutzbar — Pranzner-Niveau.'},
+   {v:'walm', label:'Vollwalm', hint:'Schöne Geometrie, aber DG-Flächenverlust prüfen!'}], input:true},
+ {id:'a3_2', q:'Welche Dachneigung konkret?', info:'DN steuert: DG-Wohnfläche (WoFlV: volle Anrechnung erst ab 2 m Höhe, 50 % zwischen 1–2 m), Ziegelwahl (Regeldachneigung!) und Sparrenlängen. 38–45° ist der Sweet-Spot: ordentlich Raum im DG, jede gängige Ziegeldeckung regelkonform, klassische Optik. Kniestock 80–120 cm mitdenken!', options:[
+   {v:'38', label:'38°', hint:'Moderat, gute Proportion, Kniestock ~1,20 m sinnvoll.'},
+   {v:'42', label:'42°', hint:'Guter Kompromiss Raum/Optik.'},
+   {v:'45', label:'45°', hint:'Viel DG-Volumen, markante Optik, längere Sparren.'}], input:true},
+ {id:'a3_3', q:'Kniestock-Höhe?', info:'Der Kniestock entscheidet mit der DN über die 2-m-Linie im DG → direkt wohnflächenrelevant. Üblich 0,75–1,25 m. Höher = mehr Wohnfläche, aber Achtung Proportion + Abstandsflächen (H × 0,4).', options:[
+   {v:'75', label:'~0,75 m', hint:'Klassisch, günstige Abstandsflächen.'},
+   {v:'100', label:'~1,00 m', hint:'Guter Kompromiss.'},
+   {v:'125', label:'~1,25 m', hint:'Maximale DG-Fläche.'}], input:true}
+]},
+{part:'A', title:'A4 · Gaube (Pflicht!)', intro:'Die Vorgabe verlangt eine Gaube, die die Raumkubatur in der RAUMEBENE DG vergrößert (nicht im Spitzboden). Das ist deine zweite Kür-Chance.', items:[
+ {id:'a4_1', q:'Welcher Gaubentyp?', info:'Schleppgaube = einfach + viel Raumgewinn. Satteldachgaube = Kehlschifter beidseitig (schöner Abbund-Nachweis). Walmgaube = Kehl- UND Gratschifter (Königsdisziplin). Trapezgaube = modern, verschnittene Flächen. Fachregel-Punkte: zweite wasserführende Ebene, Anschlusshöhen seitlich ≥ 15/10/5 cm, Kehlbleche.', options:[
+   {v:'schlepp', label:'Schleppgaube', hint:'Max. Raumgewinn, einfachste Geometrie.'},
+   {v:'sattel', label:'Satteldachgaube', hint:'Kehlschifter — solide Kür, klassisches Bild.'},
+   {v:'walm', label:'Walmgaube', hint:'Kehl- + Gratschifter — maximale Schiftungs-Kür.'},
+   {v:'trapez', label:'Trapezgaube', hint:'Modern, anspruchsvolle Verschneidung.'}], input:true},
+ {id:'a4_2', q:'Lage & Größe der Gaube?', info:'Wohin? (Kinderzimmer? Bad? Flur/Treppenhaus für Licht?) Breite üblich 1,5–3,0 m. Denk an: Belichtungswunsch der Vorgabe („helle Räume"), Sparrenraster (Wechsel!), Statik (Wechselbalken), Ansicht/Proportion.', options:[
+   {v:'bad', label:'Über dem DG-Bad', hint:'Stehhöhe + Licht dort, wo es fehlt.'},
+   {v:'kind', label:'Über einem Kinderzimmer', hint:'Wohnwert-Argument Familie.'},
+   {v:'flur', label:'Über Flur/Treppe', hint:'Belichtung Erschließung, Räume bleiben ungestört.'}], input:true}
+]},
+{part:'A', title:'A5 · Raumprogramm & Wohnflächen-Check', intro:'Jetzt die Räume den Flächen zuordnen — Ziel 145–165 m² nach WoFlV (DG: <1 m = 0 %, 1–2 m = 50 %, >2 m = 100 %).', items:[
+ {id:'a5_1', q:'EG-Raumprogramm festgelegt?', info:'Pflicht im EG: Gäste-WC. Typisch: Windfang/Diele · Wohnen/Essen/Küche (offen? „hell & großzügig"!) · Büro (separat! — EG bietet sich an: Homeoffice mit Kundenzugang, Ruhe von Kinderzimmern) · HWR/Technik · Gäste-WC. Bei ~100 m² Grundfläche ≈ 85–88 m² EG-Wohnfläche.', options:[
+   {v:'bueroEG', label:'Büro im EG (Empfehlung)', hint:'Trennung Arbeiten/Kinder-DG; kurze Wege.'},
+   {v:'bueroDG', label:'Büro im DG', hint:'Dann EG offener — aber DG wird voll: 2 Kinder + Bad + Büro + Eltern?'}], input:true},
+ {id:'a5_2', q:'DG-Raumprogramm festgelegt?', info:'Pflicht im DG: 2 geräumige Kinderzimmer + Badezimmer. Plus (je nach A5-1): Elternschlafzimmer, ggf. Ankleide. Prüfe mit DN + Kniestock die 2-m-Linien! Faustweg: DG-Wohnfläche ≈ 60–70 % der Grundfläche bei DN 38–45° + Kniestock 1 m + Gaube.', options:[
+   {v:'ok', label:'✅ DG-Programm steht (Notiz unten)', hint:''}], input:true},
+ {id:'a5_3', q:'Flächenbilanz gerechnet?', info:'Rechne: EG-Wohnfläche + DG-Wohnfläche (WoFlV) = 145–165 m²? DIN-277-Rechnung (Grundflächen/Rauminhalte) brauchst du spätestens für den Bauantrag — lege sie dir früh als Tabelle an.', options:[
+   {v:'ok', label:'✅ Bilanz liegt im Zielkorridor', hint:''},
+   {v:'todo', label:'⏳ Muss ich noch rechnen', hint:''}], input:true}
+]},
+{part:'A', title:'A6 · Wandaufbau (Außenwand) + U-Wert', intro:'Herzstück-Entscheidung — inkl. GEG-Rechnung. Die Vorgabe will: energieeffizient, ökologisch, Holzfassade.', items:[
+ {id:'a6_1', q:'Welcher Wandaufbau?', info:'Alle drei GEG-tauglich (Neubau-Nachweis läuft übers Bilanzverfahren — Zielwert Praxis: U ≤ 0,20, besser ≤ 0,15 W/m²K). Regelwerke: Fachregel 01 Außenwandbekleidungen + Regeldetailkatalog, DIN 68800-2 (GK 0), Hinterlüftung + Kleintierschutz, Lärche/Douglasie → Edelstahl A2!', options:[
+   {v:'hrb200hf', label:'HRB 60/200 KVH + Zellulose · innen OSB (luftdicht) + Installationsebene 60 + GK · außen 60 mm Holzfaserplatte + Hinterlüftung + Lärche Boden-Deckel', hint:'U ≈ 0,15 · sehr ökologisch (Vorgabe!) · diffusionsoffen · dein Pranzner-Level.'},
+   {v:'hrb240mw', label:'HRB 60/240 + Mineralwolle · innen OSB + Inst.-Ebene · außen Fassadenbahn/MDF + Rhombus-Lattung', hint:'U ≈ 0,14 · günstiger · weniger „öko"-Story fürs Fachgespräch.'},
+   {v:'clt', label:'Brettsperrholz (CLT) 100 + 160 Holzfaser + Hinterlüftung + Holzschalung', hint:'U ≈ 0,17 · massiver Holzbau, tolle Story — aber teurer, weniger HRB-Nachweis.'}], input:true},
+ {id:'a6_2', q:'U-Wert-Rechnung Wand gemacht?', info:'Schichtweise: R = d/λ je Schicht, R_T = R_si + ΣR + R_se, U = 1/R_T (dein HF-1f-Schema). Zellulose λ ≈ 0,039 · Holzfaser λ ≈ 0,042 · Gefachanteil ~85/15 mitteln (U_c über Rippenanteil). Die Rechnung wandert 1:1 ins Konzept + später in den GEG-Nachweis (übakus!).', options:[
+   {v:'ok', label:'✅ Gerechnet (Ergebnis in Notiz)', hint:''},
+   {v:'todo', label:'⏳ Machen wir zusammen (Claude rechnet mit)', hint:''}], input:true}
+]},
+{part:'A', title:'A7 · Dachaufbau + U-Wert', intro:'Gleiche Logik fürs Dach — hier zählt auch die Fachregel-Seite (Unterdach, Belüftung).', items:[
+ {id:'a7_1', q:'Welcher Dachaufbau?', info:'Zielwert Praxis Neubau: U ≤ 0,14–0,17. ZVDH-Klassen für Zusatzmaßnahmen je nach DN-Reserve; Konterlattung/Hinterlüftung 2 ‰-Regel; feuchtevariable Dampfbremse innen; Deckung Tonziegel (Regeldachneigung beachten — bei 38–45° unkritisch).', options:[
+   {v:'zw220auf60', label:'Zwischensparren 220 Zellulose + Aufsparren-Holzfaser 60 (Unterdeckplatte) + Konter/Traglattung + Tonziegel', hint:'U ≈ 0,14 · wärmebrückenarm · sd-Verlauf sauber · Empfehlung.'},
+   {v:'zw240', label:'Zwischensparren 240 MW + Unterdeckbahn + Konter/Latt + Ziegel', hint:'U ≈ 0,16 · einfachster Aufbau.'},
+   {v:'aufdach', label:'Volle Aufsparrendämmung (PU/Holzfaser 180) + Sichtsparren innen', hint:'Sichtbarer Dachstuhl als Verkaufsargument — Befestigung/Statik der Aufdachdämmung nachweisen!'}], input:true},
+ {id:'a7_2', q:'U-Wert Dach + Ziegelwahl fixiert?', info:'Ziegel: z. B. Flachdachziegel (RDN 22°) oder Reformziegel (RDN 25°) — bei DN 38–45° alles regelkonform, Windsogsicherung nach Zone (Sturmklammern Rand/Eck!).', options:[
+   {v:'ok', label:'✅ Steht (Notiz)', hint:''},{v:'todo', label:'⏳ Offen', hint:''}], input:true}
+]},
+{part:'A', title:'A8 · Geschossdecke + Innenwände', intro:'', items:[
+ {id:'a8_1', q:'Deckenaufbau EG/DG?', info:'Klassiker: Holzbalkendecke (z. B. KVH 10/24, e = 62,5–70 cm) + Rieselschutz + Schüttung (gebunden) + Trittschalldämmung + Trockenestrich. Nachweise: Biegung/Durchbiegung + SCHWINGUNG (f ≥ 8 Hz) + Trittschall (DIN 4109-33). Alternativ Sichtbalkendecke (schöner, Schallschutz aufwendiger).', options:[
+   {v:'hbd', label:'Holzbalkendecke verdeckt + Schüttung + Trockenestrich', hint:'Sicher & regelkonform — Empfehlung.'},
+   {v:'sicht', label:'Sichtbalkendecke + Aufbau oben', hint:'Wohnwert-Story, Schallschutz sorgfältig nachweisen.'}], input:true},
+ {id:'a8_2', q:'Innenwände?', info:'Tragend: HRB 60/120–140 beplankt. Nichttragend: Metall- oder Holzständer + GK (DIN 4103-1). Installationswand fürs Bad (Vorwand). Schallschutz Kinderzimmer/Bad bedenken.', options:[
+   {v:'ok', label:'✅ Konzept steht (Notiz)', hint:''}], input:true}
+]},
+{part:'A', title:'A9 · Gründung / Bodenplatte + Sockeldetail', intro:'Ohne Keller = Bodenplatte. Der Sockel ist DAS Holzschutz-Detail (Prüferliebling!).', items:[
+ {id:'a9_1', q:'Gründungsart?', info:'Thermobodenplatte (lastabtragende Dämmung XPS/Schaumglas unter Platte) = wärmebrückenfrei, moderner Standard. Alternativ Streifenfundament + Platte + Dämmung oben. Sockelregel DIN 68800-2/Fachregeln: Holz ≥ 30 cm über Gelände (15 cm mit Kiesstreifen/Spritzschutz-Maßnahme).', options:[
+   {v:'thermo', label:'Thermobodenplatte (Empfehlung)', hint:'U ≈ 0,20–0,25, sauberes Sockeldetail, schnelle Bauzeit.'},
+   {v:'streifen', label:'Streifenfundament + Bodenplatte', hint:'Klassisch, mehr Erdbau.'}], input:true},
+ {id:'a9_2', q:'Sockeldetail durchdacht?', info:'Schwelle: Lärche/kesseldruckimprägniert? Besser: Schwelle in GK 0 halten — Abdichtung unter Schwelle (Bitumenbahn), Anschlusshöhe, Spritzwasserschutz, luftdichter Anschluss OSB→Bodenplatte (Kompriband/Kleber).', options:[
+   {v:'ok', label:'✅ Detailidee steht (Notiz)', hint:''},{v:'todo', label:'⏳ Zusammen ausarbeiten', hint:''}], input:true}
+]},
+{part:'A', title:'A10 · Energie, Heizung & Extras', intro:'„Energieeffiziente Gebäudehülle" ist Pflicht-Wunsch — die Technik rundet die Story ab.', items:[
+ {id:'a10_1', q:'Heizkonzept?', info:'GEG § 71: 65-%-EE-Pflicht bei Neubau → praktisch Wärmepumpe. Luft-WP 8–12 kW + FBH passt zur Familie & zum Bauantrag (Schall-Datenblatt in die Unterlagen, WP im Lageplan + Ansichten!). Optional Kamin (Vorgabe erlaubt): Schornstein einplanen (Ansicht/Schnitt, Brandschutz-Abstände).', options:[
+   {v:'wp', label:'Luft-Wasser-WP + Fußbodenheizung', hint:'Standard-sicher.'},
+   {v:'wppv', label:'WP + PV-Anlage aufs Dach', hint:'Rundere Öko-Story; PV in Ansichten + Windsog beachten (dein HF-1h-Wissen!).'}], input:true},
+ {id:'a10_2', q:'Kamin ja/nein?', info:'„Optional" — ein wasserführender/raumluftunabhängiger Kaminofen gibt Fachgespräch-Stoff (Feuerstättenverordnung, § 48 BbgBO Rauchmelder sowieso). Kostet aber Planzeit (Schornstein in allen Plänen).', options:[
+   {v:'ja', label:'Ja, Kaminofen einplanen', hint:'Wohnwert + Prüfungsstoff.'},
+   {v:'nein', label:'Nein, weglassen', hint:'Ein Detail weniger — Fokus auf Kernthemen.'}], input:true}
+]},
+{part:'A', title:'A11 · Planungsschwerpunkt & Konzept-Paket', intro:'Der Schlusspunkt der Abgabe: „Beschreiben Sie kurz, welcher Planungsschwerpunkt bei Ihrem Entwurf im Vordergrund stand."', items:[
+ {id:'a11_1', q:'Was ist DEIN Planungsschwerpunkt (1–3 Sätze)?', info:'Kandidaten: (a) zimmermannsmäßiger Abbund — anspruchsvolle Dachgeometrie mit Gaube als handwerkliche Visitenkarte · (b) ökologischer, diffusionsoffener Holzrahmenbau mit energieeffizienter Hülle · (c) familiengerechte Grundrissorganisation (Kinder-DG, Homeoffice, helle Räume). Am stärksten: a + b kombiniert, weil beides direkt die 60-%-Durchführungsphase füttert.', options:[
+   {v:'abbund', label:'Abbund/Dachgeometrie im Fokus', hint:''},
+   {v:'oeko', label:'Ökologie/Energieeffizienz im Fokus', hint:''},
+   {v:'kombi', label:'Kombination (Empfehlung)', hint:''}], input:true},
+ {id:'a11_2', q:'Konzept-Paket vollständig?', info:'☐ Projektbeschreibung (max. 1 A4: Ausgangslage → Entwurfsidee → Konstruktion/Material je Bauteil kurz → Planungsschwerpunkt)\n☐ Skizze Grundriss EG (Blatt 1, Räume beschriftet)\n☐ Skizze Grundriss DG (Blatt 2)\n☐ Skizzen Ansichten N/O/S/W (je eigenes Blatt)\n☐ Als EIN sauberes PDF exportiert\n☐ Vor 31.08. eingereicht (Nachweis/Mail sichern)\nLeitfaden empfiehlt zusätzlich Zeit- + Materialbedarfsplanung im Konzept — die HWK-Vorgabe verlangt sie NICHT ausdrücklich → kompakt beilegen oder beim Prüfer nachfragen.', options:[
+   {v:'ok', label:'✅ Paket komplett & abgegeben', hint:''},{v:'todo', label:'⏳ In Arbeit', hint:''}], input:true}
+]},
+// ================= TEIL B — PRÜFUNGSWOCHE (12.–16.10.) =================
+{part:'B', title:'B1 · Planungsarbeiten (30 %) — Bauantrag BbgBO', intro:'Ziel: einreichungsfähiger Bauantrag. Deine komplette Formular-Checkliste liegt im Vault („Bauantrag Brandenburg – Checkliste"). Vorbereitung JETZT = Formulare ziehen & Kopfdaten vorbefüllen.', items:[
+ {id:'b1_1', q:'Textteil: alle Formulare gezogen & vorbefüllt?', info:'☐ Bauantrag (Anlage 1, afm.brandenburg.de) — vereinfachtes Verfahren § 63 BbgBO fürs EFH (Stand 2026; §§-Novelle erst 1.1.2027!)\n☐ Baubeschreibung Wohnhaus (Anlage 2.1)\n☐ Herstellungskosten (Anlage 4.4, DIN-276-Kostengruppen)\n☐ Erklärung Niederschlagswasser (BbgVersFreiV)\n☐ Bauvorlageberechtigung/Vorbemerkung (§ 65!)\n☐ Baustatistikblatt → mit Prüfer klären ob nötig\n☐ Stellplatznachweis (frei gestalten)\n☐ WP-Datenblatt mit Schallwerten', options:[
+   {v:'ok', label:'✅ Alles liegt ausgefüllt bereit', hint:''},{v:'teil', label:'🔶 Teilweise', hint:''},{v:'todo', label:'⏳ Noch nicht', hint:''}], input:true},
+ {id:'b1_2', q:'Zeichnungsteil-Plan klar?', info:'☐ Lageplan (fiktives Grundstück! Nordpfeil, Abstandsflächen H×0,4 ≥ 3 m, Höhen DHNN, WP, Stellplätze)\n☐ Flurkarte (BRANDENBURGVIEWER-Auszug als Platzhalter)\n☐ Grundrisse EG/DG 1:100 (Rettungswege, Rauchmelder § 48, Fenster mit Brüstungshöhen, Raumdaten)\n☐ Ansichten ×4\n☐ Schnitt A–A durch die Treppe (Firsthöhe DHNN, OKFF-Bezug)\n☐ DIN-277-Berechnung + Wohnflächenberechnung\n☐ GEG-Nachweis (übakus-Paket: U-Werte, Taupunkt, Feuchte, Hitzeschutz)', options:[
+   {v:'ok', label:'✅ Klar', hint:''},{v:'todo', label:'⏳ Offen', hint:''}], input:true},
+ {id:'b1_3', q:'Fiktives Grundstück definiert?', info:'Du brauchst: Gemarkung/Flur/Flurstück (fiktiv, z. B. dein Umfeld Ahrensfelde/Panketal — Brandenburg!), B-Plan-Annahmen (GRZ, Vollgeschosse, Dachform-Vorgaben?), Erschließung. Einfach halten: „B-Plan-konform, GRZ 0,3, offene Bauweise".', options:[
+   {v:'ok', label:'✅ Definiert (Notiz)', hint:''},{v:'todo', label:'⏳ Offen', hint:''}], input:true}
+]},
+{part:'B', title:'B2 · Durchführungsarbeiten (60 %) — Zeichnungen & Statik', intro:'DER Bewertungskern. Nicht an dieser Phase sparen — wenn Zeit fehlt, woanders kürzen!', items:[
+ {id:'b2_1', q:'Werkplan-Liste festgelegt?', info:'☐ Dachausmittlung (Grundlage! Mit Gauben-Verschneidung — Pranzners eigene Lücke nicht wiederholen!)\n☐ Sparren-/Dachlagenplan\n☐ Dachprofil(e)\n☐ Balkenlage Geschossdecke\n☐ Wandhölzer-Aufteilung (Giebel + Rahmenwände)\n☐ Elementpläne HRB', options:[
+   {v:'ok', label:'✅ Liste steht', hint:''},{v:'todo', label:'⏳ Offen', hint:''}], input:true},
+ {id:'b2_2', q:'Detail-Liste (1:20/1:10/1:5) festgelegt?', info:'Pflicht-Kandidaten: Traufe · Ortgang · First/Mittelpfette · Kniestock/Fußpfette (Zuganker!) · Gaubenanschluss (Kehl-/Gratschifter, Wechsel) · Sockel (A9!) · Fensteranschluss (RAL, luftdicht, 2. Ebene) · Wand-Decke-Anschluss. Qualitätsregeln: alles bemaßt, Höhenkoten DHNN, Schichtaufbauten beschriftet, Verbindungsmittel mit Norm/ETA, C24/S10-Angaben.', options:[
+   {v:'ok', label:'✅ Liste steht', hint:''},{v:'todo', label:'⏳ Offen', hint:''}], input:true},
+ {id:'b2_3', q:'Statik-Paket definiert? (nach Thielemann-Leitfäden L0–L3!)', info:'☐ Lastannahmen (L1: Grundriss-Projektion, 5 LK, Schneelastzone Standort!)\n☐ Sparrenbemessung GZT (L2) + GZG (L3)\n☐ Pfette/Wechsel (Gaube!)\n☐ ggf. Stütze/Knick\n☐ Verbindungsmittel (Versatz/Schrauben mit n_ef)\nEIGENE Statik statt „extern vergeben" = dickes Plus im Fachgespräch (Janßen/Pranzner hatten extern!).', options:[
+   {v:'selbst', label:'✅ Ich rechne selbst (mit Thielemann-Schema)', hint:'Stärkstes Fachgespräch-Argument.'},
+   {v:'teil', label:'🔶 Kernnachweise selbst, Rest Tabellenwerk', hint:''}], input:true}
+]},
+{part:'B', title:'B3 · Dokumentation (10 %) — LV & Mengen', intro:'Klein in Prozent, aber der im Muster ANGEMAHNTE Teil („LV/Rechnung fehlt!"). Nicht vergessen!', items:[
+ {id:'b3_1', q:'Doku-Paket klar?', info:'☐ Holz-/Materialliste (Bauteil · Norm · Dimension · Stück · m³)\n☐ Leistungsverzeichnis/Angebot (Positionen nach ATV DIN 18334, EP/GP, netto→brutto — dein 65-€-Stundensatz-Schema!)\n☐ Mengenberechnung (VOB/C-Regeln, Verschnitt 15 %/5 %-Sätze aus HF 2f)\n☐ Produktdatenblätter Anlage\n☐ Bauzeitenplan (Gantt — wie dein Prüfungs-Bauzeitenplan 😉)\n☐ Deckblatt, Inhaltsverzeichnis, Selbstständigkeitserklärung, Seitenzahlen\n☐ Prozessdoku: Zeitaufwand je Phase notieren (Leitfaden §3.3)', options:[
+   {v:'ok', label:'✅ Klar', hint:''},{v:'todo', label:'⏳ Offen', hint:''}], input:true}
+]},
+{part:'B', title:'B4 · 5-Tage-Plan & Endkontrolle', intro:'Zeitmanagement = kritischer Erfolgsfaktor (max. 5 Arbeitstage, § 7).', items:[
+ {id:'b4_1', q:'Tagesplan übernehmen oder anpassen?', info:'Vorschlag (Leitfaden + Gewichtung):\nTag 1 (Mo): Bauvorlagepläne fertig + GEG-Nachweise final\nTag 2 (Di): Werkplanung: Ausmittlung, Sparrenlage, Profile + erste Details\nTag 3 (Mi): Werkplanung fertig + STATIK komplett\nTag 4 (Do): Detailzeichnungen final + LV/Mengen beginnen\nTag 5 (Fr): Doku komplett, Bauakte, ENDKONTROLLE\nPuffer-Regel: Details (60 %) nie zugunsten von Doku (10 %) opfern.', options:[
+   {v:'ok', label:'✅ Übernehmen', hint:''},{v:'anpassen', label:'🔧 Anpassen (Notiz)', hint:''}], input:true},
+ {id:'b4_2', q:'Endkontroll-Checkliste klar?', info:'☐ Maße Plan = Holzliste = LV (Konsistenz!)\n☐ Höhenkoten stimmig (OKFF/Traufe/First DHNN)\n☐ Neigungen/Gratlängen = Ausmittlung\n☐ Alle Pläne mit Schriftfeld (BV, Maßstab, Datum, Bearbeiter)\n☐ PDF vollständig, beschriftet, übersichtlich\n☐ Fachgespräch-Spickzettel: WARUM je Entscheidung (3:1-Gewichtung!)', options:[
+   {v:'ok', label:'✅ Klar', hint:''}], input:true}
+]}
+];
+
+// ---------------- Engine ----------------
+const KEY = 'mpp-planer.v1';
+let st = JSON.parse(localStorage.getItem(KEY) || '{"run":1,"cur":0,"answers":{},"archive":[]}');
+function save(){ localStorage.setItem(KEY, JSON.stringify(st)); }
+function ans(id){ return st.answers[id] || (st.answers[id] = {choice:null, note:'', done:false}); }
+function secDone(s){ return s.items.every(it => (st.answers[it.id]||{}).done); }
+function render(){
+  const s = S[st.cur];
+  let h = '<div class="card"><span class="teilbadge ' + (s.part==='A'?'tA':'tB') + '">' +
+          (s.part==='A' ? 'TEIL A · KONZEPT (bis 31.08.)' : 'TEIL B · PRÜFUNGSWOCHE (12.–16.10.)') + '</span>' +
+          '<h2>' + s.title + '</h2>' + (s.intro ? '<div class="intro">' + s.intro + '</div>' : '');
+  for (const it of s.items) {
+    const a = ans(it.id);
+    h += '<div class="item"><div class="q">' + it.q + '</div>';
+    if (it.info) h += '<div class="info">' + it.info + '</div>';
+    for (const o of (it.options||[])) {
+      h += '<label class="opt"><input type="radio" name="' + it.id + '" value="' + o.v + '"' +
+           (a.choice===o.v?' checked':'') + ' onchange="pick(\'' + it.id + '\',\'' + o.v + '\')">' +
+           '<b>' + o.label + '</b>' + (o.hint ? '<small>' + o.hint + '</small>' : '') + '</label>';
+    }
+    if (it.input) h += '<textarea placeholder="Deine Notiz / Begründung / Zahlen …" onchange="note(\'' + it.id + '\', this.value)">' + (a.note||'') + '</textarea>';
+    h += '<div class="doneline"><label><input type="checkbox"' + (a.done?' checked':'') +
+         ' onchange="doneIt(\'' + it.id + '\', this.checked)"> <b>Punkt entschieden / erledigt</b></label></div></div>';
+  }
+  h += '</div>';
+  document.getElementById('page').innerHTML = h;
+  document.getElementById('prev').disabled = st.cur===0;
+  document.getElementById('next').disabled = st.cur===S.length-1;
+  const total = S.reduce((n,x)=>n+x.items.length,0);
+  const done = S.reduce((n,x)=>n+x.items.filter(it=>(st.answers[it.id]||{}).done).length,0);
+  document.getElementById('stat').innerHTML = 'Durchlauf <b>' + st.run + '</b> · Abschnitt ' + (st.cur+1) + '/' + S.length + ' · <b>' + done + '/' + total + '</b> Punkte entschieden';
+  const prog = document.getElementById('prog'); prog.innerHTML='';
+  S.forEach((x,i)=>{ const p=document.createElement('div');
+    p.className='pill ' + (x.part==='A'?'a':'b') + (secDone(x)?' done':'') + (i===st.cur?' cur':'');
+    p.title=x.title; p.onclick=()=>{st.cur=i;save();render();window.scrollTo(0,0);}; prog.appendChild(p); });
+}
+function pick(id,v){ ans(id).choice=v; save(); }
+function note(id,v){ ans(id).note=v; save(); }
+function doneIt(id,v){ ans(id).done=v; save(); render(); }
+function go(d){ st.cur=Math.max(0,Math.min(S.length-1,st.cur+d)); save(); render(); window.scrollTo(0,0); }
+function jumpOpen(){ for(let i=0;i<S.length;i++){ if(!secDone(S[i])){ st.cur=i;save();render();window.scrollTo(0,0);return; } } alert('Alles entschieden! 🎉 Jetzt: Version speichern.'); }
+function newRun(){ if(!confirm('Aktuellen Durchlauf archivieren und neu starten?'))return;
+  st.archive.push({run:st.run, at:new Date().toISOString(), answers:st.answers});
+  st.run++; st.answers={}; st.cur=0; save(); render(); }
+function exportMd(){
+  let md = '# MPP-Entscheidungen — Durchlauf ' + st.run + ' (' + new Date().toLocaleDateString('de-DE') + ')\n\n';
+  md += '> Meisterprüfungsprojekt 2026 · Vorgabe HWK: EFH 100–110 m², 145–165 m² WF, DN 32–50° + Gaube, BbgBO\n\n';
+  for (const s of S) {
+    md += '## ' + (s.part==='A'?'🅰️ ':'🅱️ ') + s.title + '\n\n';
+    for (const it of s.items) {
+      const a = st.answers[it.id]||{};
+      const o = (it.options||[]).find(x=>x.v===a.choice);
+      md += '- ' + (a.done?'[x]':'[ ]') + ' **' + it.q + '**\n';
+      md += '  - Entscheidung: ' + (o ? o.label : '_offen_') + '\n';
+      if (a.note) md += '  - Notiz: ' + a.note.replace(/\n/g,' · ') + '\n';
+    }
+    md += '\n';
+  }
+  const blob = new Blob([md], {type:'text/markdown'});
+  const aEl = document.createElement('a');
+  aEl.href = URL.createObjectURL(blob);
+  aEl.download = 'MPP-Entscheidungen_Durchlauf' + st.run + '_' + new Date().toISOString().slice(0,10) + '.md';
+  aEl.click();
+}
+render();
+</script>
+</body>
+</html>
