@@ -32,7 +32,36 @@
   <a class="primary" href="sa3.html">🔍 SA3 · Fehlersuche</a>
   <a class="primary" href="fachgespraech.html">💬 Fachgespräch</a>
   <a href="#g-hf1">HF 1</a><a href="#g-hf2">HF 2</a><a href="#g-hf3">HF 3</a><a href="#g-hf4">HF 4</a>
-  <a href="#mindmaps">🗺️ Mindmaps</a>
+  <a href="#mindmaps">🗺️ Mindmaps</a><a href="#pruefungsplan">🎯 Plan</a>
+</div>
+
+<div class="mmsec" id="pruefungsplan" style="margin-top:.8rem">
+<h2>🎯 Prüfungs-Countdown &amp; Bauzeitenplan <small>· offizielle HWK-Termine · Plan: Master-Lehrplan Prüfungsphase 2026</small></h2>
+<div id="ppChips" style="display:flex;flex-wrap:wrap;gap:.45rem;margin:.5rem 0 .7rem"></div>
+<details open>
+<summary style="cursor:pointer;font-weight:600;margin-bottom:.4rem">📅 Bauzeitenplan &amp; Wandkalender anzeigen (Klick aufs Bild = groß öffnen)</summary>
+<a href="assets/pruefungsplan.svg" target="_blank">
+<img src="assets/pruefungsplan.svg" alt="Prüfungs-Bauzeitenplan" style="width:100%;border:1px solid #ccd3db;border-radius:10px;background:#fff">
+</a>
+</details>
+<script>
+(function(){
+  var ex=[["📄 Konzept-Abgabe","2026-08-31"],["📝 Situationsaufgabe","2026-09-17"],
+          ["📐 Zeichenaufgabe","2026-09-21"],["✍️ Teil II schriftlich","2026-09-28"],
+          ["🏗️ MPP-Woche","2026-10-12"],["💬 Fachgespräch","2026-12-07"]];
+  var box=document.getElementById("ppChips"),now=new Date();now.setHours(0,0,0,0);
+  ex.forEach(function(e){
+    var d=new Date(e[1]+"T00:00:00"),rest=Math.round((d-now)/864e5);
+    var col=rest<0?"#adb5bd":rest<=7?"#e03131":rest<=21?"#e8590c":"#1971c2";
+    var txt=rest<0?"✔ vorbei":rest===0?"HEUTE!":"noch "+rest+" Tage";
+    var dd=("0"+d.getDate()).slice(-2)+"."+("0"+(d.getMonth()+1)).slice(-2)+".";
+    var c=document.createElement("div");
+    c.style.cssText="background:"+col+";color:#fff;border-radius:9px;padding:.35rem .7rem;font-size:.85rem;line-height:1.35";
+    c.innerHTML="<b>"+e[0]+"</b> "+dd+"<br>"+txt;
+    box.appendChild(c);
+  });
+})();
+</script>
 </div>
 
 <div id="due"></div>
