@@ -85,13 +85,15 @@
 <div class="quelle">Grundlage: <a href="obsidian://open?vault=Zweites_Gehirn&file=Lernmethoden%20%C3%9Cbersicht">Lernmethoden Übersicht</a> · Empfohlener Ablauf: Feynman → Mind Map → Active Recall → Spaced Repetition, geschützt durch Pomodoro.</div>
 </div>
 
+<div id="ownerBox"></div>
+
 <div class="toolbar">
   <button id="exportBtn">⬇️ Fortschritt exportieren (Backup)</button>
   <button id="resetBtn">🗑️ Fortschritt zurücksetzen</button>
 </div>
 
 <footer>
-  Fortschritt liegt lokal in diesem Browser (localStorage). Ampel-Regel: 🟢 = 2 Durchläufe ≥90% an verschiedenen Tagen · 🟡 = dran · 🔴 = neu / letzter &lt;60%.<br>
+  Fortschritt liegt lokal in diesem Browser (localStorage). Ampel-Regel: 🟢 = 2 Durchläufe ≥90% an <b>verschiedenen Tagen</b> (zählt voll) · 🔵 = 1× ≥90 %, bestätigen (zählt halb) · 🟡 = dran · 🔴 = neu / letzter &lt;60%.<br>
   Simulator- &amp; Wiederhol-Sessions zählen für Streak und Durchläufe (nicht für die Deck-Ampel).
   Ergebnis Claude melden → Vault-Lernampel (Lehrplan Meisterprüfung) wird gepflegt.
 </footer>
@@ -105,16 +107,36 @@ var STORE='lernwerkstatt.v1';
 var MAN=JSON.parse(document.getElementById('manifest').textContent);
 var GRP=JSON.parse(document.getElementById('groups').textContent);
 function load(){try{return JSON.parse(localStorage.getItem(STORE))||{decks:{}};}catch(e){return {decks:{}};}}
+/* Bugfix 13.08.2026: Auf der oeffentlichen Seite ist dieser Browser ohne das
+   Flag "lw.owner" ein Gast -> der gesyncte Stand aus progress-sync.js wurde
+   still ignoriert (Hub zeigte 0 Durchlaeufe, obwohl alles da war). Jetzt sichtbar
+   + 1 Klick zum Uebernehmen. */
+function ownerBanner(){
+  var box=document.getElementById('ownerBox'); if(!box) return;
+  if(!window.SYNC || SYNC.owner || !SYNC.syncCount){ box.innerHTML=''; return; }
+  box.innerHTML='<div style="background:#fff4e6;border:1px solid #ffa94d;border-left:5px solid #e8590c;'+
+    'border-radius:10px;padding:.7rem .9rem;margin:.8rem 0;font-size:.92rem">'+
+    '<b>👤 Dieser Browser ist noch nicht als dein Gerät markiert.</b><br>'+
+    'Dein gesyncter Fortschritt (<b>'+SYNC.syncCount+' Themen</b>) wird deshalb hier <b>nicht</b> angezeigt und neue Runden werden nicht exportiert.'+
+    '<div style="margin-top:.5rem"><button id="claimBtn" style="background:#e8590c;color:#fff;border:none;border-radius:8px;'+
+    'padding:.45rem .9rem;font:inherit;font-weight:600;cursor:pointer">Das ist mein Gerät → Fortschritt laden</button></div></div>';
+  document.getElementById('claimBtn').onclick=function(){ SYNC.claim(); };
+}
 function ampel(runs){
-  if(!runs||!runs.length) return {c:'🔴',cls:''};
+  if(!runs||!runs.length) return {c:'🔴',cls:'',score:0};
   var last=runs[runs.length-1], good={};
   runs.forEach(function(r){if(r.pct>=90)good[r.date]=1;});
-  if(Object.keys(good).length>=2) return {c:'🟢',cls:'done'};
-  if(last.pct<60) return {c:'🔴',cls:''};
-  return {c:'🟡',cls:''};
+  var gd=Object.keys(good).length;
+  if(gd>=2) return {c:'🟢',cls:'done',score:1};
+  // NEU 13.08.: 1 Tag >=90% ist sichtbarer Zwischenstand (zaehlt halb),
+  // sonst blieb die Pruefungsreife trotz 100%-Laeufen ewig auf 0.
+  if(gd===1) return {c:'🔵',cls:'half',score:0.5,need:'nur noch 1× ≥90 % an einem anderen Tag → 🟢'};
+  if(last.pct<60) return {c:'🔴',cls:'',score:0};
+  return {c:'🟡',cls:'',score:0};
 }
 function render(){
-  var db=load(), green=0, totalRuns=0, allDates={};
+  ownerBanner();
+  var db=load(), green=0, half=0, totalRuns=0, allDates={};
   var byGrp={};
   MAN.forEach(function(m){
     var d=db.decks[m.id], runs=d?d.runs:[];
@@ -122,14 +144,16 @@ function render(){
     runs.forEach(function(r){allDates[r.date]=1;});
     var a=ampel(runs);
     if(a.c==='🟢') green++;
+    if(a.c==='🔵') half++;
     (byGrp[m.group]=byGrp[m.group]||[]).push({m:m,runs:runs,a:a});
   });
   // Simulator-/Wiederhol-Sessions: zaehlen fuer Streak + Durchlaeufe
   var sess=db.sessions||[];
   sess.forEach(function(s){allDates[s.date]=1;});
-  // Reife
-  document.getElementById('reifeTxt').textContent=green+' / '+MAN.length;
-  document.getElementById('reifeFill').style.width=Math.round(green/MAN.length*100)+'%';
+  // Reife (🟢 voll, 🔵 halb -> der Balken bewegt sich schon nach dem ERSTEN guten Lauf)
+  document.getElementById('reifeTxt').innerHTML=green+' / '+MAN.length+
+    (half?' <span style="color:#1971c2;font-weight:600">+'+half+' 🔵</span>':'');
+  document.getElementById('reifeFill').style.width=Math.round((green+half*0.5)/MAN.length*100)+'%';
   document.getElementById('doneNum').textContent=totalRuns+sess.length;
   // Streak
   document.getElementById('streakNum').textContent=streak(Object.keys(allDates));
@@ -143,13 +167,15 @@ function render(){
   var h='';
   Object.keys(GRP).forEach(function(g){
     var rows=byGrp[g]||[]; var gg=rows.filter(function(x){return x.a.c==='🟢';}).length;
-    var gp=rows.length?Math.round(gg/rows.length*100):0;
+    var gscore=rows.reduce(function(s,x){return s+(x.a.score||0);},0);
+    var gp=rows.length?Math.round(gscore/rows.length*100):0;
     h+='<div class="hfgroup" id="g-'+g+'"><h2>'+GRP[g]+
        '<span class="gtrack"><span class="gfill" style="width:'+gp+'%"></span></span>'+
        '<span class="grpstat">'+gg+'/'+rows.length+' 🟢</span></h2>';
     rows.forEach(function(x){
       var last=x.runs.length?x.runs[x.runs.length-1]:null;
       var info=last?('<b>'+last.known+'/'+last.total+'</b> · '+x.runs.length+'× · '+last.date):'noch nie · 0×';
+      if(x.a.need) info+=' <span style="color:#1971c2">· '+x.a.need+'</span>';
       h+='<div class="deckrow">'+
            '<span class="amp">'+x.a.c+'</span>'+
            '<span class="name">'+x.m.title+' <small>('+x.m.n+' Fragen)</small></span>'+

@@ -87,7 +87,22 @@
     var db = load();
     if (mergeInto(db, window.SYNC_STATE)) save(db);
   }
-  window.SYNC = { autoExport: function () { if (OWNER) autoExport(); }, mergeInto: mergeInto };
+  // owner + claim nach aussen geben: der Hub zeigt sonst stumm 0 Durchlaeufe an,
+  // obwohl progress-sync.js den kompletten Stand enthaelt (Bugfix 13.08.2026).
+  window.SYNC = {
+    autoExport: function () { if (OWNER) autoExport(); },
+    mergeInto: mergeInto,
+    owner: OWNER,
+    syncCount: (window.SYNC_STATE && window.SYNC_STATE.decks) ? Object.keys(window.SYNC_STATE.decks).length : 0,
+    claim: function () {
+      try {
+        localStorage.setItem('lw.owner', '1');
+        var db = load();
+        if (window.SYNC_STATE && mergeInto(db, window.SYNC_STATE)) save(db);
+      } catch (e) {}
+      location.reload();
+    }
+  };
 
   // --- Mobil-Fix für Obsidian-Deeplinks --------------------------------------
   // Der Desktop-Vault heißt "Zweites_Gehirn", der Handy-Vault "Handy_Gehirn".

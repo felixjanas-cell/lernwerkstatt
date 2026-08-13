@@ -25,12 +25,14 @@
   }
   function deckAmpel() {
     var db = load(), d = db.decks[CFG.id];
-    if (!d || !d.runs.length) return { c: '🔴', n: 0 };
+    if (!d || !d.runs.length) return { c: '🔴', n: 0, gd: 0 };
     var last = d.runs[d.runs.length - 1], good = {};
     d.runs.forEach(function (r) { if (r.pct >= 90) good[r.date] = 1; });
-    if (Object.keys(good).length >= 2) return { c: '🟢', n: d.runs.length };
-    if (last.pct < 60) return { c: '🔴', n: d.runs.length };
-    return { c: '🟡', n: d.runs.length };
+    var gd = Object.keys(good).length;
+    if (gd >= 2) return { c: '🟢', n: d.runs.length, gd: gd };
+    if (gd === 1) return { c: '🔵', n: d.runs.length, gd: gd };   // sichtbarer Zwischenstand (13.08.)
+    if (last.pct < 60) return { c: '🔴', n: d.runs.length, gd: gd };
+    return { c: '🟡', n: d.runs.length, gd: gd };
   }
 
   function metaHtml(q) {
@@ -127,7 +129,10 @@
     if (mode === 'run') saveRun(known, total);
     if (window.SYNC) SYNC.autoExport();   // Fortschritt still in Downloads sichern (Geräte-Sync)
     var amp = deckAmpel();
-    var txt = amp.c === '🟢' ? 'prüfungsreif (2× ≥90%)' : amp.c === '🟡' ? 'dran – noch nicht grün' : 'Grundlagen wiederholen';
+    var txt = amp.c === '🟢' ? 'prüfungsreif (2× ≥90 % an verschiedenen Tagen)'
+            : amp.c === '🔵' ? 'fast! Nur noch 1× ≥90 % an einem ANDEREN Tag → 🟢'
+            : amp.c === '🟡' ? 'dran – noch nicht grün (≥90 % nötig)'
+            : 'Grundlagen wiederholen';
     host.innerHTML = '<div class="card result"><div class="score">' + known + '/' + total + '</div>' +
       '<div class="ampel">' + amp.c + ' ' + txt + ' &middot; ' + pct + '% &middot; Durchlauf Nr. ' + amp.n + '</div>' +
       (wrong.length ? '<p><b>Diese solltest du nochmal:</b></p><ul>' + wrong.map(function (q) { return '<li>' + strip(q.frage).slice(0, 95) + '…</li>'; }).join('') + '</ul>' : '<p>🎉 Alles richtig gewusst!</p>') +
