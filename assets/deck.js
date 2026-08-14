@@ -128,6 +128,9 @@
     var pct = Math.round((known / total) * 100), wrong = list.filter(function (q) { return !results[q.n]; });
     if (mode === 'run') saveRun(known, total);
     if (window.SYNC) SYNC.autoExport();   // Fortschritt still in Downloads sichern (Geräte-Sync)
+    // Frischen Stand über den Zurück-Link zum Hub transportieren (Fix 14.08. Abend:
+    // Firefox-file:// trennt localStorage pro Ordner — sonst sieht der Hub den Lauf nicht)
+    var hubHash = (window.SYNC && SYNC.hubPayload) ? SYNC.hubPayload() : '';
     var amp = deckAmpel();
     var txt = amp.c === '🟢' ? 'prüfungsreif (2× ≥90 % an verschiedenen Tagen)'
             : amp.c === '🔵' ? 'fast! Nur noch 1× ≥90 % an einem ANDEREN Tag → 🟢'
@@ -139,10 +142,15 @@
       '<div class="actions" style="justify-content:center">' +
       (wrong.length ? '<button class="btn primary" id="practice">🎯 Nur die ' + wrong.length + ' Wackler</button>' : '') +
       '<button class="btn" id="again">🔁 Ganzes Set neu</button>' +
-      '<a class="btn ghost" href="../index.html">← Zurück zum Hub</a></div>' +
+      '<a class="btn ghost" href="../index.html' + hubHash + '">← Zurück zum Hub</a></div>' +
       '<p class="muted" style="margin-top:1.2rem">Gespeichert. Melde mir „' + CFG.id.toUpperCase() + ' ' + known + '/' + total + '“ → ich pflege die Vault-Lernampel.</p></div>';
     var p = document.getElementById('practice'); if (p) p.onclick = function () { start('practice', wrong.slice()); };
     document.getElementById('again').onclick = function () { start('run', DATA.slice()); };
+    // Auch den Kopfzeilen-Link "← Zurück zum Selbsttest-Hub" mit dem Stand versorgen
+    if (hubHash) {
+      var tops = document.querySelectorAll('a.tophub, a[href="../index.html"]');
+      for (var i = 0; i < tops.length; i++) tops[i].setAttribute('href', '../index.html' + hubHash);
+    }
   }
 
   function start(m, set) { mode = m; list = set; idx = 0; results = {}; render(); }

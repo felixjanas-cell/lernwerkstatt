@@ -93,6 +93,16 @@
     autoExport: function () { if (OWNER) autoExport(); },
     mergeInto: mergeInto,
     owner: OWNER,
+    /* Fix 14.08.2026 (Abend): Firefox trennt bei file:// den localStorage PRO
+       ORDNER -> Deck (lessons/) und Hub (Root) sehen sich gegenseitig nicht.
+       Der komplette lokale Stand wandert deshalb als #lwsync=... im Zurueck-
+       Link zum Hub, der ihn beim Laden einmergt (origin-unabhaengig). */
+    hubPayload: function () {
+      try {
+        var data = localStorage.getItem(STORE);
+        return data ? '#lwsync=' + encodeURIComponent(data) : '';
+      } catch (e) { return ''; }
+    },
     syncCount: (window.SYNC_STATE && window.SYNC_STATE.decks) ? Object.keys(window.SYNC_STATE.decks).length : 0,
     claim: function () {
       try {
