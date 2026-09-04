@@ -3,6 +3,35 @@
    - Ergebnis pro Frage gespeichert (db.decks[id].q[n] = true/false) → Wiederhol-Deck
    - Rechen-Check: Fragen mit q.ergebnis {wert,einheit,tol,hinweis} bekommen Zahleneingabe mit Auto-Feedback
    Erwartet: window.DECK_CFG={id,title}; <script id="deck-data" type="application/json">[...]</script>; <div id="deck"></div> */
+/* Copy-Helfer fuer den /vertiefe-Button (global, Fix 04.09.2026).
+   Vorher: navigator.clipboard.writeText() im try/catch -> ein abgelehntes Promise
+   wurde NICHT gefangen, der Button meldete trotzdem Erfolg und im Clipboard blieb
+   der ALTE Befehl stehen (Felix fuegte am 04.09. versehentlich "/vertiefe hf1e 5"
+   vom Vortag ein). Jetzt: echtes Promise-Handling + execCommand-Fallback +
+   ehrliche Fehlermeldung mit markierbarem Text. */
+window.lwCopyCmd = function (btn) {
+  var txt = btn.getAttribute('data-cmd') || '';
+  function ok() { btn.textContent = '✅ kopiert — bei Claude einfügen'; }
+  function fail() {
+    btn.textContent = '⚠️ Kopieren blockiert — bitte markieren: ' + txt;
+    btn.style.userSelect = 'all';
+  }
+  function legacy() {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = txt; ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+      document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, txt.length);
+      var done = document.execCommand('copy');
+      document.body.removeChild(ta);
+      done ? ok() : fail();
+    } catch (e) { fail(); }
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(txt).then(ok, legacy);
+  } else { legacy(); }
+};
+
 (function () {
   var raw = document.getElementById('deck-data'); if (!raw) return;
   var DATA = JSON.parse(raw.textContent);
